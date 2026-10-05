@@ -19,3 +19,6 @@ node_modules/
 # Windows 噪声
 nul
 NUL
+
+# 含真实密钥的抓取件（红线：留磁盘不入库）
+rt_cc_conn.html
