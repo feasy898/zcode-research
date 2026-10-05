@@ -1,7 +1,11 @@
 {
   "tool": "validate.py",
   "asset": "skillfactory/v5/assets/deploy-pack/package",
+<<<<<<< HEAD
   "pack": "D:\\workspace\\zcode研究\\skillfactory\\v5\\assets\\deploy-pack\\package\\out\\pack-subset",
+=======
+  "pack": "/opt/gpumachine/projects/zcode-research/skillfactory/v5/assets/deploy-pack/package/out/pack-subset",
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e
   "expected_services": [
     "asr",
     "todo"

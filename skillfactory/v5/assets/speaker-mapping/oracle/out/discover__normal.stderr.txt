@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [map_speakers.py] INFO: 发现 3 个说话人标签 / 10 条发言，草稿映射已写出 out\discover__normal.json
+=======
+[map_speakers.py] INFO: 发现 3 个说话人标签 / 10 条发言，草稿映射已写出 out\discover__normal.json
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e

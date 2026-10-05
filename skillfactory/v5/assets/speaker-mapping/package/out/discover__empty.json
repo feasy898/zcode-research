@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "transcript": "fixtures\\empty.txt",
+=======
+  "transcript": "fixtures/empty.txt",
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e
   "total_utterances": 0,
   "speakers": [],
   "draft_mapping": {}

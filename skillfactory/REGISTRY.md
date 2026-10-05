@@ -147,3 +147,32 @@ hot-templates-skill    → rating A（5/5），15:48:32
 3. meeting-minutes Δ+5.25 来自 2026-09-30 majority 判定反演修正后的重算（均值与 Δ 未受修正影响）。
 4. hot-templates 按 SPEC §4 五门口径欠账未清（每臂 2<3 重复、benchmark.json 未落盘），V7 报告原要求复检通过前不上架——是否随本批放行，随三包一并待雇主裁决。
 5. 发布打包最后一道工序：再次清点删除包内 `.mimosa/`（本轮实查三包为 0，动作本身须进发布 checklist）。
+
+---
+
+## 2026-10-01 夜班轮追加登记：v5 代三候选（评估与准入 · worker-B）
+
+> 登记人：worker-B（CloudCrane 夜班 loop 自迭代批）；评估执行机 anolis-gpu-01（Python 3.12.13 + PyYAML 6.0.3）。
+> 评估记录（跑分落盘，退出码为证）：`v5/eval-round-20261001/`＝scorecard.md + results.tsv（41 门逐项退出码）+ 45 份 stdout/stderr 原始输出 + keyfiles.sha256（19 个关键文件）+ healthcheck/ 三份 report.json。
+> 口径：各候选自带 spec.md/contract.md 冻结红绿矩阵（未放宽任何阈值）；worker-A 本轮未落盘独立口径文档（考古如实记录），故按盘内冻结契约执行。全程离线，**零模型调用**。
+> 本节为追加登记，不改上方任何既有行。
+
+| 名称 | 目录 | 形态 | 状态 | 确定性评测（2026-10-01 本轮实跑） | 盲评 | 体检级 | 许可 | 一句话用途 |
+|---|---|---|---|---|---|---|---|---|
+| hotwords（热词表管理器） | `v5/assets/hotwords`（spec/contract/eval/oracle/package） | skill+CLI 工具 | **内部就绪**（工具/基建件） | 全过：oracle `run_all.py` 10 步 exit 0（基线重跑前后 diff 仅 cmd.txt 解释器路径形态 40 行，A.7 归一化吸收）；eval 4/4 exit 0＝绿自评 + package vs oracle **54 文件一致率 100%**（Windows 纪基线与新基线双跑均绿）；红（空目录）exit 1 拦截；用法错 exit 2；runner 双跑 stdout 逐字节一致 | 不适用（工具类） | **C**（2/5；3 失分项属形态错配，见注 1） | 未声明（SKILL.md 仅 name+description） | ASR 热词库增删查导出（funasr/plain），10 步真实 CLI 序列快照自证 |
+| deploy-pack（三服务部署包生成器） | `v5/assets/deploy-pack` | tooling（生成器+校验器） | **内部就绪**（工具/基建件） | **12/12 全过**：oracle fixtures **7/7**（verdict=ALL FIXTURES AS EXPECTED，含 4 red 包各被恰一 C 项击穿）；eval 绿自评与 pack-canonical direct 均 exit 0（4/4，rate 1.0）；6 红矩阵（空目录/bad-yaml/missing-service/env-drift/hardcoded-secret/subset）全 exit 1 拦截；用法错 exit 2；runner 双跑逐字节一致 | 不适用（工具类） | **C**（2/5；同注 1） | 未声明（SKILL.md 仅 name+description） | 一条命令生成 asr/minutes/todo 三服务 docker-compose 部署包 + C1-C7 机器判验（密钥占位红线内嵌 C4） |
+| speaker-mapping（说话人标签映射） | `v5/assets/speaker-mapping` | skill+CLI 工具 | **待迭代**（确定性门 3/4） | 4 项检查 3/4 过（9 映射产物逐字节/WARNING 集/discover 统计全过）；检查 4 红：12 主产物 9/12 一致，3 个 discover JSON 仅 transcript 路径形态不符（盘内 Windows 纪基线冻结 `fixtures\…` vs 本机重生成 `fixtures/…`）；对照证据：oracle 工具本机独立重生成 9 txt vs 基线 **9/9 逐字节一致**（真回归排除）；红空目录 exit 1、用法 exit 2 过 | 不适用（工具类） | **C**（2/5；同注 1） | 未声明（SKILL.md 仅 name+description） | diarization 转写稿 SPEAKER_XX→人名替换 / discover 说话人扫描（纯标准库确定性） |
+
+> 注 1（体检形态备注，如实登记不推翻 C）：v3/tools/healthcheck 5 项按 dist skill 包形态设计；v5 三件为工具类，eval 在**资产级**（`assets/<a>/eval/runner.py`，本轮全实跑）而非 package/eval/，脚本在包根而非 scripts/，SKILL.md 仅 name+description。2 PASS=skill_md_exists+eval_smoke(skip)。同先例：B 表 mcp-office-pack「配置包形态，体检器 5 项不适用」。形态豁免与整改（补 front-matter 三字段）留待后续轮/owner 裁定。
+> 注 2：三件均**不进 dist/**——可分发门=确定性+盲评+体检(A) 三者齐，且发布动作待雇主批准（红线）。
+> 注 3：speaker-mapping 唯一红项修复路径＝contract §6 基线升版流程（Linux 重跑 12 命令重建 `oracle/out` + 同步 spec 附录 A.3 + 升版本号），属生成侧（worker-A）动作，本轮未代办。
+> 注 4：本轮 worker-B 未重跑双臂盲评（Δ/胜率），未做被测-参照全量对拍以外的新增评测面；v0.2 及更早各行数字与本轮无涉。
+
+### 更正（2026-10-01 R2，worker-B 终门复跑留档后；只追加，不改上方任何既有行）
+
+> 证据：`v5/report/EVAL-RUN-20261001.md` + `v5/report/eval-records/`（8 门 JSON/gates.tsv/keyfiles.sha256 R2 刷新版）。R1 节（L153 起）两行更正如下，其余行（含 hotwords）复跑无变化。
+
+| 名称 | 更正内容 |
+|---|---|
+| deploy-pack | 确定性评测更正：**package vs oracle 终门 4/4、rate 1.0**（复跑 exit 0；修复前 2/4、rate 0.6；R1 行内「dp05 绿 direct」实为 oracle 自评 self_eval=true，经 **2015999 模板对齐迭代修复**；本轮 deploy-pack.gate.json 为 self_eval=false 的 package 终门实证）。状态维持**内部就绪（工具/基建件）**，体检 C 形态备注不变。 |
+| speaker-mapping | 状态更正：待迭代 → **内部就绪（12/12）**——复跑 gate/self 均 exit 0（4 项检查全过；contract v1.1 增补条款 A-2 平台路径归一，仅及 discover JSON transcript 字段，9 txt 仍逐字节）；空目录红路 exit 1 保持 fail-closed。体检 C 形态备注不变。 |

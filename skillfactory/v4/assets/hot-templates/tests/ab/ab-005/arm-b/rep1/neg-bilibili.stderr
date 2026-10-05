@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 usage: gen.py [-h] --platform {dy,video,wx,xhs} --topic TOPIC --points POINTS
               --outdir OUTDIR
 gen.py: error: argument --platform: invalid choice: 'bilibili' (choose from dy, video, wx, xhs)
+=======
+usage: gen.py [-h] --platform {dy,video,wx,xhs} --topic TOPIC --points POINTS
+              --outdir OUTDIR
+gen.py: error: argument --platform: invalid choice: 'bilibili' (choose from dy, video, wx, xhs)
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e

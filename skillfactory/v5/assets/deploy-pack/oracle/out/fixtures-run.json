@@ -1,8 +1,13 @@
 {
   "tool": "run_fixtures.py",
   "asset": "skillfactory/v5/assets/deploy-pack/oracle",
+<<<<<<< HEAD
   "started_at": "2026-09-30T16:48:45+08:00",
   "duration_s": 2.65,
+=======
+  "started_at": "2026-10-01T03:31:32+08:00",
+  "duration_s": 0.64,
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e
   "total": 7,
   "passed": 7,
   "failed": 0,
@@ -39,7 +44,11 @@
       "fixture": "red-bad-yaml/",
       "kind": "red-pack",
       "services": "默认三服务",
+<<<<<<< HEAD
       "command": "validate.py --pack red-bad-yaml --out out\\red\\red-bad-yaml-report.json",
+=======
+      "command": "validate.py --pack red-bad-yaml --out out/red/red-bad-yaml-report.json",
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e
       "expected": "validate exit=1（判为残缺包）",
       "observed": "validate exit=1; FAIL 项=['C1 compose_safe_load']",
       "verdict": "OK"
@@ -48,7 +57,11 @@
       "fixture": "red-env-drift/",
       "kind": "red-pack",
       "services": "默认三服务",
+<<<<<<< HEAD
       "command": "validate.py --pack red-env-drift --out out\\red\\red-env-drift-report.json",
+=======
+      "command": "validate.py --pack red-env-drift --out out/red/red-env-drift-report.json",
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e
       "expected": "validate exit=1（判为残缺包）",
       "observed": "validate exit=1; FAIL 项=['C3 env_consistent']",
       "verdict": "OK"
@@ -57,7 +70,11 @@
       "fixture": "red-hardcoded-secret/",
       "kind": "red-pack",
       "services": "默认三服务",
+<<<<<<< HEAD
       "command": "validate.py --pack red-hardcoded-secret --out out\\red\\red-hardcoded-secret-report.json",
+=======
+      "command": "validate.py --pack red-hardcoded-secret --out out/red/red-hardcoded-secret-report.json",
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e
       "expected": "validate exit=1（判为残缺包）",
       "observed": "validate exit=1; FAIL 项=['C4 no_hardcoded_secrets']",
       "verdict": "OK"
@@ -66,7 +83,11 @@
       "fixture": "red-missing-service/",
       "kind": "red-pack",
       "services": "默认三服务",
+<<<<<<< HEAD
       "command": "validate.py --pack red-missing-service --out out\\red\\red-missing-service-report.json",
+=======
+      "command": "validate.py --pack red-missing-service --out out/red/red-missing-service-report.json",
+>>>>>>> 4f26eaab8cf326432c79fee06da6a9aae47b661e
       "expected": "validate exit=1（判为残缺包）",
       "observed": "validate exit=1; FAIL 项=['C2 services_exact']",
       "verdict": "OK"
