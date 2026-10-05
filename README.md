@@ -39,3 +39,9 @@
 3. **历史欠账**：B 线 FunASR 彩排（需音频环境）、C 线 hot-templates 盲评加厚（需模型配额）。
 4. **研究线产物为大体积一次性调研快照**（`research/`、`zctl/`），按可归档区对待；工厂线以 `skillfactory/REGISTRY.md` 为唯一状态入口。
 5. dist 包内个别 JSON 存在 CRLF 脏项，发布前按 DISTRIBUTION-CHECKLIST 复核格式。
+
+---
+
+## 仓库来源
+
+本仓库自 agentic-factory-projects monorepo 拆分而来（一个项目一个仓库）；monorepo 内历史快照见原仓 feasy898/agentic-factory-projects。本 main 为两条快照线（monorepo 拆分线 + windev 本地快照 2026-10-05）合并结果。
