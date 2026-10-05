@@ -1,0 +1,309 @@
+====================================================================================================
+TEMPLATE 周报  (case1)
+-- fields.json: oracle sha=3f657d4347b6 package sha=4145a6a420a7
+-- fields.json deep-diff: 2 diff(s)
+     /outputs/docx: VALUE oracle='oracle\\out\\周报\\case1\\文书.docx' vs package='package\\out\\周报\\case1\\文书.docx'
+     /outputs/fields_json: VALUE oracle='oracle\\out\\周报\\case1\\fields.json' vs package='package\\out\\周报\\case1\\fields.json'
+-- oracle ledger top-level keys: ['template', 'title', 'filled_fields', 'missing_fields', 'fields', 'summary', 'outputs']
+-- 文书.docx: oracle sha=f0d11dc26c79 package sha=db05b138be92 byte_identical=False
+-- docx layout profile diff: 31 diff(s)
+     .normal_style.font: oracle='Times New Roman' vs package=None
+     .normal_style.size_pt: oracle=16.0 vs package=None
+     .paras[0].line_spacing: oracle='355600' vs package='None'
+     .paras[0].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[0].runs[0].bold: oracle=False vs package=None
+     .paras[0].space_after: oracle=0.0 vs package=None
+     .paras[0].space_before: oracle=0.0 vs package=None
+     .paras[1].align: oracle='CENTER (1)' vs package='None'
+     .paras[1].runs[0].bold: oracle=False vs package=None
+     .paras[1].runs[0].t: oracle='填报人：王小明\u3000\u3000部门：研发部\u3000\u3000周期：2026-09-21 至 2026-09-27' vs package='填报人：王小明\u3000\u3000周期：2026-09-21 至 2026-09-27'
+     .paras[1].text: oracle='填报人：王小明\u3000\u3000部门：研发部\u3000\u3000周期：2026-09-21 至 2026-09-27' vs package='填报人：王小明\u3000\u3000周期：2026-09-21 至 2026-09-27'
+     .paras[2].first_line_indent: oracle=32.0 vs package=None
+     .paras[2].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[2].runs[0].bold: oracle=False vs package=None
+     .paras[3].first_line_indent: oracle=32.0 vs package=None
+     .paras[3].runs[0].bold: oracle=False vs package=None
+     .paras[4].first_line_indent: oracle=32.0 vs package=None
+     .paras[4].runs[0].bold: oracle=False vs package=None
+     .paras[5].first_line_indent: oracle=32.0 vs package=None
+     .paras[5].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[5].runs[0].bold: oracle=False vs package=None
+     .paras[6].first_line_indent: oracle=32.0 vs package=None
+     .paras[6].runs[0].bold: oracle=False vs package=None
+     .paras[7].first_line_indent: oracle=32.0 vs package=None
+     .paras[7].runs[0].bold: oracle=False vs package=None
+     .paras[8].first_line_indent: oracle=32.0 vs package=None
+     .paras[8].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[8].runs[0].bold: oracle=False vs package=None
+     .paras[9].first_line_indent: oracle=32.0 vs package=None
+     .paras[9].runs[0].bold: oracle=False vs package=None
+     .paras[10].runs[0].bold: oracle=False vs package=None
+  [PKG] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [PKG] normal_style={'font': None, 'size_pt': None}
+  [PKG] paragraphs=11 tables=0
+  [PKG] P00 style=Normal align=CENTER (1) indent=None text='研发部工作周报' runs: <'研发部工作周报' b=None font=黑体/黑体 22.0pt>
+  [PKG] P01 style=Normal align=None indent=None text='填报人：王小明\u3000\u3000周期：2026-09-21 至 2' runs: <'填报人：王小明\u3000\u3000周期：2026-0' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P02 style=Normal align=None indent=None text='一、本周工作内容' runs: <'一、本周工作内容' b=None font=黑体/黑体 16.0pt>
+  [PKG] P03 style=Normal align=None indent=None text='1．完成打分器 v0.9 与评测台联调' runs: <'1．完成打分器 v0.9 与评测台联' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P04 style=Normal align=None indent=None text='2．修复评测集 3 处标注不一致问题' runs: <'2．修复评测集 3 处标注不一致问题' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P05 style=Normal align=None indent=None text='二、下周工作计划' runs: <'二、下周工作计划' b=None font=黑体/黑体 16.0pt>
+  [PKG] P06 style=Normal align=None indent=None text='1．启动回归测试全量跑批' runs: <'1．启动回归测试全量跑批' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P07 style=Normal align=None indent=None text='2．输出周度质量报告初稿' runs: <'2．输出周度质量报告初稿' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P08 style=Normal align=None indent=None text='三、问题与需协调事项' runs: <'三、问题与需协调事项' b=None font=黑体/黑体 16.0pt>
+  [PKG] P09 style=Normal align=None indent=None text='1．测试机资源紧张，需协调一台 GPU 机器' runs: <'1．测试机资源紧张，需协调一台 GP' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P10 style=Normal align=RIGHT (2) indent=None text='报送日期：2026-09-28' runs: <'报送日期：2026-09-28' b=None font=Times New Roman/仿宋 16.0pt>
+  [ORC] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [ORC] normal_style={'font': 'Times New Roman', 'size_pt': 16.0}
+  [ORC] paragraphs=11 tables=0
+  [ORC] P00 style=Normal align=CENTER (1) indent=None text='研发部工作周报' runs: <'研发部工作周报' b=False font=Times New Roman/黑体 22.0pt>
+  [ORC] P01 style=Normal align=CENTER (1) indent=None text='填报人：王小明\u3000\u3000部门：研发部\u3000\u3000周期：2026-0' runs: <'填报人：王小明\u3000\u3000部门：研发部\u3000\u3000周' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P02 style=Normal align=None indent=32.0 text='一、本周工作内容' runs: <'一、本周工作内容' b=False font=Times New Roman/黑体 16.0pt>
+  [ORC] P03 style=Normal align=None indent=32.0 text='1．完成打分器 v0.9 与评测台联调' runs: <'1．完成打分器 v0.9 与评测台联' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P04 style=Normal align=None indent=32.0 text='2．修复评测集 3 处标注不一致问题' runs: <'2．修复评测集 3 处标注不一致问题' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P05 style=Normal align=None indent=32.0 text='二、下周工作计划' runs: <'二、下周工作计划' b=False font=Times New Roman/黑体 16.0pt>
+  [ORC] P06 style=Normal align=None indent=32.0 text='1．启动回归测试全量跑批' runs: <'1．启动回归测试全量跑批' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P07 style=Normal align=None indent=32.0 text='2．输出周度质量报告初稿' runs: <'2．输出周度质量报告初稿' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P08 style=Normal align=None indent=32.0 text='三、问题与需协调事项' runs: <'三、问题与需协调事项' b=False font=Times New Roman/黑体 16.0pt>
+  [ORC] P09 style=Normal align=None indent=32.0 text='1．测试机资源紧张，需协调一台 GPU 机器' runs: <'1．测试机资源紧张，需协调一台 GP' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P10 style=Normal align=RIGHT (2) indent=None text='报送日期：2026-09-28' runs: <'报送日期：2026-09-28' b=False font=Times New Roman/仿宋 16.0pt>
+-- determinism oracle 文书.docx: backup_exists=True fresh==backup:False
+-- determinism oracle fields.json: backup_exists=True fresh==backup:False
+-- determinism package 文书.docx: backup_exists=True fresh==backup:False
+-- determinism package fields.json: backup_exists=True fresh==backup:True
+====================================================================================================
+TEMPLATE 请示函  (case1)
+-- fields.json: oracle sha=ad0146f0ac46 package sha=0f826be81779
+-- fields.json deep-diff: 2 diff(s)
+     /outputs/docx: VALUE oracle='oracle\\out\\请示函\\case1\\文书.docx' vs package='package\\out\\请示函\\case1\\文书.docx'
+     /outputs/fields_json: VALUE oracle='oracle\\out\\请示函\\case1\\fields.json' vs package='package\\out\\请示函\\case1\\fields.json'
+-- oracle ledger top-level keys: ['template', 'title', 'filled_fields', 'missing_fields', 'fields', 'summary', 'outputs']
+-- 文书.docx: oracle sha=1005b9a471f4 package sha=02b170b5799c byte_identical=False
+-- docx layout profile diff: 29 diff(s)
+     .normal_style.font: oracle='Times New Roman' vs package=None
+     .normal_style.size_pt: oracle=16.0 vs package=None
+     .paras: LEN oracle=9 package=7
+     .paras[0].line_spacing: oracle='355600' vs package='None'
+     .paras[0].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[0].runs[0].bold: oracle=False vs package=None
+     .paras[0].space_after: oracle=0.0 vs package=None
+     .paras[0].space_before: oracle=0.0 vs package=None
+     .paras[1].runs[0].bold: oracle=False vs package=None
+     .paras[2].first_line_indent: oracle=32.0 vs package=None
+     .paras[2].runs[0].bold: oracle=False vs package=None
+     .paras[3].first_line_indent: oracle=32.0 vs package=None
+     .paras[3].runs[0].bold: oracle=False vs package=None
+     .paras[3].runs[0].t: oracle='现就有关事项请示如下：' vs package='申请采购 V100S 服务器 2 台，预算 12 万元，本月内完成到货验收。'
+     .paras[3].text: oracle='现就有关事项请示如下：' vs package='申请采购 V100S 服务器 2 台，预算 12 万元，本月内完成到货验收。'
+     .paras[4].first_line_indent: oracle=32.0 vs package=None
+     .paras[4].runs[0].bold: oracle=False vs package=None
+     .paras[4].runs[0].t: oracle='申请采购 V100S 服务器 2 台，预算 12 万元，本月内完成到货验收。' vs package='联系人：李工\u3000\u3000联系电话：010-88886666'
+     .paras[4].text: oracle='申请采购 V100S 服务器 2 台，预算 12 万元，本月内完成到货验收。' vs package='联系人：李工\u3000\u3000联系电话：010-88886666'
+     .paras[5].align: oracle='None' vs package='RIGHT (2)'
+     .paras[5].first_line_indent: oracle=32.0 vs package=None
+     .paras[5].runs[0].bold: oracle=False vs package=None
+     .paras[5].runs[0].t: oracle='妥否，请批示。' vs package='评测技术部'
+     .paras[5].text: oracle='妥否，请批示。' vs package='评测技术部'
+     .paras[6].align: oracle='None' vs package='RIGHT (2)'
+     .paras[6].first_line_indent: oracle=32.0 vs package=None
+     .paras[6].runs[0].bold: oracle=False vs package=None
+     .paras[6].runs[0].t: oracle='联系人：李工\u3000\u3000联系电话：010-88886666' vs package='2026年9月28日'
+     .paras[6].text: oracle='联系人：李工\u3000\u3000联系电话：010-88886666' vs package='2026年9月28日'
+  [PKG] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [PKG] normal_style={'font': None, 'size_pt': None}
+  [PKG] paragraphs=7 tables=0
+  [PKG] P00 style=Normal align=CENTER (1) indent=None text='关于采购评测用 GPU 服务器的请示' runs: <'关于采购评测用 GPU 服务器的请示' b=None font=黑体/黑体 22.0pt>
+  [PKG] P01 style=Normal align=None indent=None text='公司总经理办公会：' runs: <'公司总经理办公会：' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P02 style=Normal align=None indent=None text='因评测规模扩大，现有设备无法满足批量推理需求，评测周' runs: <'因评测规模扩大，现有设备无法满足批量' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P03 style=Normal align=None indent=None text='申请采购 V100S 服务器 2 台，预算 12 万' runs: <'申请采购 V100S 服务器 2 台' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P04 style=Normal align=None indent=None text='联系人：李工\u3000\u3000联系电话：010-88886666' runs: <'联系人：李工\u3000\u3000联系电话：010-8' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P05 style=Normal align=RIGHT (2) indent=None text='评测技术部' runs: <'评测技术部' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P06 style=Normal align=RIGHT (2) indent=None text='2026年9月28日' runs: <'2026年9月28日' b=None font=Times New Roman/仿宋 16.0pt>
+  [ORC] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [ORC] normal_style={'font': 'Times New Roman', 'size_pt': 16.0}
+  [ORC] paragraphs=9 tables=0
+  [ORC] P00 style=Normal align=CENTER (1) indent=None text='关于采购评测用 GPU 服务器的请示' runs: <'关于采购评测用 GPU 服务器的请示' b=False font=Times New Roman/黑体 22.0pt>
+  [ORC] P01 style=Normal align=None indent=None text='公司总经理办公会：' runs: <'公司总经理办公会：' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P02 style=Normal align=None indent=32.0 text='因评测规模扩大，现有设备无法满足批量推理需求，评测周' runs: <'因评测规模扩大，现有设备无法满足批量' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P03 style=Normal align=None indent=32.0 text='现就有关事项请示如下：' runs: <'现就有关事项请示如下：' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P04 style=Normal align=None indent=32.0 text='申请采购 V100S 服务器 2 台，预算 12 万' runs: <'申请采购 V100S 服务器 2 台' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P05 style=Normal align=None indent=32.0 text='妥否，请批示。' runs: <'妥否，请批示。' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P06 style=Normal align=None indent=32.0 text='联系人：李工\u3000\u3000联系电话：010-88886666' runs: <'联系人：李工\u3000\u3000联系电话：010-8' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P07 style=Normal align=RIGHT (2) indent=None text='评测技术部' runs: <'评测技术部' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P08 style=Normal align=RIGHT (2) indent=None text='2026年9月28日' runs: <'2026年9月28日' b=False font=Times New Roman/仿宋 16.0pt>
+-- determinism oracle 文书.docx: backup_exists=True fresh==backup:False
+-- determinism oracle fields.json: backup_exists=True fresh==backup:False
+-- determinism package 文书.docx: backup_exists=True fresh==backup:False
+-- determinism package fields.json: backup_exists=True fresh==backup:True
+====================================================================================================
+TEMPLATE 会议通知  (case1)
+-- fields.json: oracle sha=80ed165c2e37 package sha=f21e402b9a89
+-- fields.json deep-diff: 2 diff(s)
+     /outputs/docx: VALUE oracle='oracle\\out\\会议通知\\case1\\文书.docx' vs package='package\\out\\会议通知\\case1\\文书.docx'
+     /outputs/fields_json: VALUE oracle='oracle\\out\\会议通知\\case1\\fields.json' vs package='package\\out\\会议通知\\case1\\fields.json'
+-- oracle ledger top-level keys: ['template', 'title', 'filled_fields', 'missing_fields', 'fields', 'summary', 'outputs']
+-- 文书.docx: oracle sha=5daf9a2bc4c6 package sha=b4e3f9603585 byte_identical=False
+-- docx layout profile diff: 42 diff(s)
+     .normal_style.font: oracle='Times New Roman' vs package=None
+     .normal_style.size_pt: oracle=16.0 vs package=None
+     .paras[0].line_spacing: oracle='355600' vs package='None'
+     .paras[0].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[0].runs[0].bold: oracle=False vs package=None
+     .paras[0].space_after: oracle=0.0 vs package=None
+     .paras[0].space_before: oracle=0.0 vs package=None
+     .paras[1].runs[0].bold: oracle=False vs package=None
+     .paras[2].first_line_indent: oracle=32.0 vs package=None
+     .paras[2].runs[0].bold: oracle=False vs package=None
+     .paras[2].runs[0].t: oracle='经研究，决定召开三季度质量评审会。现将有关事项通知如下：' vs package='会议时间：2026年10月9日（周五）14:00'
+     .paras[2].text: oracle='经研究，决定召开三季度质量评审会。现将有关事项通知如下：' vs package='会议时间：2026年10月9日（周五）14:00'
+     .paras[3].first_line_indent: oracle=32.0 vs package=None
+     .paras[3].runs[0].bold: oracle=False vs package=None
+     .paras[3].runs[0].t: oracle='一、会议时间：2026年10月9日（周五）14:00' vs package='会议地点：3 号楼 501 会议室'
+     .paras[3].text: oracle='一、会议时间：2026年10月9日（周五）14:00' vs package='会议地点：3 号楼 501 会议室'
+     .paras[4].first_line_indent: oracle=32.0 vs package=None
+     .paras[4].runs[0].bold: oracle=False vs package=None
+     .paras[4].runs[0].t: oracle='二、会议地点：3 号楼 501 会议室' vs package='参会人员：各部门负责人、各项目组 PM'
+     .paras[4].text: oracle='二、会议地点：3 号楼 501 会议室' vs package='参会人员：各部门负责人、各项目组 PM'
+     .paras[5].first_line_indent: oracle=32.0 vs package=None
+     .paras[5].runs[0].bold: oracle=False vs package=None
+     .paras[5].runs[0].t: oracle='三、参会人员：各部门负责人、各项目组 PM' vs package='会议议题：三季度评测结果复盘与四季度计划'
+     .paras[5].text: oracle='三、参会人员：各部门负责人、各项目组 PM' vs package='会议议题：三季度评测结果复盘与四季度计划'
+     .paras[6].first_line_indent: oracle=32.0 vs package=None
+     .paras[6].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[6].runs[0].bold: oracle=False vs package=None
+     .paras[6].runs[0].east_font: oracle='仿宋' vs package='黑体'
+     .paras[6].runs[0].t: oracle='四、会议议题：三季度评测结果复盘与四季度计划' vs package='一、会议要求'
+     .paras[6].text: oracle='四、会议议题：三季度评测结果复盘与四季度计划' vs package='一、会议要求'
+     .paras[7].first_line_indent: oracle=32.0 vs package=None
+     .paras[7].runs[0].bold: oracle=False vs package=None
+     .paras[7].runs[0].t: oracle='五、会议要求：会前提交本部门质量简报；迟到 10 分钟以上按缺席处理。' vs package='1．会前提交本部门质量简报'
+     .paras[7].text: oracle='五、会议要求：会前提交本部门质量简报；迟到 10 分钟以上按缺席处理。' vs package='1．会前提交本部门质量简报'
+     .paras[8].first_line_indent: oracle=32.0 vs package=None
+     .paras[8].runs[0].bold: oracle=False vs package=None
+     .paras[8].runs[0].t: oracle='特此通知。' vs package='2．迟到 10 分钟以上按缺席处理'
+     .paras[8].text: oracle='特此通知。' vs package='2．迟到 10 分钟以上按缺席处理'
+     .paras[9].first_line_indent: oracle=32.0 vs package=None
+     .paras[9].runs[0].bold: oracle=False vs package=None
+     .paras[10].runs[0].bold: oracle=False vs package=None
+     .paras[11].runs[0].bold: oracle=False vs package=None
+  [PKG] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [PKG] normal_style={'font': None, 'size_pt': None}
+  [PKG] paragraphs=12 tables=0
+  [PKG] P00 style=Normal align=CENTER (1) indent=None text='关于召开三季度质量评审会的通知' runs: <'关于召开三季度质量评审会的通知' b=None font=黑体/黑体 22.0pt>
+  [PKG] P01 style=Normal align=None indent=None text='各部门、各项目组：' runs: <'各部门、各项目组：' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P02 style=Normal align=None indent=None text='会议时间：2026年10月9日（周五）14:00' runs: <'会议时间：2026年10月9日（周五' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P03 style=Normal align=None indent=None text='会议地点：3 号楼 501 会议室' runs: <'会议地点：3 号楼 501 会议室' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P04 style=Normal align=None indent=None text='参会人员：各部门负责人、各项目组 PM' runs: <'参会人员：各部门负责人、各项目组 P' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P05 style=Normal align=None indent=None text='会议议题：三季度评测结果复盘与四季度计划' runs: <'会议议题：三季度评测结果复盘与四季度' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P06 style=Normal align=None indent=None text='一、会议要求' runs: <'一、会议要求' b=None font=黑体/黑体 16.0pt>
+  [PKG] P07 style=Normal align=None indent=None text='1．会前提交本部门质量简报' runs: <'1．会前提交本部门质量简报' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P08 style=Normal align=None indent=None text='2．迟到 10 分钟以上按缺席处理' runs: <'2．迟到 10 分钟以上按缺席处理' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P09 style=Normal align=None indent=None text='联系人：李工\u3000\u3000联系电话：010-88886666' runs: <'联系人：李工\u3000\u3000联系电话：010-8' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P10 style=Normal align=RIGHT (2) indent=None text='评测技术部' runs: <'评测技术部' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P11 style=Normal align=RIGHT (2) indent=None text='2026年9月28日' runs: <'2026年9月28日' b=None font=Times New Roman/仿宋 16.0pt>
+  [ORC] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [ORC] normal_style={'font': 'Times New Roman', 'size_pt': 16.0}
+  [ORC] paragraphs=12 tables=0
+  [ORC] P00 style=Normal align=CENTER (1) indent=None text='关于召开三季度质量评审会的通知' runs: <'关于召开三季度质量评审会的通知' b=False font=Times New Roman/黑体 22.0pt>
+  [ORC] P01 style=Normal align=None indent=None text='各部门、各项目组：' runs: <'各部门、各项目组：' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P02 style=Normal align=None indent=32.0 text='经研究，决定召开三季度质量评审会。现将有关事项通知如' runs: <'经研究，决定召开三季度质量评审会。现' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P03 style=Normal align=None indent=32.0 text='一、会议时间：2026年10月9日（周五）14:00' runs: <'一、会议时间：2026年10月9日（' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P04 style=Normal align=None indent=32.0 text='二、会议地点：3 号楼 501 会议室' runs: <'二、会议地点：3 号楼 501 会议' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P05 style=Normal align=None indent=32.0 text='三、参会人员：各部门负责人、各项目组 PM' runs: <'三、参会人员：各部门负责人、各项目组' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P06 style=Normal align=None indent=32.0 text='四、会议议题：三季度评测结果复盘与四季度计划' runs: <'四、会议议题：三季度评测结果复盘与四' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P07 style=Normal align=None indent=32.0 text='五、会议要求：会前提交本部门质量简报；迟到 10 分' runs: <'五、会议要求：会前提交本部门质量简报' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P08 style=Normal align=None indent=32.0 text='特此通知。' runs: <'特此通知。' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P09 style=Normal align=None indent=32.0 text='联系人：李工\u3000\u3000联系电话：010-88886666' runs: <'联系人：李工\u3000\u3000联系电话：010-8' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P10 style=Normal align=RIGHT (2) indent=None text='评测技术部' runs: <'评测技术部' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P11 style=Normal align=RIGHT (2) indent=None text='2026年9月28日' runs: <'2026年9月28日' b=False font=Times New Roman/仿宋 16.0pt>
+-- determinism oracle 文书.docx: backup_exists=True fresh==backup:False
+-- determinism oracle fields.json: backup_exists=True fresh==backup:False
+-- determinism package 文书.docx: backup_exists=True fresh==backup:False
+-- determinism package fields.json: backup_exists=True fresh==backup:True
+====================================================================================================
+TEMPLATE 工作总结  (case1)
+-- fields.json: oracle sha=eff334b0d344 package sha=759997031c15
+-- fields.json deep-diff: 2 diff(s)
+     /outputs/docx: VALUE oracle='oracle\\out\\工作总结\\case1\\文书.docx' vs package='package\\out\\工作总结\\case1\\文书.docx'
+     /outputs/fields_json: VALUE oracle='oracle\\out\\工作总结\\case1\\fields.json' vs package='package\\out\\工作总结\\case1\\fields.json'
+-- oracle ledger top-level keys: ['template', 'title', 'filled_fields', 'missing_fields', 'fields', 'summary', 'outputs']
+-- 文书.docx: oracle sha=081bfb263158 package sha=1120fcfe4835 byte_identical=False
+-- docx layout profile diff: 37 diff(s)
+     .normal_style.font: oracle='Times New Roman' vs package=None
+     .normal_style.size_pt: oracle=16.0 vs package=None
+     .paras[0].line_spacing: oracle='355600' vs package='None'
+     .paras[0].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[0].runs[0].bold: oracle=False vs package=None
+     .paras[0].space_after: oracle=0.0 vs package=None
+     .paras[0].space_before: oracle=0.0 vs package=None
+     .paras[1].first_line_indent: oracle=32.0 vs package=None
+     .paras[1].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[1].runs[0].bold: oracle=False vs package=None
+     .paras[2].first_line_indent: oracle=32.0 vs package=None
+     .paras[2].runs[0].bold: oracle=False vs package=None
+     .paras[3].first_line_indent: oracle=32.0 vs package=None
+     .paras[3].runs[0].bold: oracle=False vs package=None
+     .paras[4].first_line_indent: oracle=32.0 vs package=None
+     .paras[4].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[4].runs[0].bold: oracle=False vs package=None
+     .paras[5].first_line_indent: oracle=32.0 vs package=None
+     .paras[5].runs[0].bold: oracle=False vs package=None
+     .paras[6].first_line_indent: oracle=32.0 vs package=None
+     .paras[6].runs[0].bold: oracle=False vs package=None
+     .paras[7].first_line_indent: oracle=32.0 vs package=None
+     .paras[7].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[7].runs[0].bold: oracle=False vs package=None
+     .paras[8].first_line_indent: oracle=32.0 vs package=None
+     .paras[8].runs[0].bold: oracle=False vs package=None
+     .paras[9].first_line_indent: oracle=32.0 vs package=None
+     .paras[9].runs[0].bold: oracle=False vs package=None
+     .paras[10].first_line_indent: oracle=32.0 vs package=None
+     .paras[10].runs[0].ascii_font: oracle='Times New Roman' vs package='黑体'
+     .paras[10].runs[0].bold: oracle=False vs package=None
+     .paras[11].first_line_indent: oracle=32.0 vs package=None
+     .paras[11].runs[0].bold: oracle=False vs package=None
+     .paras[12].first_line_indent: oracle=32.0 vs package=None
+     .paras[12].runs[0].bold: oracle=False vs package=None
+     .paras[13].runs[0].bold: oracle=False vs package=None
+     .paras[14].runs[0].bold: oracle=False vs package=None
+  [PKG] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [PKG] normal_style={'font': None, 'size_pt': None}
+  [PKG] paragraphs=15 tables=0
+  [PKG] P00 style=Normal align=CENTER (1) indent=None text='评测技术部2026年第三季度工作总结' runs: <'评测技术部2026年第三季度工作总结' b=None font=黑体/黑体 22.0pt>
+  [PKG] P01 style=Normal align=None indent=None text='一、工作回顾' runs: <'一、工作回顾' b=None font=黑体/黑体 16.0pt>
+  [PKG] P02 style=Normal align=None indent=None text='1．完成 P0 打分器三轮迭代' runs: <'1．完成 P0 打分器三轮迭代' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P03 style=Normal align=None indent=None text='2．建设 12 份评测 JSON 台账' runs: <'2．建设 12 份评测 JSON 台' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P04 style=Normal align=None indent=None text='二、主要成绩' runs: <'二、主要成绩' b=None font=黑体/黑体 16.0pt>
+  [PKG] P05 style=Normal align=None indent=None text='1．打分一致性从 6.1 提升到 7.4' runs: <'1．打分一致性从 6.1 提升到 7' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P06 style=Normal align=None indent=None text='2．评测周期缩短 30%' runs: <'2．评测周期缩短 30%' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P07 style=Normal align=None indent=None text='三、存在问题' runs: <'三、存在问题' b=None font=黑体/黑体 16.0pt>
+  [PKG] P08 style=Normal align=None indent=None text='1．标注规范仍有歧义' runs: <'1．标注规范仍有歧义' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P09 style=Normal align=None indent=None text='2．GPU 资源排期紧张' runs: <'2．GPU 资源排期紧张' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P10 style=Normal align=None indent=None text='四、下一步工作打算' runs: <'四、下一步工作打算' b=None font=黑体/黑体 16.0pt>
+  [PKG] P11 style=Normal align=None indent=None text='1．发布标注规范 v2' runs: <'1．发布标注规范 v2' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P12 style=Normal align=None indent=None text='2．引入自动化回归评测' runs: <'2．引入自动化回归评测' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P13 style=Normal align=RIGHT (2) indent=None text='评测技术部' runs: <'评测技术部' b=None font=Times New Roman/仿宋 16.0pt>
+  [PKG] P14 style=Normal align=RIGHT (2) indent=None text='2026年9月30日' runs: <'2026年9月30日' b=None font=Times New Roman/仿宋 16.0pt>
+  [ORC] sections=[{'page_w_cm': 21.001, 'page_h_cm': 29.7, 'orientation': 'PORTRAIT (0)', 'margins_cm': [3.701, 3.5, 2.799, 2.6]}]
+  [ORC] normal_style={'font': 'Times New Roman', 'size_pt': 16.0}
+  [ORC] paragraphs=15 tables=0
+  [ORC] P00 style=Normal align=CENTER (1) indent=None text='评测技术部2026年第三季度工作总结' runs: <'评测技术部2026年第三季度工作总结' b=False font=Times New Roman/黑体 22.0pt>
+  [ORC] P01 style=Normal align=None indent=32.0 text='一、工作回顾' runs: <'一、工作回顾' b=False font=Times New Roman/黑体 16.0pt>
+  [ORC] P02 style=Normal align=None indent=32.0 text='1．完成 P0 打分器三轮迭代' runs: <'1．完成 P0 打分器三轮迭代' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P03 style=Normal align=None indent=32.0 text='2．建设 12 份评测 JSON 台账' runs: <'2．建设 12 份评测 JSON 台' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P04 style=Normal align=None indent=32.0 text='二、主要成绩' runs: <'二、主要成绩' b=False font=Times New Roman/黑体 16.0pt>
+  [ORC] P05 style=Normal align=None indent=32.0 text='1．打分一致性从 6.1 提升到 7.4' runs: <'1．打分一致性从 6.1 提升到 7' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P06 style=Normal align=None indent=32.0 text='2．评测周期缩短 30%' runs: <'2．评测周期缩短 30%' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P07 style=Normal align=None indent=32.0 text='三、存在问题' runs: <'三、存在问题' b=False font=Times New Roman/黑体 16.0pt>
+  [ORC] P08 style=Normal align=None indent=32.0 text='1．标注规范仍有歧义' runs: <'1．标注规范仍有歧义' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P09 style=Normal align=None indent=32.0 text='2．GPU 资源排期紧张' runs: <'2．GPU 资源排期紧张' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P10 style=Normal align=None indent=32.0 text='四、下一步工作打算' runs: <'四、下一步工作打算' b=False font=Times New Roman/黑体 16.0pt>
+  [ORC] P11 style=Normal align=None indent=32.0 text='1．发布标注规范 v2' runs: <'1．发布标注规范 v2' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P12 style=Normal align=None indent=32.0 text='2．引入自动化回归评测' runs: <'2．引入自动化回归评测' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P13 style=Normal align=RIGHT (2) indent=None text='评测技术部' runs: <'评测技术部' b=False font=Times New Roman/仿宋 16.0pt>
+  [ORC] P14 style=Normal align=RIGHT (2) indent=None text='2026年9月30日' runs: <'2026年9月30日' b=False font=Times New Roman/仿宋 16.0pt>
+-- determinism oracle 文书.docx: backup_exists=True fresh==backup:False
+-- determinism oracle fields.json: backup_exists=True fresh==backup:False
+-- determinism package 文书.docx: backup_exists=True fresh==backup:False
+-- determinism package fields.json: backup_exists=True fresh==backup:True
+====================================================================================================
+DONE

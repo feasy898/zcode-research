@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "summary": {
+    "total": 6,
+    "pass": 6,
+    "fail": 0,
+    "tested_root": "D:\\workspace\\zcode研究\\skillfactory\\v4\\tools\\content-evaluator\\oracle\\out",
+    "reference_root": "D:\\workspace\\zcode研究\\skillfactory\\v4\\tools\\content-evaluator\\oracle\\out"
+  },
+  "checks": [
+    {
+      "name": "good_fixtures_all_pass",
+      "pass": true,
+      "detail": "两好样本均全 PASS: good_dy 9/9, good_xhs 9/9"
+    },
+    {
+      "name": "bad_xhs_expected_fails",
+      "pass": true,
+      "detail": "基线违规 5 项均 FAIL: title_length, emoji_density, tag_count, banned_words, structure_cta"
+    },
+    {
+      "name": "bad_wx_expected_fails",
+      "pass": true,
+      "detail": "3 项 FAIL（paragraph_max, banned_words, structure_cta）且 emoji_density 为 WARN（pass+warning，不计失败）"
+    },
+    {
+      "name": "score_recompute",
+      "pass": true,
+      "detail": "四样本总分复算一致（通过/应检）: good_dy=9/9, good_xhs=9/9, bad_xhs=4/9, bad_wx=6/9"
+    },
+    {
+      "name": "report_md_consistency",
+      "pass": true,
+      "detail": "四样本 REPORT.md 锚点（总分/汇总/逐检查行标记）均与 report.json 一致"
+    },
+    {
+      "name": "oracle_agreement_90pct",
+      "pass": true,
+      "detail": "逐检查项一致 36/36（100.0%，阈值 90%）"
+    }
+  ]
+}

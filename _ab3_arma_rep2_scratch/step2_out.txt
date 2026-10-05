@@ -1,0 +1,66 @@
+====================================================================================================
+### 模板 周报 / case2
+[ledger 深度 diff，抹去绝对路径后] 差异数 = 0
+
+[逐字段记账]
+    部门(req=True,kind=text): oracle status=missing value=null rendered_as='以____占位'
+    填报人(req=True,kind=text): oracle status=filled value="赵倩" rendered_as=None
+    周期(req=True,kind=text): oracle status=missing value=null rendered_as='以____占位'
+    本周工作内容(req=True,kind=list): oracle status=missing value=null rendered_as='以____占位条目'
+    下周工作计划(req=True,kind=list): oracle status=filled value=["整理缺陷清单并分派责任人"] rendered_as=None
+    问题与需协调事项(req=False,kind=list): oracle status=missing value=null rendered_as='省略该条目/小节'
+    报送日期(req=False,kind=text): oracle status=filled value="2026-09-28" rendered_as=None
+ summary oracle = {"total": 7, "filled": 3, "missing": 4, "missing_required": 3, "missing_required_names": ["部门", "周期", "本周工作内容"], "unknown_keys": []}
+ summary packge = {"total": 7, "filled": 3, "missing": 4, "missing_required": 3, "missing_required_names": ["部门", "周期", "本周工作内容"], "unknown_keys": []}
+
+[docx 段落] oracle 7 段 / package 7 段
+  p00 = O: '____工作周报'
+  p01 ≠ O: '填报人：赵倩\u3000\u3000部门：____\u3000\u3000周期：____'
+        P: '填报人：赵倩\u3000\u3000周期：____'
+  p02 = O: '一、本周工作内容'
+  p03 = O: '1．____'
+  p04 = O: '二、下周工作计划'
+  p05 = O: '1．整理缺陷清单并分派责任人'
+  p06 = O: '报送日期：2026-09-28'
+
+[编造针检]
+  报送日期 '2026-09-28'（输入已填）出现次数: 2
+  '三、问题与需协调事项'节头出现次数（选填缺失应=0）: 0
+  '____' 计数: oracle=4 package=3
+
+[确定性] 与仓内既有 oracle/out/周报/case2 相比：ledger 差异=2（抹路径），docx 段落文本一致=True
+====================================================================================================
+### 模板 工作总结 / case2
+[ledger 深度 diff，抹去绝对路径后] 差异数 = 0
+
+[逐字段记账]
+    总结主体(req=True,kind=text): oracle status=missing value=null rendered_as='以____占位'
+    总结时段(req=True,kind=text): oracle status=filled value="2026年9月" rendered_as=None
+    工作回顾(req=True,kind=list): oracle status=filled value=["完成评测平台月度巡检"] rendered_as=None
+    主要成绩(req=True,kind=list): oracle status=missing value=null rendered_as='以____占位条目'
+    存在问题(req=False,kind=list): oracle status=missing value=null rendered_as='省略该条目/小节'
+    下一步工作打算(req=True,kind=list): oracle status=filled value=["制定四季度评测排期"] rendered_as=None
+    成文日期(req=False,kind=text): oracle status=missing value=null rendered_as='留空（渲染为空字符串）'
+ summary oracle = {"total": 7, "filled": 3, "missing": 4, "missing_required": 2, "missing_required_names": ["总结主体", "主要成绩"], "unknown_keys": []}
+ summary packge = {"total": 7, "filled": 3, "missing": 4, "missing_required": 2, "missing_required_names": ["总结主体", "主要成绩"], "unknown_keys": []}
+
+[docx 段落] oracle 9 段 / package 9 段
+  p00 = O: '____2026年9月工作总结'
+  p01 = O: '一、工作回顾'
+  p02 = O: '1．完成评测平台月度巡检'
+  p03 = O: '二、主要成绩'
+  p04 = O: '1．____'
+  p05 ≠ O: '三、下一步工作打算'
+        P: '四、下一步工作打算'
+  p06 = O: '1．制定四季度评测排期'
+  p07 = O: '____'
+  p08 = O: ''
+
+[编造针检]
+  日期型字符串命中（输入成文日期缺失）: ['2026年9', '2026年9']
+  '存在问题'节头出现次数（选填缺失应=0）: 0 / '三、' 出现: 1
+  '____' 计数: oracle=3 package=3
+
+[确定性] 与仓内既有 oracle/out/工作总结/case2 相比：ledger 差异=2（抹路径），docx 段落文本一致=True
+
+DONE

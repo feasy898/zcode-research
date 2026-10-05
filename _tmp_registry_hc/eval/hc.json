@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "summary": {
+    "total": 5,
+    "pass": 5,
+    "fail": 0,
+    "tested_root": "D:\\workspace\\zcode研究\\skillfactory\\v3\\tools\\healthcheck\\oracle\\out",
+    "reference_root": "D:\\workspace\\zcode研究\\skillfactory\\v3\\tools\\healthcheck\\oracle\\out"
+  },
+  "checks": [
+    {
+      "name": "meeting_minutes_all_pass",
+      "pass": true,
+      "detail": "report.json 5/5 项 pass（全 PASS）"
+    },
+    {
+      "name": "broken_skill_expected_fails",
+      "pass": true,
+      "detail": "两项均 FAIL: front_matter_fields, scripts_syntax"
+    },
+    {
+      "name": "no_eval_eval_present_fail",
+      "pass": true,
+      "detail": "eval_present=false（命中 eval 缺失红项）"
+    },
+    {
+      "name": "rating_consistency",
+      "pass": true,
+      "detail": "三样本评级均一致（A=0 失败 / B=1 / C=≥2）: meeting-minutes-skill=A, broken-skill=C, no-eval=B"
+    },
+    {
+      "name": "oracle_agreement_90pct",
+      "pass": true,
+      "detail": "逐检查项一致 15/15（100.0%，阈值 90%）"
+    }
+  ]
+}

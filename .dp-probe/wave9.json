@@ -1,0 +1,19 @@
+[
+ {"label":"W9-e01",".env.example":["ASR_IMAGE=placeholder/asr:dev"]},
+ {"label":"W9-e02",".env.example":["ASR_PORT=8001"]},
+ {"label":"W9-e03",".env.example":["ASR_INPUT_DIR=./data/incoming"]},
+ {"label":"W9-e04",".env.example":["ASR_OUTPUT_DIR=./data/asr-out"]},
+ {"label":"W9-e05",".env.example":["ASR_MODEL=base"]},
+ {"label":"W9-e06",".env.example":["MINUTES_IMAGE=placeholder/minutes:dev"]},
+ {"label":"W9-e07",".env.example":["MINUTES_PORT=8002"]},
+ {"label":"W9-e08",".env.example":["MINUTES_INPUT_DIR=./data/asr-out"]},
+ {"label":"W9-e09",".env.example":["MINUTES_OUTPUT_DIR=./data/minutes-out"]},
+ {"label":"W9-e10",".env.example":["TODO_IMAGE=placeholder/todo:dev"]},
+ {"label":"W9-e11",".env.example":["TODO_PORT=8003"]},
+ {"label":"W9-e12",".env.example":["TODO_DATA_DIR=./data/todo"]},
+ {"label":"W9-e13",".env.example":["ASR_OUTPUT_DIR =./data/asr-out"]},
+ {"label":"W9-e14",".env.example":["ASR_OUTPUT_DIR=./data/asr-out "]},
+ {"label":"W9-dep-block","DEPLOY.md":["```bash","cp .env.example .env","docker compose up -d","docker compose ps","```"]},
+ {"label":"W9-dep-tbl1","DEPLOY.md":["| 服务 | 说明 | 宿主端口 |","| 服务 | 宿主端口 |","| 服务 | 端口 |"]},
+ {"label":"W9-comp-cmt-in","docker-compose.yml":["    # 语音识别","      # 语音识别"]}
+]

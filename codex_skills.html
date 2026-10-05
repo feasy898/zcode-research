@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <title>403: Forbidden</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --content-width: 283px;
+        --background: #0a0a0a;
+        --foreground: #ededed;
+        --copy: #ffffff;
+        --secondary: #a0a0a0;
+        --button-background: #ededed;
+        --button-background-hover: #d8d8d8;
+        --button-foreground: #0a0a0a;
+        --divider: #878787;
+        --focus: #0070f3;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          color-scheme: light;
+          --background: #ffffff;
+          --foreground: #171717;
+          --copy: #171717;
+          --secondary: #4d4d4d;
+          --button-background: #171717;
+          --button-background-hover: #333333;
+          --button-foreground: #ffffff;
+          --divider: #a8a8a8;
+        }
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--foreground);
+        font-family:
+          "Geist",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
+        font-synthesis: none;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      main {
+        display: grid;
+        min-height: 100vh;
+        min-height: 100svh;
+        place-items: center;
+        padding: 32px;
+      }
+
+      .error-page {
+        width: var(--content-width);
+        max-width: calc(100vw - 64px);
+        transform: translateY(-4px);
+      }
+
+      h1,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        color: var(--foreground);
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -0.96px;
+        line-height: 32px;
+        white-space: nowrap;
+      }
+
+      .description {
+        width: 100%;
+        margin-top: 8px;
+        color: var(--copy);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        overflow-wrap: anywhere;
+      }
+
+      .primary-action {
+        appearance: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        height: 32px;
+        margin-top: 24px;
+        padding: 0 12px;
+        border: 0;
+        border-radius: 6px;
+        background: var(--button-background);
+        color: var(--button-foreground);
+        cursor: pointer;
+        font: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-decoration: none;
+        transition:
+          background-color 150ms ease,
+          transform 150ms ease;
+        user-select: none;
+      }
+
+      .primary-action:hover {
+        background: var(--button-background-hover);
+      }
+
+      .primary-action:active {
+        transform: scale(0.98);
+      }
+
+      .primary-action:focus-visible,
+      .secondary-action:focus-visible {
+        border-radius: 6px;
+        outline: 2px solid var(--focus);
+        outline-offset: 2px;
+      }
+
+      .secondary-actions {
+        position: fixed;
+        bottom: calc(34px + env(safe-area-inset-bottom));
+        left: 50%;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: var(--content-width);
+        max-width: calc(100vw - 64px);
+        transform: translateX(-50%);
+      }
+
+      .secondary-action {
+        appearance: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        color: var(--secondary);
+        cursor: pointer;
+        font-family:
+          "Geist Mono",
+          "SFMono-Regular",
+          Consolas,
+          "Liberation Mono",
+          Menlo,
+          monospace;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 150ms ease;
+        user-select: none;
+        white-space: nowrap;
+      }
+
+      .secondary-action::before {
+        position: absolute;
+        inset: -4px 0;
+        content: "";
+      }
+
+      .secondary-action:hover {
+        color: var(--foreground);
+      }
+
+      .copy-confirmation-icon {
+        position: absolute;
+        top: 2px;
+        left: calc(100% + 8px);
+        display: block;
+        width: 12px;
+        height: 12px;
+        color: var(--secondary);
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .copy-debug-prompt[data-copied] .copy-confirmation-icon {
+        opacity: 1;
+      }
+
+      .copy-status {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .secondary-action-separator {
+        display: block;
+        flex: none;
+        width: 6px;
+        height: 10.392px;
+        color: var(--divider);
+        overflow: visible;
+      }
+
+
+
+      .metadata {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+        margin-top: 23px;
+        color: var(--secondary);
+        font-family:
+          "Geist Mono",
+          "SFMono-Regular",
+          Consolas,
+          "Liberation Mono",
+          Menlo,
+          monospace;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 16px;
+        white-space: nowrap;
+      }
+
+      .metadata p:first-child {
+        text-transform: uppercase;
+      }
+
+      .error-page:not(:has(.primary-action)) .metadata {
+        margin-top: 8px;
+      }
+
+      @media (max-width: 500px) {
+        main {
+          padding: 24px;
+        }
+
+        .error-page {
+          max-width: calc(100vw - 48px);
+        }
+
+        .secondary-actions {
+          bottom: calc(24px + env(safe-area-inset-bottom));
+          max-width: calc(100vw - 48px);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .primary-action,
+        .secondary-action {
+          transition: none;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+      <main>
+        <section class="error-page" aria-labelledby="error-title">
+          <h1 id="error-title">This request was blocked</h1>
+          
+
+          
+
+          <div class="metadata" aria-label="HTTP status, error code, and request ID">
+            <p>403 Forbidden</p>
+            <p>hnd1::hnjx7-1790599645655-8b1d6a24f1a6</p>
+          </div>
+        </section>
+      </main>
+
+      
+
+  </body>
+</html>

@@ -1,0 +1,14 @@
+arm=B group=g4_data_顶层非对象
+--- argv ---
+['C:\\Program Files\\Python312\\python.exe', 'D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\oracle.py', '--template', '周报', '--data', 'D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\inputs\\top_level_array.json', '--outdir', 'D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\B\\g4_data_顶层非对象\\out']
+--- exit ---
+2
+--- stdout ---
+
+--- stderr ---
+[oracle] 数据必须是 JSON 对象（键值对）
+
+--- outdir state after run ---
+MISSING
+--- residue (WORK tree diff) ---
+(none)

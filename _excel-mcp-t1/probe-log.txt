@@ -1,0 +1,9 @@
+NON-JSON-LINE: 使用python命令
+NON-JSON-LINE: 正在启动Excel文件读取MCP服务器...
+NON-JSON-LINE: Python脚本路径: C:\Users\Administrator\AppData\Local\npm-cache\_npx\6cf22a2c57e34f3e\node_modules\excel-mcp-server\read_file_server.py
+[srv-stderr] Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\npm-cache\_npx\6cf22a2c57e34f3e\node_modules\excel-mcp-server\read_file_server.py", line 9, in <module>
+[srv-stderr] import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+NON-JSON-LINE: MCP服务器已退出，退出码: 1
+PROBE_FAIL timeout: initialize

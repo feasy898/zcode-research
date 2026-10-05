@@ -1,0 +1,28 @@
+[
+ {"label":"W8-comp-envline","docker-compose.yml":["      ASR_INPUT_DIR: \"${ASR_INPUT_DIR:-./data/incoming}\""]},
+ {"label":"W8-comp-volline","docker-compose.yml":["      - \"${ASR_INPUT_DIR:-./data/incoming}:/data/in\""]},
+ {"label":"W8-env-fmt",".env.example":[
+   "ASR_OUTPUT_DIR = ./data/asr-out",
+   "ASR_OUTPUT_DIR= ./data/asr-out",
+   "ASR_OUTPUT_DIR=\"./data/asr-out\"",
+   "ASR_OUTPUT_DIR='./data/asr-out'",
+   "ASR_OUTPUT_DIR = \"./data/asr-out\""]},
+ {"label":"W8-env-model-sp",".env.example":[
+   "ASR_MODEL = base",
+   "ASR_MODEL= base",
+   "ASR_MODEL=\"base\""]},
+ {"label":"W8-dep-bq1","DEPLOY.md":["> 由 gen_deploy.py 生成；服务集：asr, minutes, todo。验收口径：validate.py 七项检查全绿。"]},
+ {"label":"W8-dep-h1","DEPLOY.md":["## 一、三条命令完成部署"]},
+ {"label":"W8-dep-fence1","DEPLOY.md":["```bash"]},
+ {"label":"W8-dep-c1","DEPLOY.md":["# 1) 生成环境配置（占位默认值，可先不改）"]},
+ {"label":"W8-dep-cp","DEPLOY.md":["cp .env.example .env"]},
+ {"label":"W8-dep-c2","DEPLOY.md":["# 2) 启动全部服务"]},
+ {"label":"W8-dep-up","DEPLOY.md":["docker compose up -d"]},
+ {"label":"W8-dep-c3","DEPLOY.md":["# 3) 查看容器状态"]},
+ {"label":"W8-dep-ps","DEPLOY.md":["docker compose ps"]},
+ {"label":"W8-dep-fend","DEPLOY.md":["```"]},
+ {"label":"W8-dep-h2","DEPLOY.md":["## 二、服务与端口"]},
+ {"label":"W8-dep-blank10","DEPLOY.md":["x","","","","","","","","","",""]},
+ {"label":"W8-dep-blank14","DEPLOY.md":["x","","","","","","","","","","","","","","",""]},
+ {"label":"W8-dep-blank20","DEPLOY.md":["x","","","","","","","","","","","","","","","","","","","","",""]}
+]

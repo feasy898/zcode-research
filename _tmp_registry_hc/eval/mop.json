@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "tested": "D:\\workspace\\zcode研究\\skillfactory\\v4\\assets\\mcp-office-pack\\package",
+  "reference": "D:\\workspace\\zcode研究\\skillfactory\\v4\\assets\\mcp-office-pack\\oracle",
+  "checks": [
+    {
+      "name": "package_validate_all_green",
+      "pass": true,
+      "detail": "validate.py exit=0；out/validate.json all_green=true，7 个必备 id 齐全且全部 pass"
+    },
+    {
+      "name": "config_json_valid",
+      "pass": true,
+      "detail": "mcpServers 共 10 条"
+    },
+    {
+      "name": "scenario_coverage_matrix",
+      "pass": true,
+      "detail": "六格齐全: 文件×1(filesystem)；Excel×2(excel,excel-npm)；Word×1(word)；PPT×1(powerpoint)；浏览器×1(playwright)；搜索×1(tavily)"
+    },
+    {
+      "name": "docs_one_to_one",
+      "pass": true,
+      "detail": "10 条 entry ↔ 10 份手册，双向一一对应"
+    },
+    {
+      "name": "coverage_equivalent_to_reference",
+      "pass": true,
+      "detail": "参照槽位 ['Excel', 'PPT', 'Word', '搜索', '文件', '浏览器'] ⊆ 被测槽位 ['Excel', 'PPT', 'Word', '搜索', '文件', '浏览器']（条目重合不做要求）"
+    }
+  ]
+}

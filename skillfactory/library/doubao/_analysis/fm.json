@@ -1,0 +1,2159 @@
+[
+ {
+  "dir": "skill-0155e0700fe60480e64462936fc9e13d",
+  "fm_raw_lines": 13,
+  "body_lines": 102,
+  "body_chars": 3233,
+  "total_chars": 3725,
+  "fm": {
+   "name": "byted-mediakit-shared",
+   "version": "'0.2.1'",
+   "license": "'MIT'",
+   "description": "'MediaKit 是面向音视频与图像处理的专业工具集，覆盖音视频剪辑与合成、音频媒资探测与人声分离、视频理解与增强、图像增强与内容理解等工作流。用户明确提出叠加、字幕压制、滤镜、运镜、提取字幕、语音转字幕、裁剪、拼接、调速、混音、音视频处理、图片增强或擦除、视频分析或画质增强目标时，先加载本 Skill，再按对象和目标选择 audio、editing、image 或 video；仅说明媒体类型而未说明处理目标时先澄清。不承担具体能力参数说明。'",
+   "permissions": [
+    "shell"
+   ],
+   "metadata": {
+    "requires": "",
+    "bins": "['mediakit-cli']",
+    "cliHelp": "'mediakit-cli --help'",
+    "product": "'mediakit-cli-doubao/skills'",
+    "domain": "shared",
+    "capability_count": "0"
+   }
+  },
+  "entries": [
+   "LICENSE",
+   "SKILL.md",
+   "reference"
+  ],
+  "file_count": 3,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-0459b763842d9e1950595ec96f4d7b8e",
+  "fm_raw_lines": 2,
+  "body_lines": 137,
+  "body_chars": 6966,
+  "total_chars": 7316,
+  "fm": {
+   "name": "doubao-medical-literature-monitoring",
+   "description": "\"医学进展跟踪 Skill。用于医生、研究人员或医学内容团队对相关领域最新进展的跟踪和调研需求，当用户提出“查询最新进展、订阅监控进展更新、定期更新推送”等需求时，可以调用该技能跟踪相关医学主题的研究、预印本、指南/共识、监管、临床试验、会议和专业资讯进展，首次检索生成飞书进展报告，并邀请用户确认订阅定时监控推送，用户确认后创建定时任务，定时任务中需要强调后续推送时调用本 Skill 呈现新增进展变化。调研某领域最新医学进展需求使用本 Skill，普通医学文献调研、综述或课题调研请用医学文献检索技能；基于具体患者或明确临床问题的诊疗分析请用临床诊疗与循证技能。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 9,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-07a5e2600eac11236f7f267cb4a74724",
+  "fm_raw_lines": 2,
+  "body_lines": 124,
+  "body_chars": 6919,
+  "total_chars": 7139,
+  "fm": {
+   "name": "multi-stock-comparison",
+   "description": "对两家及以上上市公司或股票进行横向研究，覆盖大盘与板块、外围市场、供应链、重要新闻与监管、商业模式、经营财务、成长、预期、估值、股价、组合以及 A/H 股与跨上市地相对价值。适用于公司比较、选股、财报或估值对比、股价与事件复盘、供应链或监管分析、组合适配、配对交易、H 股相对价值，以及需要飞书文档、高级金融图表或可复核多维报告的任务。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 29,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-07a8c729b0e5233caf7131bef55c7376",
+  "fm_raw_lines": 2,
+  "body_lines": 103,
+  "body_chars": 2988,
+  "total_chars": 3165,
+  "fm": {
+   "name": "seedance-25",
+   "description": "使用seedance2.5模型生成视频,使用 Seedance 2.5 按用户原始提示词生成视频，禁止改写提示词或切换模型，并在生成前补齐时长、比例和检索所得的必要信息后向用户确认原样透传提示词、不润色视频 prompt、不要改写后生成，或显式调用本 Skill 时使用。"
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-07c702753395022576e1e78ccc1fd5c1",
+  "fm_raw_lines": 2,
+  "body_lines": 184,
+  "body_chars": 7459,
+  "total_chars": 7704,
+  "fm": {
+   "name": "doubao-product-qa",
+   "description": "将 PRD、原型、网页、接口、代码、测试记录和多轮上下文转成可追踪的 QA 基线、风险用例、执行证据、Bug 与发布判断。适用于 Web/API/App/小程序测试、回归、热修复、测试方案、Bug 复核和 QA 收口。用户指定 Markdown、Office、豆包文档/表格/PPT 或飞书载体时严格服从；未指定时默认创建与内容匹配的豆包在线载体。纯开发实现、纯排版和无测试目标的数据分析不触发。"
+  },
+  "entries": [
+   ".pytest_cache",
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts",
+   "tests"
+  ],
+  "file_count": 102,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-07df3d5a79c9ae195240b95a5034276f",
+  "fm_raw_lines": 2,
+  "body_lines": 380,
+  "body_chars": 7399,
+  "total_chars": 7632,
+  "fm": {
+   "name": "doubao-reference-audit",
+   "description": "用于用户提交论文、学位论文或参考文献清单后，系统审查参考文献真实性、题录准确性、文内—文后对应关系以及正文主张是否得到被引文献支持，并生成专业、清晰、可直接指导修改的论文引用审计报告与飞书文档。用户要求“论文审计”“参考文献检查”“引用核对”“引用是否支持观点”“检查错引、过度推断或二手转引”时使用。开放主题综述、普通论文精读、论文代写或仅做语言润色时不使用。"
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "scripts"
+  ],
+  "file_count": 3,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-090298bb3a1ba839794595149b780353",
+  "fm_raw_lines": 3,
+  "body_lines": 196,
+  "body_chars": 51056,
+  "total_chars": 51367,
+  "fm": {
+   "name": "doubao-journal-format",
+   "description": "用于对学术论文类 Word/DOCX 文档进行期刊、学校、会议或课程要求的格式排版与修复。当用户需要把论文原稿套用.docx 模板或明确格式规则、或提到论文排版、期刊投稿格式、学位论文格式、会议论文模板、时使用；如果同一请求同时包含论文 Word 排版和任何非排版任务，必须先停止并询问用户选择“只做格式排版”还是“作为复合任务拆分处理”，在用户明确选择前不得执行排版。不用于论文写作、润色、降重、翻译、代写、文献检索、补引用、验证引用、伪造数据/引用，或普通非论文 Word 文档套模板；",
+   "Version": "1.1.0"
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references",
+   "render_docx.py",
+   "scripts"
+  ],
+  "file_count": 14,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-098d38f5a3f43cdf1676e4ce301cf06d",
+  "fm_raw_lines": 2,
+  "body_lines": 228,
+  "body_chars": 6699,
+  "total_chars": 7053,
+  "fm": {
+   "name": "doubao-product-analysis",
+   "description": "围绕具体产品、产品想法或存量方案，产出用于产品进入、定位、竞争策略、上市路径、能力建设与路线图决策的证据型分析报告。适用于“值不值得做或发布”“进入哪个细分”“目标用户和市场是否成立”“竞品为何这样设计”“该借鉴、差异化或放弃什么”“核心能力与 Roadmap 怎么定”“如何调整已有产品”等请求，也适用于将用户研究、市场信息、竞品实测、内部资料和业务约束整合为决策建议。支持 0→1、存量产品调整、竞品专项与组合分析；默认交付为可独立阅读的飞书云文档，并用正文内 HTML5 block 呈现必要的产品定位图或能力路线图。不用于只需罗列功能、直接撰写实施 PRD，或在缺少依据时给出确定性预测的任务。"
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references"
+  ],
+  "file_count": 7,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-0a25baf0b6e176840bf4b25490d8b9d1",
+  "fm_raw_lines": 2,
+  "body_lines": 128,
+  "body_chars": 13606,
+  "total_chars": 14639,
+  "fm": {
+   "name": "doubao-listing-localization",
+   "description": "Cross-border ecommerce Listing and Product Optimization for Amazon, TEMU, Walmart Marketplace, TikTok Shop, Shopify, AliExpress, Etsy, Google Shopping, Shopee, Lazada, Ozon, and other marketplace or independent-store product pages. Use when the user asks to create, rewrite, translate, localize, audit, diagnose, or optimize product titles, bullet points, descriptions, A+ Content, backend search terms, tags, attributes, feed titles, PDP/detail pages, main images, image briefs, product images, category/attributes, variants, size charts, price display, coupons/promotions, Buy Box/Featured Offer readiness, listing quality, item setup, conversion, click potential, unpublished/suppressed products, or keyword-stuffed supplier titles. This skill combines listing SEO/localization with product-page optimization diagnosis and must check official product requirements, platform policy paths, and available Seller Center evidence before making platform-specific recommendations."
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 10,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-103b964ea088e98cea458120aeacf440",
+  "fm_raw_lines": 7,
+  "body_lines": 61,
+  "body_chars": 2087,
+  "total_chars": 2422,
+  "fm": {
+   "name": "lark-contact",
+   "version": "1.0.0",
+   "description": "\"飞书 / Lark 通讯录:按姓名 / 邮箱解析成 open_id,或按 open_id 反查姓名 / 部门 / 邮箱 / 联系方式 / 个人状态 / 签名,以及按关键词搜索当前用户可见的机器人 / 智能体(agent)。当用户提到一个名字要下一步发消息 / 排日程,或拿到 open_id 想查具体信息时使用。不负责部门树遍历、按部门列员工、组织架构图,这类需求走原生 OpenAPI。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli contact --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 4,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-1199def7f62a07895bd7adfe5deead9b",
+  "fm_raw_lines": 2,
+  "body_lines": 58,
+  "body_chars": 1443,
+  "total_chars": 1578,
+  "fm": {
+   "name": "gift-card-redemption",
+   "description": "查询豆包订阅礼品卡的可兑换状态和套餐，并在确认后完成兑换。适用于查询或兑换豆包订阅礼品卡，支持文本兑换码和上传的二维码图片。不处理购买、退款、订单、优惠券或非豆包礼品卡。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 3,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-13fc4695615ef076c2e46ac0b2fc718d",
+  "fm_raw_lines": 2,
+  "body_lines": 225,
+  "body_chars": 8512,
+  "total_chars": 8870,
+  "fm": {
+   "name": "doubao-multiplatform-rewrite",
+   "description": "基于用户提供的已有素材（母稿、文章、新闻稿、活动稿、产品稿、报告摘要、访谈素材、口播稿、散乱素材等），改写成可发布的多平台分发版本，标准场景为≥2个平台，有素材的单平台改写也可支持，覆盖微信公众号、短视频脚本、微博等平台。当用户提到\"一稿多发\"\"多平台分发\"\"内容矩阵\"\"跨平台改写\"\"同一内容发多个平台\"\"分发执行包\"，或提供母稿并说\"适合不同平台\"\"不同平台都能发\"\"平台化处理\"\"适合平台传播\"\"改成某平台版\"时触发。不适用场景包括：单平台从零创作、无素材自由发挥、论文及学术写作、短剧小说代写、纯润色翻译摘要选题库slogan、要求实际发布排期私信评论等执行动作。最终必须创建并交付飞书文档。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 12,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-1417b29973e6675d7cc097b0cf82b36b",
+  "fm_raw_lines": 2,
+  "body_lines": 309,
+  "body_chars": 12768,
+  "total_chars": 12992,
+  "fm": {
+   "name": "seedream-50",
+   "description": "当用户明确要求使用“5.0”“5.0 Pro”“5.0pro”“Seedream 5.0 Pro”生成、编辑、重绘或延展图片时，必须调用此 Skill；负责按照 5.0 Pro 规则组装 Prompt，并将任务交接给 doubao-creative-design Skill，由其以 modelversion=\"seedream_5.0_pro\" 调用实际图片工具。"
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-16ba2193b90892fefbb3f640c2ae34f3",
+  "fm_raw_lines": 3,
+  "body_lines": 74,
+  "body_chars": 1970,
+  "total_chars": 2276,
+  "fm": {
+   "name": "doubao-identity",
+   "description": "当用户询问豆包工作、豆包专业版、豆包会员与付费服务（包含权益、充值、退款、发票、订阅、连续包月/包年比较、学生优惠、录音转写、创作额度等）、平台规则与隐私安全（使用条款、隐私政策、内容安全、客服投诉、聊天记录存储/删除/恢复、数据是否用于训练、个人数据、定位、IP）、记忆功能（用途、可记录内容、查询/删除/清空、开关及生效规则）或记忆认知（为什么记得、知道、忘记、记错个人信息）时，必须先调用Skill，并按其中官方口径回答，不得仅凭模型记忆推测或以联网搜索替代。与上述主题无关的普通知识问答、闲聊和其他任务不调用。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-16c0c9701f05d6bff1746e22b3bb0d92",
+  "fm_raw_lines": 2,
+  "body_lines": 18,
+  "body_chars": 363,
+  "total_chars": 581,
+  "fm": {
+   "name": "doubao-game-designer",
+   "description": "\"把游戏创意、参考作品、现有方案、配置或试玩证据转化为玩法成立、规则闭合、数值可复算且能进入制作的 GDD、玩法方案与系统规格；需要验证关键玩法时，联合前端或开发能力交付可直接运行的 HTML 游戏 Demo。用于核心循环、战斗、成长、经济、关卡、引导、平衡、活动、版本设计、方案评审与修订，以及按需追加的立项、发行、商业和制作内容。\""
+  },
+  "entries": [
+   ".git",
+   "SKILL.md",
+   "agents",
+   "references",
+   "scripts"
+  ],
+  "file_count": 74,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-1a1963e906d5c401c51c026f529f86dd",
+  "fm_raw_lines": 2,
+  "body_lines": 103,
+  "body_chars": 3647,
+  "total_chars": 3919,
+  "fm": {
+   "name": "doubao-product-manager",
+   "description": "\"将产品想法、用户反馈、研究数据、云文档、附件和已有方案转化为有依据的产品判断、策略、MVP、优先级、Roadmap、PRD、用户故事、验收标准或方案评审。任务涉及产品决策、需求取舍、存量产品修改、范围变更、上线复盘或产品文档交付时使用，即使用户没有说‘产品经理’；纯转写、翻译、校对、格式转换、资料摘要或已定方案的技术实现不由本 Skill 主导，除非仍需产品判断。用户提供链接、文件、截图、脑图、表格、评论或旧产物时，先读取真实内容。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 15,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-1a848ac0ba3254e2602da14a49a428cb",
+  "fm_raw_lines": 7,
+  "body_lines": 58,
+  "body_chars": 2783,
+  "total_chars": 3090,
+  "fm": {
+   "name": "lark-markdown",
+   "version": "1.2.2",
+   "description": "\"飞书 Markdown：查看、创建、上传、编辑和比较飞书中的原生 Markdown 文件。当用户要操作飞书 Markdown 文件，或比较其远端版本及本地草稿时使用。纯本地 Markdown 文件操作不触发本 skill。不负责将 Markdown 导入为飞书在线文档，也不负责文件搜索、权限、评论、移动、删除等云空间管理操作。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli markdown --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-1ea9978c6b74cd24b1ec7c29cf9b1c0a",
+  "fm_raw_lines": 7,
+  "body_lines": 117,
+  "body_chars": 5850,
+  "total_chars": 6232,
+  "fm": {
+   "name": "lark-meeting",
+   "version": "1.0.0",
+   "description": "\"飞书视频会议：查询会议记录与会议产物(纪要/逐字稿/妙记)、妙记搜索/上传/下载/编辑；查询进行中的会议、实时会议内容(发言/聊天/共享文档)问答(会上/会里)、发送会中聊天/表情；基于 meeting_id、meeting_no、event_id、note_id、minute_token、vc-node-id 或妙记 URL 查询相关信息。预约会议、忙闲和会议室管理走 lark-calendar。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli vc --help;lark-cli minutes --help;lark-cli note --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scenes"
+  ],
+  "file_count": 25,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-23a5327f5651218c72d3c2c94e53989c",
+  "fm_raw_lines": 2,
+  "body_lines": 111,
+  "body_chars": 11224,
+  "total_chars": 11488,
+  "fm": {
+   "name": "doubao-medical-literature-search",
+   "description": "\"医学文献检索分析 Skill。用户需要查找临床指南、论文研究，或要求检索主流医学数据库时使用，满足文献检索、领域综述、选题分析、考试学习、方法调研等医学文献场景需求。用于查找指南、共识和研究，或围绕医学主题、疾病、药物、干预及课题开展文献综述与课题论证。具体病例决策改用 doubao-clinical-decision-support，其他医学文献分析场景使用 doubao-medical 系列。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 17,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-249166944c13372c77061e4d69aade6f",
+  "fm_raw_lines": 6,
+  "body_lines": 187,
+  "body_chars": 4897,
+  "total_chars": 5331,
+  "fm": {
+   "name": "doubao-marketing-material-review",
+   "description": "营销素材审核。当用户上传待审核的广告宣传语、营销海报、社交媒体推广文案、直播话术等营销素材时，从虚假宣传、夸大宣传、绝对化用语、比较广告、引证数据真实准确性、价格违规、有奖营销、知识产权、风险行业违规宣传（如金融、医疗、三品一械、教育等特殊监管行业）、数据对外披露、不当承诺或表达等维度开展全面审查与风险扫描，对违规点归类、逐条分析判断并直接给出修改建议。当用户提到\"营销素材审核\"\"广告文案合规审查\"\"宣传语合规\"\"看看这段宣传/文案有没有问题\"\"海报/直播话术审核\"\"广告法审查\"\"促销价格合规\"\"有奖活动规则审查\"，或直接粘贴/上传营销宣传内容要求把关时，请优先使用本技能。",
+   "license": "Proprietary",
+   "metadata": {
+    "author": "CIS AI Application Team",
+    "version": "\"1.0\""
+   }
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-263384a266b113960d8b393b4b4a2728",
+  "fm_raw_lines": 14,
+  "body_lines": 22,
+  "body_chars": 1275,
+  "total_chars": 1753,
+  "fm": {
+   "name": "byted-mediakit-audio",
+   "version": "0.2.1",
+   "license": "MIT",
+   "description": "\"面向音频文件或视频中的音轨，处理语音边界定位、音频媒资信息探测、音频转码与码流封装适配、人声与背景声分离等目标。若对象和目标族已明确属于音频内容理解、音频转码、音频格式治理或音轨分离，但具体做法不确定，可先加载本 Skill 探索；若只说有音频而未说明业务目标，应先澄清。音频裁剪、拼接、调速、淡入淡出、混音、从视频抽取音轨或音视频合流等编辑合成诉求应路由到 editing；字幕生成、视频理解、视频增强等应路由到 video。\"",
+   "permissions": [
+    "shell"
+   ],
+   "metadata": {
+    "requires": "",
+    "bins": "",
+    "_list": [
+     "mediakit-cli"
+    ],
+    "cliHelp": "mediakit-cli audio --help",
+    "product": "mediakit-cli-doubao/skills",
+    "domain": "audio",
+    "capability_count": "4"
+   }
+  },
+  "entries": [
+   "LICENSE",
+   "SKILL.md",
+   "reference"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-26dc082893cc118843a179cffbf7b7de",
+  "fm_raw_lines": 2,
+  "body_lines": 141,
+  "body_chars": 8592,
+  "total_chars": 8925,
+  "fm": {
+   "name": "doubao-medical-literature-interpretation",
+   "description": "\"医学文献解读 Skill。用户上传或提供医学论文、指南等资料的片段、网页链接、DOI、aka 文件链接、PDF、表格或图片，并要求解读、总结、分析、问答或对比时使用；先阅读内容并判断是否属于医学文献。面向医学领域文献资料，对已给定的一篇或一组医学论文、指南的 PDF、网页、摘要、段落、表格或图片进行总结、问答、逐篇解读、横向比较及方法学评价。需主动检索或扩展文献时改用 doubao-medical-literature-search；具体病例诊疗改用 doubao-clinical-decision-support。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 8,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-2b5409855c605c9770f4e1e8c9d6283b",
+  "fm_raw_lines": 6,
+  "body_lines": 287,
+  "body_chars": 13948,
+  "total_chars": 14127,
+  "fm": {
+   "name": "word",
+   "description": "Office Word 的阅读、新建和修改使用此技能。不处理 飞书/豆包在线文档、PDF文件。党政公文、正式文书、商务与项目合同、专利司法等专业领域文书写作使用此技能。",
+   "metadata": {
+    "version": "1.0.30",
+    "requires": "",
+    "bins": "[\"python\"]"
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references",
+   "requirements.txt"
+  ],
+  "file_count": 18,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-2ed73725a90baacdd4d31f2aa76e3eb0",
+  "fm_raw_lines": 2,
+  "body_lines": 93,
+  "body_chars": 3379,
+  "total_chars": 3589,
+  "fm": {
+   "name": "doubao-contract-amendment",
+   "description": "用于在已签原协议基础上，依据用户提供的新情况起草补充协议、变更协议或终止协议。先重建主体、标的、资金、条件、时间和文件构成的整体法律状态，再在用户明确授权范围内成文。仅处理既有协议的派生修改；不用于全新合同起草、既有合同风险审查、一般法律咨询或纯 Word 排版与纯文件处理，纯文档编辑改用 lark-doc。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 2,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-30ee3da3189d08ee2d8aeebd1841ef26",
+  "fm_raw_lines": 7,
+  "body_lines": 229,
+  "body_chars": 27787,
+  "total_chars": 28013,
+  "fm": {
+   "name": "lark-base",
+   "version": "1.4.1",
+   "description": "多维表格：可视化表格数据库与业务系统，可搭建台账/进度/项目/订单/客户/排班等业务场景，具备多表联动、多视图看板、表单问卷收集、仪表盘、自动化工作流、表格行列权限，支撑持续运营业务闭环",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli base --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 32,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-3a385ecc9f04a65b5aa266c0967fca26",
+  "fm_raw_lines": 2,
+  "body_lines": 130,
+  "body_chars": 10600,
+  "total_chars": 10932,
+  "fm": {
+   "name": "doubao-data-analysis",
+   "description": "结构化业务数据分析：附件读取与口径核验、定向筛选、规则/阈值判定、指标异动归因、漏斗/留存/实验分析、经营复盘及可审计报告。当用户提供 Excel、CSV、PDF、图片或多份业务材料，要求查数、判异常、解释变化、比较方案或形成行动建议时使用。Use for evidence-grounded analysis of structured business data, including filtering, rule checks, reconciliation, diagnostics, experiments, and decision reports."
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references",
+   "scripts"
+  ],
+  "file_count": 15,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-3a40ced2ec19e4f9f9066bf979b5f312",
+  "fm_raw_lines": 2,
+  "body_lines": 340,
+  "body_chars": 22356,
+  "total_chars": 22557,
+  "fm": {
+   "name": "browser-record-replay",
+   "description": "Develop, record, debug, and deliver reusable browser RPA Skills with the browser built into Doubao. Use for same-computer Local Direct workflows only."
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-3e946c0a93287fcff4826260cc67b00a",
+  "fm_raw_lines": 2,
+  "body_lines": 117,
+  "body_chars": 7922,
+  "total_chars": 8184,
+  "fm": {
+   "name": "doubao-answer-with-medical-evidence",
+   "description": "\"健康问题循证咨询，患者或家属提出健康或医学问题时使用，患者提问优先使用本技能，适用于需要围绕相关症状、疾病、检查、用药、治疗或预后问题，结合医学文献进行回答的场景。该技能会使用循证医学的思路全面分析患者表现，并提供相关关怀支持。医生与医疗从业者的提问改用doubao-clinical-decision-support技能，其余医学文献专业场景改用 doubao-medical 系列技能。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 11,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-3f345a337e8b5d02f0ab7506dcdffbfa",
+  "fm_raw_lines": 7,
+  "body_lines": 303,
+  "body_chars": 20123,
+  "total_chars": 20333,
+  "fm": {
+   "name": "ppt",
+   "version": "1.0.13",
+   "description": "飞书幻灯片：创建和编辑幻灯片。创建演示文稿、读取幻灯片内容、管理幻灯片页面（创建、删除、读取、局部替换）。当用户需要创建或编辑幻灯片、读取或修改单个页面时使用。",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli slides --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 68,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-3fad7dcc0a472ace40fd35612c64ed65",
+  "fm_raw_lines": 2,
+  "body_lines": 88,
+  "body_chars": 7601,
+  "total_chars": 7889,
+  "fm": {
+   "name": "doubao-clinical-decision-support",
+   "description": "\"循证医学临床辅助决策 Skill。用户需要分析临床问题，解释临床表现，提供循证医学判断时使用，用于针对临床问题，结合病例资料，查阅指南和文献等循证依据，进行科学回答与诊疗决策，进行诊断鉴别、检查路径、用药安全、治疗比较、预后和风险分析。医学文献检索调研改用 doubao-medical-literature-search，单纯报告解读改用 doubao-medical-report，其他医学文献分析场景使用 doubao-medical 系列。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 17,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-4129cdacab6f5fbf1179d10c638e92b4",
+  "fm_raw_lines": 7,
+  "body_lines": 245,
+  "body_chars": 20297,
+  "total_chars": 20619,
+  "fm": {
+   "name": "lark-im",
+   "version": "1.0.0",
+   "description": "\"飞书即时通讯：收发消息和管理群聊。发送和回复消息、搜索聊天记录、管理群聊成员、上传下载图片和文件、管理表情回复、发送应用内/短信/电话加急、发送交互卡片（Interactive Card）。当用户需要发消息、查看或搜索聊天记录、下载聊天中的文件、查看群成员、搜索群、创建群聊或话题群、管理标记数据、管理 Feed 置顶（添加/移除/查询置顶会话）、管理标签数据、发送交互卡片时使用。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli im --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 59,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-41594a8e6b61916402fb2a71dbcc4d47",
+  "fm_raw_lines": 7,
+  "body_lines": 175,
+  "body_chars": 8213,
+  "total_chars": 8526,
+  "fm": {
+   "name": "lark-task",
+   "version": "1.0.0",
+   "description": "\"飞书任务：管理任务、清单和任务智能体。创建待办任务、查看和更新任务状态、拆分子任务、组织任务清单、分配协作成员、上传任务附件、注册或注销任务智能体、更新任务智能体的主页数据、写入智能体任务记录。当用户需要创建待办事项、查看任务列表、跟踪任务进度、管理项目清单或给他人分配任务、为任务上传附件文件、注册注销任务智能体、更新智能体主页数据、写入任务记录时使用。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli task --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 18,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-416a081b7921c7a80d46eff9751c72c0",
+  "fm_raw_lines": 20,
+  "body_lines": 149,
+  "body_chars": 4931,
+  "total_chars": 6063,
+  "fm": {
+   "name": "verifier-hub",
+   "description": "Deterministic artifact verifier CLI (file/xlsx/docx/pdf/pptx/text/archive/rubric) for pre-delivery artifact checks and agentic judges. 58 subcommands callable as `verifier {family} {subcmd} [args]`. Use before delivering or uploading a file, or whenever you need to check file format, sheet/section presence, cell values, formulas, keywords, character counts, page counts, placeholders, signatures or zip contents, instead of guessing from an LLM reading. Every call prints one JSON object with a quotable `evidence` field.",
+   "license": "Proprietary — internal use only.",
+   "compatibility": ">-",
+   "metadata": {
+    "version": "\"2.1\"",
+    "hub": "verifier-hub"
+   }
+  },
+  "entries": [
+   "README.md",
+   "SKILL.md",
+   "bin",
+   "lib",
+   "references",
+   "requirements.txt"
+  ],
+  "file_count": 18,
+  "desc_block_scalar": true
+ },
+ {
+  "dir": "skill-4b22c55ae5d62070bc8edf5f11259b37",
+  "fm_raw_lines": 7,
+  "body_lines": 162,
+  "body_chars": 11461,
+  "total_chars": 11733,
+  "fm": {
+   "name": "lark-okr",
+   "version": "1.0.0",
+   "description": "\"飞书 OKR：管理目标与关键结果。查看和编辑 OKR 周期、目标、关键结果、对齐关系、量化指标和进展记录。当用户需要查看或创建 OKR、管理目标和关键结果、查看对齐关系时使用。不负责：待办任务管理（lark-task）、日程/会议安排（lark-calendar）、绩效评估\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[ \"lark-cli\" ]",
+    "cliHelp": "\"lark-cli okr --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 26,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-4d6d8ca4f1cea673ad65c493c87f34f0",
+  "fm_raw_lines": 2,
+  "body_lines": 223,
+  "body_chars": 10998,
+  "total_chars": 11325,
+  "fm": {
+   "name": "doubao-medical-literature-translation",
+   "description": "\"医学文献翻译 Skill，面向医学领域文献资料翻译。用于英译中或中译英，覆盖论文、摘要、指南、临床试验、药品资料等医学文献的翻译需求；支持文本片段、指定章节、网页、PDF、飞书文件、文章全文的翻译，中译英只在不改变原意下使用常见医学学术表达。全文翻译默认创建飞书文档提供翻译结果，论文片段、短论文使用 quick answer 模式翻译后直接回答。仅做来源内语言转换，检索或综合多篇证据用医学文献检索技能，具体病例诊疗用临床诊疗与循证技能，单篇论文解读用医学文献解读技能，改写、重组论证或适配期刊风格用学术润色技能。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 11,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-52d2686c64803679b30cab66dda0256f",
+  "fm_raw_lines": 14,
+  "body_lines": 39,
+  "body_chars": 4201,
+  "total_chars": 4819,
+  "fm": {
+   "name": "byted-mediakit-editing",
+   "version": "0.2.1",
+   "license": "MIT",
+   "description": "\"面向音频、视频或图片素材组成成片的编辑制作目标，适用于时间线裁剪与拼接、速度和音量调整、视频滤镜、运镜特效、转场、画面裁切旋转翻转、字幕压制、局部模糊、动图截取、淡入淡出、音视频提取与合流、音频混合以及多画面空间组合等操作。若用户要给视频添加滤镜、春日/晚霞/鲜亮/白皙/食物等滤镜效果，或对象和目标族已明确是对现有素材做剪辑、合成、混合或成片编排，但具体做法不确定，可先加载本 Skill 探索；若只给出媒体类型而未说明要剪、合、调、加滤镜还是分析，应先澄清。纯图像增强、抠图、OCR、图片水印或图片体积治理应路由到 image；视频画质增强、内容理解、字幕擦除、暗水印、人像或绿幕抠像等视频智能处理应路由到 video；音频转码、语音端点检测、人声背景分离等非剪辑目标应路由到 audio。\"",
+   "permissions": [
+    "shell"
+   ],
+   "metadata": {
+    "requires": "",
+    "bins": "",
+    "_list": [
+     "mediakit-cli"
+    ],
+    "cliHelp": "mediakit-cli editing --help",
+    "product": "mediakit-cli-doubao/skills",
+    "domain": "editing",
+    "capability_count": "20"
+   }
+  },
+  "entries": [
+   "LICENSE",
+   "SKILL.md",
+   "reference"
+  ],
+  "file_count": 22,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-531e521f8e77b486f55706be2602b7fe",
+  "fm_raw_lines": 2,
+  "body_lines": 267,
+  "body_chars": 9553,
+  "total_chars": 9853,
+  "fm": {
+   "name": "doubao-creative-video",
+   "description": "当用户需要通用视频生成、视频创作、视频提示词规划或文生/图生视频时使用，包括创意视频、产品广告、商品广告、UGC口播/带货/信息流视频、marketing/TVC风格广告、企业宣传片、商务视频、品牌形象片、产品功能介绍、带旁白视频，以及带 ref/参考素材的视频生成。禁止用于短剧创作、剧情脚本、分集剧情、角色扮演故事或影视叙事创作；此类需求应调用 doubao-creative-drama。仅当用户明确要求把短剧/剧情素材改造成普通视频、商业广告、UGC 或企业宣传视频时，才使用本 skill。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 4,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-598ff636a0e64e2b4ce5a6103cb7257f",
+  "fm_raw_lines": 7,
+  "body_lines": 46,
+  "body_chars": 914,
+  "total_chars": 1079,
+  "fm": {
+   "name": "lark-attendance",
+   "version": "1.0.0",
+   "description": "\"飞书考勤打卡：查询自己的考勤打卡记录\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli attendance --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-5df9d24d9188ca654bb093d4caecd5ad",
+  "fm_raw_lines": 2,
+  "body_lines": 58,
+  "body_chars": 3166,
+  "total_chars": 3398,
+  "fm": {
+   "name": "doubao-contract-drafting",
+   "description": "直接起草中国大陆商业合同并生成无批注、无颜色、中文字体正确的可编辑 Word 文件。适用于采购、服务、营销、工程施工、软件许可、SaaS、委托开发、联合研发、知识产权、租赁、数据处理和保密等场景；读取题干及附件后完成交易信息拆解、风险识别、起草方标准条款与默认商业参数填充、合同生成与交付校验。涉及跨境交易、境外法域或境外争议解决安排时，需升级并要求复核。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 24,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-5e21a971df08e058363a00000041db66",
+  "fm_raw_lines": 6,
+  "body_lines": 107,
+  "body_chars": 2620,
+  "total_chars": 2823,
+  "fm": {
+   "name": "lark-workflow-standup-report",
+   "version": "1.0.0",
+   "description": "\"日程待办摘要：编排 calendar +agenda 和 task +get-my-tasks，生成指定日期的日程与未完成任务摘要。适用于了解今天/明天/本周的安排。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]"
+   }
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-5e84a530ca1db13e950dbc89ee470800",
+  "fm_raw_lines": 2,
+  "body_lines": 301,
+  "body_chars": 10564,
+  "total_chars": 10731,
+  "fm": {
+   "name": "doubao-wealth-planning",
+   "description": "为个人或家庭构建目标导向的财富规划，覆盖现金流、应急资金、债务、保障、教育/养老等目标、资产配置、情景压力测试与行动清单。用于新规划、年度复盘或重大人生变化。必须先确认司法辖区和风险承受能力；不替代持牌投资、税务、保险或法律意见。"
+  },
+  "entries": [
+   ".git",
+   "SKILL.md",
+   "config",
+   "evals",
+   "references",
+   "schemas",
+   "scripts",
+   "tests"
+  ],
+  "file_count": 166,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6029eb84e8a494e03cfdaf144da253e7",
+  "fm_raw_lines": 3,
+  "body_lines": 373,
+  "body_chars": 21208,
+  "total_chars": 21388,
+  "fm": {
+   "name": "skill-creator-for-work",
+   "description": "创建有效 Skill 的指南。当用户想要创建新的 Skill，或更新现有 Skill，以便通过专门知识、工作流程或工具集成来扩展 AI Agent 能力时，应使用此 Skill。",
+   "license": "Complete terms in LICENSE.txt"
+  },
+  "entries": [
+   "LICENSE.txt",
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6143212a80dafddf3a9c5dba1840e64b",
+  "fm_raw_lines": 2,
+  "body_lines": 288,
+  "body_chars": 9886,
+  "total_chars": 10081,
+  "fm": {
+   "name": "doubao-market-hotspot",
+   "description": "把宏观、政策、监管、供需、地缘、行业或公司事件转化为公司、行业与公开市场的因果影响分析，覆盖事件状态、基线、传导渠道、财务与估值影响、直接及高阶影响、priced-in判断、情景、监控与证伪。用于事件影响、政策冲击、跨资产传导和公司事件研究；不要用于无明确事件的公司基本面或普通新闻摘要。"
+  },
+  "entries": [
+   "SKILL.md",
+   "config",
+   "evals",
+   "references",
+   "schemas",
+   "scripts",
+   "tests"
+  ],
+  "file_count": 63,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-62a51cd03807846890e25c40aa92b12b",
+  "fm_raw_lines": 7,
+  "body_lines": 369,
+  "body_chars": 28607,
+  "total_chars": 28849,
+  "fm": {
+   "name": "sheet",
+   "version": "3.2.3",
+   "description": "\"表格全场景（本地 Excel/CSV 与飞书/doubao 在线表格）：创建、读写、分析、计算、建模、语义处理、可视化与美化。若用户上传附件、提供表格链接/token，或要求任何表格操作，必须加载。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\", \"python3\"]",
+    "cliHelp": "\"lark-cli sheets --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 44,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-63302ad8e81cc2bf56db8a2fb5436721",
+  "fm_raw_lines": 2,
+  "body_lines": 421,
+  "body_chars": 7386,
+  "total_chars": 7604,
+  "fm": {
+   "name": "doubao-paper-close-reading",
+   "description": "用于用户提供一篇或少量学术论文后，进行专业深度精读，讲清研究问题、研究故事、方法或理论机制、关键证据、实验结果、可信边界、复现风险与研究启示，并生成高级 Markdown 报告和飞书文档。用户要求“论文精读”“深度解读”“分析方法与实验”“判断论文价值或局限”时使用。开放主题综述、单纯题录核验、论文代写或语言润色时不使用。"
+  },
+  "entries": [
+   "SKILL.md",
+   "assets"
+  ],
+  "file_count": 2,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-63e907b2558fef94bd38ebc95050dcda",
+  "fm_raw_lines": 7,
+  "body_lines": 286,
+  "body_chars": 16464,
+  "total_chars": 16808,
+  "fm": {
+   "name": "lark-mail",
+   "version": "1.0.0",
+   "description": "\"飞书邮箱：Use when user mentions 起草邮件、写邮件、草稿、发送/回复/转发邮件、查阅邮件、看邮件、搜索邮件、邮件文件夹、邮件标签、邮件联系人、监听新邮件、邮件收信规则等；use for mail/email intent only. Do not use for docs/sheets/calendar/auth setup/pure contact lookup/IM chat tasks.\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli mail --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references"
+  ],
+  "file_count": 35,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6444f4f0d82f17f94bb63ef2d60c60e0",
+  "fm_raw_lines": 6,
+  "body_lines": 139,
+  "body_chars": 2709,
+  "total_chars": 2945,
+  "fm": {
+   "name": "lark-openapi-explorer",
+   "version": "1.0.0",
+   "description": "\"飞书/Lark 原生 OpenAPI 探索：从官方文档库中挖掘未经 CLI 封装的原生 OpenAPI 接口。当用户的需求无法被现有 lark-* skill 或 lark-cli 已注册命令满足，需要查找并调用原生飞书 OpenAPI 时使用。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]"
+   }
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-64b33f2ad6ae097dbbe70261f6b53aa0",
+  "fm_raw_lines": 2,
+  "body_lines": 235,
+  "body_chars": 10763,
+  "total_chars": 11496,
+  "fm": {
+   "name": "computer-use-automation",
+   "description": "Use this Windows Computer Use skill whenever the user wants to open, switch to, or operate a desktop app or local GUI and complete a task in it—even when they never mention \"computer use\" explicitly. Trigger on requests such as opening Calculator/计算器/计算机 app to compute expressions, using another app, changing Windows Settings, handling file pickers, or operating a user-specified local browser session. This includes controls, menus, dialogs, and windows. Use computer_use_tool plane=\"cu\" with seed_computer_use, observe the current screen before coordinate actions, verify the outcome, and request user takeover for login or other manual-only steps. Not for BU page automation."
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6532bef9d4f6ff96872e448dc897c6e1",
+  "fm_raw_lines": 9,
+  "body_lines": 42,
+  "body_chars": 1718,
+  "total_chars": 2015,
+  "fm": {
+   "name": "lark-whiteboard",
+   "version": "1.0.0",
+   "description": "飞书画板：查询和编辑飞书云文档中的画板。支持导出画板为预览图片、导出原始节点结构、使用多种格式更新画板内容。 当用户需要查看画板内容、导出画板图片、编辑画板时使用此 skill。不负责：飞书云文档内容编辑（lark-doc）、文档内嵌电子表格/Base（sheet / lark-base）。",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli whiteboard --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "elements",
+   "references",
+   "routes",
+   "scenes"
+  ],
+  "file_count": 31,
+  "desc_block_scalar": true
+ },
+ {
+  "dir": "skill-666edb3a9c400301e2a400f9c5a3ac99",
+  "fm_raw_lines": 2,
+  "body_lines": 316,
+  "body_chars": 12972,
+  "total_chars": 13140,
+  "fm": {
+   "name": "doubao-public-company-analysis",
+   "description": "分析上市公司的商业模式、竞争优势、行业位置、财务质量、估值、风险与投资观点。用于用户要求公司基本面研究、公司深度分析、投资研究或提供公司名称/代码与关注点时。不要用于纯事件影响、批量选股、一级市场项目或个人财富规划。"
+  },
+  "entries": [
+   "SKILL.md",
+   "config",
+   "evals",
+   "references",
+   "schemas",
+   "scripts",
+   "tests"
+  ],
+  "file_count": 64,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-69d323e83107ae501bc68116483f5832",
+  "fm_raw_lines": 8,
+  "body_lines": 19,
+  "body_chars": 717,
+  "total_chars": 841,
+  "fm": {
+   "name": "doubao-record",
+   "description": "启动当前飞书会话的录音。当用户需要发起录音，或对录音进行中的内容询问的时候，可以使用此技能。用户如果选择了该技能但未做任何输入则默认用户意图为启动录音。"
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6a293591d44ba7b56a89723dae156648",
+  "fm_raw_lines": 2,
+  "body_lines": 39,
+  "body_chars": 1502,
+  "total_chars": 1677,
+  "fm": {
+   "name": "doubao-oceanengine-adops-agent",
+   "description": "字节UG自动化投放Agent 的巨量引擎只读盯盘与数据分析 Skill。适用于查询已授权账户报表、分析核心投放指标、识别长尾候选和诊断效果问题；使用官方 Remote MCP，只输出观察与建议，不创建、暂停、开启、删除或调整广告。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references"
+  ],
+  "file_count": 5,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6cc06ce155d62f977cdfd0544a1ab745",
+  "fm_raw_lines": 3,
+  "body_lines": 41,
+  "body_chars": 1340,
+  "total_chars": 1565,
+  "fm": {
+   "name": "seed-audio",
+   "description": "用自然语言描述生成目标音频。把一段场景描述（人声对话、环境声、音效、背景音乐等复合音频）一次性生成成音频。当用户描述一个声音场景、要求生成/合成/制作一段音频或声音、给出形如\"角色：台词\"的对话脚本要转成音频、或要按参考音频的音色说话时使用。支持两种模式：纯文本描述生成（T2A）和带参考音频生成（A2A，在描述中引用参考音频指定角色音色）",
+   "version": "0.2.0"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 3,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6d7a40e381e76fc8c73b8dfe2a38c787",
+  "fm_raw_lines": 14,
+  "body_lines": 47,
+  "body_chars": 6921,
+  "total_chars": 7501,
+  "fm": {
+   "name": "byted-mediakit-video",
+   "version": "0.2.1",
+   "license": "MIT",
+   "description": "\"面向视频文件的智能处理、媒资理解、画质治理与画质检测、抽帧、隐私保护、字幕与水印处理、精彩片段与高光拆条分析生成、剧情结构化与剧本整理、场景与语义分段、画面文字识别、视频转码转封装及人像或绿幕抠像等目标。若对象和目标族已明确属于视频增强、视频分析理解、视频内容结构化、视频字幕识别或擦除、视频隐私脱敏、视频媒资探测或分发适配，但具体能力不确定，可先加载本 Skill 探索；若只说有视频而未说明业务目标，应先澄清。明确要裁剪、拼接、叠加字幕、混音、合流、调速、转场、画面旋转翻转、视频滤镜或多视频拼画面的成片编辑诉求应路由到 editing；单张图片处理应路由到 image；音频转码、人声分离或语音端点检测应路由到 audio。\"",
+   "permissions": [
+    "shell"
+   ],
+   "metadata": {
+    "requires": "",
+    "bins": "",
+    "_list": [
+     "mediakit-cli"
+    ],
+    "cliHelp": "mediakit-cli video --help",
+    "product": "mediakit-cli-doubao/skills",
+    "domain": "video",
+    "capability_count": "29"
+   }
+  },
+  "entries": [
+   "LICENSE",
+   "SKILL.md",
+   "reference"
+  ],
+  "file_count": 31,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6ef23dc79d3f0e1a39b7e42f7e12cdaf",
+  "fm_raw_lines": 2,
+  "body_lines": 139,
+  "body_chars": 7507,
+  "total_chars": 8238,
+  "fm": {
+   "name": "doubao-cross-border-growth-content",
+   "description": "Evidence-grounded cross-border ecommerce content operations for short-video and livestream scripts, UGC or creator briefs, multilingual captions, localized content angles, image/video briefs, content calendars, hook matrices, creative tests, Spark or creator reuse, and production handoffs. Use for content-first or mixed content-and-growth requests on TikTok Shop, Instagram/Reels, Meta, Amazon, Shopify, Shopee, Lazada, AliExpress, Ozon, and similar channels. For ads-only budget, bid, account-structure, scaling, or pause decisions, validate evidence and creative implications only; do not route to a named ads skill unless a current ads/growth skill is available."
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 16,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6f9064259f49979f1c5e6eabcbf1c669",
+  "fm_raw_lines": 2,
+  "body_lines": 161,
+  "body_chars": 4269,
+  "total_chars": 4452,
+  "fm": {
+   "name": "doubao-critical-reading-companion",
+   "description": "深度解读文章，把新闻、长评或宣传文案等非学术公共文本转成便于理解、可追溯的阅读地图；用于重建论证链、评价证据与推理、识别隐藏前提、补充替代解释、核查关键事实，并输出可追溯的阅读地图。适用于可信度判断、论证拆解、宣传分析、作者自检和行动决策。"
+  },
+  "entries": [
+   "SKILL.md",
+   "reference"
+  ],
+  "file_count": 5,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-6fde60d522a3b8cac4029e33e8272e7a",
+  "fm_raw_lines": 2,
+  "body_lines": 127,
+  "body_chars": 7475,
+  "total_chars": 7799,
+  "fm": {
+   "name": "doubao-industry-analysis",
+   "description": "针对某一行业（半导体、新能源、医药、消费等）的中长期基本面与产业研究，覆盖行业定义与规模、产业链与竞争格局、政策与驱动力、景气周期、趋势研判与三情景、盈利质量与落地建议。先想清楚这篇报告要证明什么判断（判断主线），再用三级数据分级取证、按固定五大板块写透，最终交付一份可直接用于战略规划、投资决策与商业化落地的飞书深度报告。对于一句话能答的问题，不要凭训练记忆或随手搜索口头作答，一律走本 Skill 的结构化多源论证。不触发并转其他场景：问该行业今天涨跌/热度/资金流/龙头股；问某个具体公司；问宏观事件对市场影响；问行业内某公司的财报。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references",
+   "scripts"
+  ],
+  "file_count": 15,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-739c4782187e0e1c53d0c38abc66703f",
+  "fm_raw_lines": 2,
+  "body_lines": 234,
+  "body_chars": 12149,
+  "total_chars": 12415,
+  "fm": {
+   "name": "doubao-creative-design",
+   "description": "当用户要求从零生成、设计商业/社交媒体创意图片，或做系列延展、多比例适配时使用；触发任务包括做图、出图、生成图片、设计海报、主视觉/KV、Banner、封面、社媒配图、社媒长图、电商主图、详情页、产品图、Logo、IP角色、吉祥物、包装、品牌应用物料、活动物料、宣传册、落地页、知识科普海报、信息图、教学图、教材插图、课件配图、思维导图、知识图谱、流程图、数据图表、科学结构图、公式推导图、工程图纸、多资产视觉系统等图片设计场景"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 18,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-791fc7025b35309f09b931d8a2e51d97",
+  "fm_raw_lines": 2,
+  "body_lines": 165,
+  "body_chars": 7124,
+  "total_chars": 7461,
+  "fm": {
+   "name": "doubao-creative-drama",
+   "description": "当用户提出短篇短剧、动画短片、微电影、剧情视频、AI视频、影视化短片、动态漫、宣传片、预告片等**单集 5-10 分钟以内**的短篇制作需求，或包含\"做个短剧\"、\"拍个微电影\"、\"弄个动画短片\"、\"写个短剧剧本\"、\"画个分镜\"、\"搞个人设/场景资产\"、\"出个关键帧\"、\"写图生视频提示词/Seedance提示词\"等表达时调用。适用于需要按\"规划-剧本-分镜-资产-关键帧-视频生成\"推进完整视频生产流程的短篇场景。**不承接几十集连续短剧、长篇商用短剧、连续剧、连续番剧的完整制作**；如遇此类需求，明确声明本 skill 边界并建议用户使用专门的长篇短剧工具或分批下单。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-7ab40cedd855dc30da4c0ce83d0bd02a",
+  "fm_raw_lines": 2,
+  "body_lines": 161,
+  "body_chars": 8346,
+  "total_chars": 8484,
+  "fm": {
+   "name": "doubao-pc-optimizer",
+   "description": "用户需要清理磁盘垃圾、释放空间、处理电脑卡顿或开机慢、优化 Windows/macOS 性能、提升游戏帧率、生成安全清理脚本，或提到 C 盘满、磁盘空间不足、掉帧、运行慢时使用。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references",
+   "scripts"
+  ],
+  "file_count": 11,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-7e207611f542ee906ad35d802161fdf9",
+  "fm_raw_lines": 7,
+  "body_lines": 101,
+  "body_chars": 7185,
+  "total_chars": 7617,
+  "fm": {
+   "name": "lark-wiki",
+   "version": "1.0.3",
+   "description": "\"飞书知识库：管理知识空间、空间成员和文档节点。创建和查询知识空间、查看和管理空间成员、管理节点层级结构、在知识库中组织文档和快捷方式。当用户需要在知识库中查找或创建文档、浏览知识空间结构、查看或管理空间成员、移动或复制节点时使用。当用户给出 doubao.com 的 /wiki/ URL/token 时，也应直接使用本 skill，不要因为域名不是飞书而回退到 WebFetch；路由依据是 URL 路径模式和 token，而不是域名。不负责：上传文件到知识库节点下（走 lark-drive）、编辑文档/表格/Base 内容（走 lark-doc / sheet / lark-base）。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli wiki --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 14,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-861469de16bdbd1b5f294695995fd38e",
+  "fm_raw_lines": 3,
+  "body_lines": 197,
+  "body_chars": 5887,
+  "total_chars": 6092,
+  "fm": {
+   "name": "doubao-customer-service",
+   "description": "生成电商在线文字客服的可执行处理方案和正式交付文档。适用于客户回复、售前咨询、催发货、物流履约、退换货、质量问题、补偿争议、差评投诉、私聊舆情询问、聊天截图分析、客服标准流程、权限矩阵、升级规则和自动客服配置。不适用于电话客服、线下接待、媒体公关、客服培训质检、真实系统操作或法律责任最终认定。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "templates"
+  ],
+  "file_count": 17,
+  "desc_block_scalar": true
+ },
+ {
+  "dir": "skill-899adabe25b5689a827ef75527f93ddf",
+  "fm_raw_lines": 7,
+  "body_lines": 207,
+  "body_chars": 15892,
+  "total_chars": 16533,
+  "fm": {
+   "name": "lark-drive",
+   "version": "1.0.0",
+   "description": "\"飞书云空间（云盘/云存储）：管理 Drive 文件和文件夹，包含上传/下载、创建文件夹、复制/移动/删除、查看元数据、查询权限设置、评论/权限/订阅、标题、版本、飞书文档密级标签（secure labels）和本地文件导入，也可通过 `drive +fetch` 把 Drive 文件读取为 Markdown（含知识库里映射为 wiki URL 的 Drive 文件）。用户需要整理云盘目录、处理云空间资源 URL/token、判断链接类型/真实 token/标题、读取/总结 Drive 文件的内容、或导入 Word/Markdown/Excel/CSV/PPTX/.base 为 docx/sheet/bitable/slides 时使用；doubao.com 云空间 URL/token 也按资源路径和 token 路由，不回退 WebFetch。不负责：文档内容编辑（走 lark-doc）、表格/Base 表内数据操作（走 sheet/lark-base）、知识空间节点/成员管理（走 lark-wiki）、原生 Markdown 文件读写/patch/diff（走 lark-markdown）。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli drive --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 63,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-8a10c84639c6cb6dab3dbf482140a93c",
+  "fm_raw_lines": 2,
+  "body_lines": 153,
+  "body_chars": 5027,
+  "total_chars": 5191,
+  "fm": {
+   "name": "doubao-human-signal",
+   "description": "去除或避免文本中的 AI 味。用于用户强制调用本 Skill，或写作/改写时提到“不要有 AI 味”“不要太假”“真情实感”“有人感”，或对已有文本/上一轮输出反馈“太像 AI”“太空泛”“太模板”“太官方”“不像我说的”等场景。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references"
+  ],
+  "file_count": 13,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-8a5998abc95675999ebb81867911a594",
+  "fm_raw_lines": 2,
+  "body_lines": 123,
+  "body_chars": 14599,
+  "total_chars": 15533,
+  "fm": {
+   "name": "doubao-ecommerce-compliance-tax-logistics",
+   "description": "Cross-border ecommerce compliance, tax, IP, customs, tariff, HS code, fulfillment, warehousing, China import, and clearance workflow for marketplace and independent-store sellers. Use when the user asks whether a product can be sold, listed, imported, exported, shipped, fulfilled, or cleared; whether it needs certification, labeling, authorization, trademark/IP review, VAT/GST/Sales Tax, OSS/IOSS/Nexus, China Customs/CCC/GB standards, HS classification, tariff, commercial invoice, COO, DDP/DDU, FBA/FBM, overseas warehouse, 3PL, dangerous goods, restricted/prohibited product review, customs documentation, or SKU/invoice/packing-list/logistics/tax file reconciliation. This skill is source-first and evidence-bound; do not provide final legal, tax, IP, customs, HS, tariff, platform-policy, or numerical conclusions without required evidence and validation."
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 12,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-8d2103eae0d346132e2bc3fb490e9179",
+  "fm_raw_lines": 4,
+  "body_lines": 111,
+  "body_chars": 6458,
+  "total_chars": 6804,
+  "fm": {
+   "name": "doubao-medical-report",
+   "description": "必须在用户需要医学报告解读时使用。包括：用户上传体检报告、检验报告、检查单、化验单、血常规/尿常规/生化/肝肾功能/血脂血糖等检验检查图片、照片、截图、PDF、文档、表格或文件；用户只发报告图片/附件且没有文字说明；用户说“帮我看看”“看下这个报告”“这个结果正常吗”“有什么问题”“报告怎么解读”；用户表达体检报告解读、医院报告解读、影像/超声/CT/MRI/内镜/病理报告解读等需求。用于梳理报告内容，解释异常指标和检查发现，识别需要关注的风险信号，并给出就医沟通、复查随访、观察监测和生活方式管理建议。",
+   "metadata": {
+    "short-description": "解读体检和检查报告"
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 17,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-907b9d0c4581ab64db3282833b2e31ff",
+  "fm_raw_lines": 2,
+  "body_lines": 40,
+  "body_chars": 1734,
+  "total_chars": 2084,
+  "fm": {
+   "name": "doubao-ecommerce-proposal",
+   "description": "电商活动策划专家。用于生成、改写、优化完整电商活动策划方案，并默认交付一份已经本地落地、可用浏览器打开验证的 HTML 网页版方案。覆盖淘宝/天猫、抖音电商、京东、得物、拼多多、小红书、Amazon、TikTok Shop、Shopee、Lazada、eBay、Shopify/独立站等平台的节点大促、店铺活动、平台活动、直播间活动、品类活动、品牌日、上新、清仓、会员复购、内容种草到成交、站内外联动与跨境电商活动。若用户只要商品标题/详情页文案/商品主图详情图，优先使用 product-content；若只要生成、编辑或延展单张/套组商业图片，优先使用 creative-design。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 5,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-9266bd10fe61547449fec1e6e76b7db0",
+  "fm_raw_lines": 2,
+  "body_lines": 122,
+  "body_chars": 6730,
+  "total_chars": 6995,
+  "fm": {
+   "name": "doubao-patent-drafting",
+   "description": "用户要求基于技术交底书撰写或修改中国发明、实用新型专利申请文件，或者审查已有权利要求书时使用。典型触发包括“专利撰写”“专利申请”“技术交底书”“权利要求”“说明书”“实用新型”“发明专利”。专利检索、FTO/侵权分析、无效宣告、审查意见答复、商标或著作权是相邻业务：用户只提这些时不适用本流程；与撰写需求混在一起提出时，撰写照常进行，但最终回复必须对其中每一项其他诉求逐一说明处理情况——漏掉任何一项，这次交付就是不完整的。"
+  },
+  "entries": [
+   "README.md",
+   "SKILL.md",
+   "references",
+   "scripts",
+   "sub-skills"
+  ],
+  "file_count": 7,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-94b0a64ab313c0c444497d9623686270",
+  "fm_raw_lines": 6,
+  "body_lines": 74,
+  "body_chars": 3571,
+  "total_chars": 3806,
+  "fm": {
+   "name": "lark-doc",
+   "description": "飞书/豆包在线文档（`/docx`、`/wiki`）的阅读、新建和修改以及操作思维笔记，使用此技能。不处理 Office Word(.docx)、PDF文件；创建文档副本走 drive",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli docs --help;lark-cli mindnotes --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 23,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-9a1fc87b6dfbc652321fb7471edbce13",
+  "fm_raw_lines": 2,
+  "body_lines": 37,
+  "body_chars": 1262,
+  "total_chars": 1396,
+  "fm": {
+   "name": "doubao-marketing-plan",
+   "description": "首席营销策划官。用于生成、改写、优化并默认以飞书文档/Lark Doc 交付，以首席营销策划官的全域营销能力，把用户模糊的业务诉求转化为资深操盘手会交付的实战级方案。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 5,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-9a6d62c1a3fcd6ff54318a79cffa0dd5",
+  "fm_raw_lines": 2,
+  "body_lines": 343,
+  "body_chars": 7465,
+  "total_chars": 7717,
+  "fm": {
+   "name": "doubao-novel-writing",
+   "description": "用于网文小说创作、改写、续写、诊断、卖点包装、市场调查和编辑视角分析。当用户需要写或优化开篇、第一章、前三章、章节正文、大纲、设定、人设、CP、情节桥段、简介、导语、投稿文，或要求分析相似网文、研究题材市场、拆解公开作品、模拟网文编辑审稿、制定连载规划时使用。适用于女频、男频、短篇、长篇、爽文、甜宠、悬疑、玄幻、末世、无限流等网文任务。不用于范文批量入库、小说素材库维护、小红书运营或非小说类写作任务。"
+  },
+  "entries": [
+   "SKILL.md",
+   "evals",
+   "references",
+   "scripts"
+  ],
+  "file_count": 10,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-9d7a8684b608a41d194e178d6d8ab077",
+  "fm_raw_lines": 2,
+  "body_lines": 393,
+  "body_chars": 25256,
+  "total_chars": 25660,
+  "fm": {
+   "name": "doubao-academic-researcher",
+   "description": "通用学术文献调研Skill，面向研究者、学生和论文写作者在未锁定具体论文题目前摸清某学术方向、概念、机制、热点前沿、学术史或选题依据。执行系统检索、引用真实性核验、证据分级、主题聚类、交叉综合、争议与空白识别，产出结论先行、引用可追溯的结构化调研结果。触发于用户要求调研某方向、梳理研究现状或related work、查看最新进展、梳理热点前沿或学术史、找文献支撑、做选题依据、解释某概念或机制。只做文献调研与证据支撑，不产出摘要引言方法结果讨论结论式成品论文，不代写用户论文段落或文献综述章节；写作润色转doubao-academic-writing，想法评估转doubao-academic-evaluator，医学文献检索转doubao-medical-literature-search。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts",
+   "sub-skills"
+  ],
+  "file_count": 21,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-a5bed54ddd046e91809433ca10be30f8",
+  "fm_raw_lines": 2,
+  "body_lines": 164,
+  "body_chars": 9628,
+  "total_chars": 9857,
+  "fm": {
+   "name": "html",
+   "description": "专门设计、生成和修改可直接在浏览器中打开的 HTML 页面或已发布的 Miaoda 妙搭链接。交付物以独立 .html 文件为主，可包含内联或本地 CSS、JavaScript，支持页面布局、视觉样式、交互效果、响应式适配、组件设计和内容展示。适用于静态网页、单页展示、活动页、原型页、HTML 模板及页面片段。不处理前后端工程、应用框架、服务端接口、数据库、用户系统、构建部署或运营数据。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 9,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-a73a1dfd0b0dba29339b610fb312483a",
+  "fm_raw_lines": 2,
+  "body_lines": 425,
+  "body_chars": 7039,
+  "total_chars": 7269,
+  "fm": {
+   "name": "doubao-ultimate-guide",
+   "description": "统一攻略创作总控 Skill：根据用户需求路由到旅游攻略、健身攻略、美食烹饪教程、游戏攻略四个分支，默认先创建飞书/Lark 文档容器，再读取对应分支 Skill 生成内容并写入同一个文档。适用于旅行行程、训练健身、菜谱烹饪、游戏实战攻略等中文攻略类创作；不适用于泛资讯、商业分析、医疗诊断、金融投资、法律意见、纯文案包装、无明确攻略目标或不安全/违规请求。"
+  },
+  "entries": [
+   "SKILL.md",
+   "branches"
+  ],
+  "file_count": 64,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-a7eb0a21e88e2b2c761bb6194d5ce7a9",
+  "fm_raw_lines": 2,
+  "body_lines": 189,
+  "body_chars": 14202,
+  "total_chars": 14279,
+  "fm": {
+   "name": "doubao-product-content",
+   "description": "生成或优化电商商品标题、详情文案和商品页静态图片。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references",
+   "scripts"
+  ],
+  "file_count": 21,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-aa4b5b6425df400ee9f75407ba20c714",
+  "fm_raw_lines": 2,
+  "body_lines": 55,
+  "body_chars": 995,
+  "total_chars": 1163,
+  "fm": {
+   "name": "doubao-product-selection",
+   "description": "电商选品与品类机会分析技能。根据商家的预算、目标平台、货源优势，按\"市场需求×竞争度×利润空间×季节性×复购率\"五维打分，输出3-5个候选品类及切入建议。适用于新手不知道卖什么、老商家想拓新品类、想判断某个品值不值得进货的场景。"
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-aceb00b7207087342325d6fcc46a7981",
+  "fm_raw_lines": 2,
+  "body_lines": 255,
+  "body_chars": 5082,
+  "total_chars": 5256,
+  "fm": {
+   "name": "doubao-sentiment-tracker",
+   "description": "当用户在网页端或电脑客户端需要进行舆情监控、调研、社交媒体反馈收集、用户评价、品牌声量追踪时使用。支持微博、知乎、即刻、脉脉、B站、抖音.等多平台的舆情搜索、内容筛选和原始帖子溯源。注意：判断用户所处平台是手机端时，禁止触发这个skill。"
+  },
+  "entries": [
+   "LICENSE.txt",
+   "SKILL.md",
+   "agents",
+   "references"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-afc0aaec9a5ef56bbcb128e81327f28d",
+  "fm_raw_lines": 2,
+  "body_lines": 284,
+  "body_chars": 10068,
+  "total_chars": 10180,
+  "fm": {
+   "name": "doubao-pdf",
+   "description": "用于处理所有 PDF 相关任务，包括读取、创建、编辑、转换、内容提取、页面处理、表单填写和扫描件解析。用户提供、提及或要求生成 PDF 时使用。"
+  },
+  "entries": [
+   "SKILL.md",
+   "editing.md",
+   "forms.md",
+   "reference.md",
+   "requirements.txt",
+   "scripts"
+  ],
+  "file_count": 15,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-b13f8e677a563c7fad5d5cb971f17cb2",
+  "fm_raw_lines": 2,
+  "body_lines": 498,
+  "body_chars": 24235,
+  "total_chars": 24485,
+  "fm": {
+   "name": "doubao-app-builder",
+   "description": "统一处理应用级和工程级产品的设计、开发、编辑及产物问答（单页html和h5的开发和设计不要使用这个skill）。当用户明确点名「妙搭」时请使用本技能。适用于全栈应用，包括多页面或多文件工程、前端框架、后端服务、API、数据库、登录权限、业务逻辑、构建运行和发布部署。也支持基于 PRD、文档、截图或素材开发应用，以及对已有应用新增功能、调整页面、修复 Bug、分析源码、排查运行错误和查询运营或发布状态。"
+  },
+  "entries": [
+   "SKILL.md",
+   "reference"
+  ],
+  "file_count": 15,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-b44daad2dd2dfef2fbdb73c43b8069cb",
+  "fm_raw_lines": 2,
+  "body_lines": 128,
+  "body_chars": 6543,
+  "total_chars": 6679,
+  "fm": {
+   "name": "student-discount-application",
+   "description": "办理豆包专业版学生优惠申请：引导用户绑定抖音、完成学生认证并领取权益。仅当用户明确提出申请、继续办理或查询申请状态时加载；单纯咨询优惠或诉求不明确时不加载。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references"
+  ],
+  "file_count": 13,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-bc261fdc23e8573a1e4f548da63201fa",
+  "fm_raw_lines": 2,
+  "body_lines": 294,
+  "body_chars": 10606,
+  "total_chars": 10786,
+  "fm": {
+   "name": "doubao-private-company",
+   "description": "评估一级市场、私募股权或创业项目的初步投资价值，基于BP、Deck、财务和访谈资料输出Screening Report、投资逻辑、红旗、情景、尽调缺口和初步建议。用于项目初筛、是否进入下一轮尽调或是否安排首次会议。不要替代完整尽调、法律意见或正式IC审批。"
+  },
+  "entries": [
+   ".git",
+   "SKILL.md",
+   "config",
+   "evals",
+   "references",
+   "schemas",
+   "scripts",
+   "tests"
+  ],
+  "file_count": 163,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-c226a9fcc54de98ccc92aac20f4fb767",
+  "fm_raw_lines": 3,
+  "body_lines": 171,
+  "body_chars": 5314,
+  "total_chars": 5513,
+  "fm": {
+   "name": "doubao-earnings-analysis",
+   "description": "上市公司财报/季报/年报/业绩的深度因果分析，覆盖A股、港股、美股和中概股。用于解读财报表现、亮点/风险、收入利润等指标变动、超预期或低于预期原因，以及针对毛利率、现金流、费用率等具体变量的归因问题。不用于纯股价、估值、评级、目标价、非财报新闻或未锚定具体公司报告期的宏观行业讨论。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 23,
+  "desc_block_scalar": true
+ },
+ {
+  "dir": "skill-c25e1a6d14b8b3751923b8def385bb24",
+  "fm_raw_lines": 2,
+  "body_lines": 269,
+  "body_chars": 8307,
+  "total_chars": 8475,
+  "fm": {
+   "name": "doubao-cron-scheduler",
+   "description": "'创建、查看、更新或删除定时任务：一次性提醒、周期任务、后台监控、多轮编辑已有任务、登录态/权限敏感任务。用于用户要求提醒我、稍后检查、持续关注、每天/每周/每小时运行、创建定时任务/提醒/监控、修改/暂停/删除刚才或已有定时任务。'"
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-c2626f849256b8e5c00651ff69addb8e",
+  "fm_raw_lines": 2,
+  "body_lines": 100,
+  "body_chars": 3564,
+  "total_chars": 3751,
+  "fm": {
+   "name": "doubao-visualization",
+   "description": "当回答涉及趋势、占比、比较、流程、机制、因果、架构、关系、时间线、状态机、算法步骤、参数变化、原图证据，或用户明确要求图表、图解、标注、动态/交互演示时使用。优先用 ECharts、确定性 HTML/SVG 或原图叠加；不承接地图、附件交付、海报、头像、写实图片和艺术插画。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "examples",
+   "references",
+   "schemas",
+   "scripts"
+  ],
+  "file_count": 25,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-c7fdfe955913a17baea1a8b6753a5b1a",
+  "fm_raw_lines": 2,
+  "body_lines": 334,
+  "body_chars": 6963,
+  "total_chars": 7279,
+  "fm": {
+   "name": "doubao-contract-reviewer",
+   "description": "doubao-contract-reviewer 是面向大众用户的合同审查 Skill，适合在豆包/豆包 Turbo 中审查各类合同。用户上传合同或询问“帮我审合同、合同有没有问题、这份合同能不能签、合同风险、合同把关、legal review”时必须使用。本 Skill 强制输出比裸跑更有用的结构化审查：先判断我方立场，再按交易模块识别风险，区分“必改风险 / 可争取优化项 / 形式完善项”，并给出可直接替换或补充的修改文本。适用于保密、买卖、服务、委托、借调、SaaS、许可、合作、租赁、渠道、数据处理等泛合同场景。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 4,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-ca6f46167a165dd50d214b44ddecd4f2",
+  "fm_raw_lines": 2,
+  "body_lines": 86,
+  "body_chars": 3988,
+  "total_chars": 4268,
+  "fm": {
+   "name": "doubao-academic-polish",
+   "description": "学术论文正文写作、结构设计与语言润色总入口。完整起草、续写、扩写、补写或实质性修订各学科的中英文论文正文时，进入paper-write-zh或paper-write-en；只做提纲、结构诊断或重排方案时，进入paper-shape结构模式；只做忠实润色或不新增研究内容的中译英时，进入paper-shape润色模式。研究评价转/doubao-academic-evaluator；独立系统性文献调研转/doubao-literature-research。"
+  },
+  "entries": [
+   "SKILL.md",
+   "paper-shape",
+   "paper-write-en",
+   "paper-write-zh"
+  ],
+  "file_count": 53,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-cb1e094de2695ac6f6d0a00ace83d8e9",
+  "fm_raw_lines": 2,
+  "body_lines": 229,
+  "body_chars": 7610,
+  "total_chars": 7742,
+  "fm": {
+   "name": "\"doubao-compliance-assessment-public\"",
+   "description": "\"基于公开法律来源开展交互式合规评估并生成可审阅报告。用户要求评估业务法律风险、审阅 PRD、判断监管红线或生成合规报告时使用。\""
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 28,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-cb8086694dfbc1ce1c21fab63fcc1b3b",
+  "fm_raw_lines": 21,
+  "body_lines": 227,
+  "body_chars": 5864,
+  "total_chars": 6991,
+  "fm": {
+   "name": "artifact-preview",
+   "description": "Render workspace artifacts (pdf/pptx/docx/xlsx/html/png/jpg/txt/zip) into text + page screenshots + thumbnail + multi-page collages, saved under ./.preview/{hash}/. Use Read on the resulting jpg/png files to visually inspect your own deliverables before delivering them; it catches what a structural checker cannot — text truncation, colour clashes, clipped chart titles, layout drift, blank slides, CJK rendered as boxes. Triggered by: \"看看产物长什么样\", \"视觉自检\", \"preview pptx\", \"render artifact\", \"screenshot pdf\", \"渲染产物\", \"我的报告画出来好看吗\", \"图表是否完整\".",
+   "license": "Proprietary — internal use only.",
+   "compatibility": ">-",
+   "metadata": {
+    "version": "\"2.1\"",
+    "hub": "artifact-preview"
+   }
+  },
+  "entries": [
+   "README.md",
+   "SKILL.md",
+   "bin",
+   "lib",
+   "requirements.txt"
+  ],
+  "file_count": 30,
+  "desc_block_scalar": true
+ },
+ {
+  "dir": "skill-cfd0abd2a96a07786a5de1961a418b32",
+  "fm_raw_lines": 2,
+  "body_lines": 52,
+  "body_chars": 2259,
+  "total_chars": 2511,
+  "fm": {
+   "name": "doubao-academic-evaluator",
+   "description": "用资深审稿人和导师的眼光，对科研工作做\"只看不改\"的诊断。两类任务：一是评判研究想法值不值得做（打分、查新颖性、判可行性）；二是论文评审，给文章成稿挑硬伤、判断能不能投。只负责找问题、下结论、给修改方向，不替你写正文、不替你画图。要动手写作、搭结构、润色语言，请用姊妹技能 doubao-academic-polish。触发于\"帮我看看这个想法\"\"值不值得做\"\"投稿前帮我审一遍\"\"能不能投\"。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "sub-skills"
+  ],
+  "file_count": 8,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-d7376f2aa4b12b5b1f01fbd70ba002c0",
+  "fm_raw_lines": 7,
+  "body_lines": 227,
+  "body_chars": 9866,
+  "total_chars": 10145,
+  "fm": {
+   "name": "lark-calendar",
+   "version": "1.0.0",
+   "description": "\"飞书日历：管理日历日程和会议室。查看/搜索日程、创建/更新日程、管理参会人、查询忙闲和推荐时段、预定会议室。当用户需要查看日程安排、创建/修改会议、查询/预定会议室时使用。不负责：查询过去的视频会议记录（走 lark-meeting）、待办任务（走 lark-task）。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli calendar --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 15,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-d77268dcd14762bfc38cf8f3731e2153",
+  "fm_raw_lines": 2,
+  "body_lines": 84,
+  "body_chars": 2139,
+  "total_chars": 2595,
+  "fm": {
+   "name": "doubao-questionnaire-designer",
+   "description": "\"用户研究一站式助手,覆盖四大能力:①问卷设计(按调研目标产出可落地问卷,含试填优化,交付 Word/飞书文档);②访谈提纲(题量按诉求动态确定、含追问轮次/方向/触发条件的深访提纲);③开放题原声打标(五步工作流建立标签体系并批量标注);④定量问卷分析(仅需回收数据,自动识别题型、自动清洗、直接出关键发现/画像/详细发现/原声引用报告)。触发词:设计问卷、写问卷、满意度调研、NPS、访谈提纲、深访提纲、开放题打标、原声编码、VOC 分析、问卷分析、定量分析。One-stop user-research assistant: questionnaire design, interview outlines, verbatim tagging, and quantitative survey analysis. Deliverables in Word or Feishu docs.\""
+  },
+  "entries": [
+   "CHANGELOG.md",
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 6,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-da884df46a60f716b761504cc2dd0cac",
+  "fm_raw_lines": 2,
+  "body_lines": 199,
+  "body_chars": 9704,
+  "total_chars": 9944,
+  "fm": {
+   "name": "doubao-stock-screening",
+   "description": "用于 A 股、港股、美股及其他股票市场的股票筛选、候选股构建、指定股票比较、行业筛选、主题概念筛选、产业链环节筛选、策略风格筛选和龙头识别。适用于用户要求找股票、筛股票池、比较指定股票、识别行业或主题龙头、按市场/行业/主题/产业链/投资风格/透明指标排序候选标的等场景。强调动态检索、权威信源、业务证据验证、透明分组和可解释结论；禁止隐藏评分、不可解释排名和确定性投资建议。"
+  },
+  "entries": [
+   "SKILL.md",
+   "config",
+   "playbooks",
+   "references",
+   "templates"
+  ],
+  "file_count": 49,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-dd857e42d797c0b098e726e0fa0305f1",
+  "fm_raw_lines": 2,
+  "body_lines": 143,
+  "body_chars": 7970,
+  "total_chars": 8207,
+  "fm": {
+   "name": "doubao-finance-model-builder",
+   "description": "对 A 股、港股和美股上市公司执行中文、可审计且带机器阻断质量门的三表预测、DCF、LBO或可比公司估值。支持最新公告增量检索、除权除息和送转股等公司行动证据冻结、收入增速和多产品量价预测、三表勾稽、FCFF/WACC/终值、分层债务与回报、同行筛选和相对估值。用于财务预测、预算、目标价、杠杆回报或交易可比分析；不要用于自动下单、纯信用评级或并购法律意见。"
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 116,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-e0704b9983124d9890a724cb2147914d",
+  "fm_raw_lines": 2,
+  "body_lines": 130,
+  "body_chars": 7746,
+  "total_chars": 7961,
+  "fm": {
+   "name": "doubao-daily-stock",
+   "description": "用于单一上市股票的个股日报，解释涨跌和异动原因，梳理行情、资金流、新闻公告、板块联动、技术面、预期与风险。适用于“某股今天为什么涨跌”“做个日报”“近期表现”“资金面和消息面”等问题；默认先输出结构完整、观点深入的对话版分析，并询问是否写入飞书文档；不用于长期商业模式/护城河、财报业绩、行业/板块、多股主题、一级市场或大盘事件解读。"
+  },
+  "entries": [
+   "SKILL.md",
+   "agents",
+   "references"
+  ],
+  "file_count": 9,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-e3aa922fc5bafa4b46649679d1798705",
+  "fm_raw_lines": 6,
+  "body_lines": 544,
+  "body_chars": 13047,
+  "total_chars": 13259,
+  "fm": {
+   "name": "doubao-dpa-drafter",
+   "description": "DPA数据处理协议专业起草；当用户需要起草数据处理协议、DPA协议、数据委托处理协议、数据共同处理协议或数据对外提供协议时使用。仅做数据合规类协议起草，通用商务合同或非数据类合同请改用对应 skill",
+   "metadata": {
+    "dependency": "",
+    "python": "",
+    "_list": [
+     "python-docx==0.8.11"
+    ]
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 15,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-e8b6eb9f86c79e56fc70a1e3ed19a786",
+  "fm_raw_lines": 3,
+  "body_lines": 303,
+  "body_chars": 18178,
+  "total_chars": 19026,
+  "fm": {
+   "name": "browser-use-automation",
+   "description": "\"Control websites exclusively through the CNGC Browser Use stack: `computer_use_tool` with `plane=\\\"bu\\\"` and `seed_browser_use`. Use whenever the user asks to open or navigate a web page, inspect visible content or UI state, click, type, select, upload or download files, take screenshots, manage tabs, test a web flow, or troubleshoot browser behavior. Also use for Taobao/Tmall, Weibo, and Xiaohongshu workflows. Site references provide business rules only. Whenever login, reauthentication, QR/SMS/OTP, CAPTCHA, identity verification, or user takeover is required, always call `interaction.request_action` with `type=\\\"browserControl\\\"`; never rely on a text-only login request.\"",
+   "compatibility": "\"Requires computer_use_tool with the bu plane, seed_browser_use, and interaction.request_action.\""
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 10,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-e9640cf7dd453cd61a9e1de4e5cf2974",
+  "fm_raw_lines": 14,
+  "body_lines": 43,
+  "body_chars": 4874,
+  "total_chars": 5427,
+  "fm": {
+   "name": "byted-mediakit-image",
+   "version": "0.2.1",
+   "license": "MIT",
+   "description": "\"面向单张或批量图片的视觉处理、质量优化、内容理解与基础编辑目标，适用于图片尺寸缩放与体积治理、质量优先缩小体积、明确体积上限/质量值/格式转换的压缩、元信息探测、裁剪旋转翻转与圆角、颜色与锐化清晰度调整、负片、模糊与打码、水印、背景移除、文字识别、画质评估与智能裁剪等。若对象和目标族已明确属于图片优化、图片理解、图片隐私保护或图片基础编辑，但具体做法不确定，可先加载本 Skill 探索；若只说有图片而未说明业务目标，应先澄清。视频画面裁剪、字幕压制、混音合流或视频局部模糊等成片编辑应路由到 editing；视频抽帧、视频理解、视频增强或视频字幕擦除应路由到 video。\"",
+   "permissions": [
+    "shell"
+   ],
+   "metadata": {
+    "requires": "",
+    "bins": "",
+    "_list": [
+     "mediakit-cli"
+    ],
+    "cliHelp": "mediakit-cli image --help",
+    "product": "mediakit-cli-doubao/skills",
+    "domain": "image",
+    "capability_count": "21"
+   }
+  },
+  "entries": [
+   "LICENSE",
+   "SKILL.md",
+   "reference"
+  ],
+  "file_count": 24,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-eaf5c493536763f20f60b9fa54a3a7f2",
+  "fm_raw_lines": 2,
+  "body_lines": 344,
+  "body_chars": 10167,
+  "total_chars": 10477,
+  "fm": {
+   "name": "doubao-headlines-calendar",
+   "description": "跨平台内容生成、改写、评估和A/B测试标题，并结合账号定位、受众、产能和节点规划可执行的周度或月度内容选题日历。用于爆款标题、多平台标题适配、标题优化、标题拆解、A/B标题、周选题、月度排期、栏目规划、热点日历和新媒体内容策划；不用于直接写完整文章、小说、脚本、PPT或其他成品。能力范围外或多意图任务先说明边界并提供可转化、分模块交付方案。除非用户明确指定其他格式，必须实际创建、写入并校验飞书/Lark文档后返回可访问链接；不得用Markdown、Word、PDF或对话文本静默降级。总标题数不超过30个。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 8,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-ee68dae572e30ba038330591455a9f6e",
+  "fm_raw_lines": 3,
+  "body_lines": 196,
+  "body_chars": 6203,
+  "total_chars": 6465,
+  "fm": {
+   "name": "doubao-personal-info-audit",
+   "description": "开展中国个人信息保护合规审计、审计触发判断、证据登记与证明力评价、事实和不确定性分析、数据分类、处理活动盘点、法律角色和处理情形识别、适用规则检索、上下位法与配套规范衔接、26模块107子项评价、风险与整改设计，并生成可追溯的Word审计报告和Excel底稿。用于个人信息保护法、网络数据安全、App/SDK、敏感个人信息、未成年人、人脸识别、自动化决策、AI、委托共享、数据出境、监管检查准备及整改复核任务。"
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references",
+   "scripts"
+  ],
+  "file_count": 69,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-ef15d08b8a132f0f8879f7ea7dd72dc0",
+  "fm_raw_lines": 2,
+  "body_lines": 326,
+  "body_chars": 17048,
+  "total_chars": 17457,
+  "fm": {
+   "name": "doubao-enterprise-search",
+   "description": "判断是否调用 `enterprise_agentic_search` 工具前，必须先完整读取 `doubao-enterprise-search` skill。适用场景包括：用户显式使用 /doubao-enterprise-search；问题明确或高度可能依赖企业内部资料、内部口径、内部系统、业务背景、历史讨论、协作记录、制度流程、员工权益、差旅报销，或内部产品、项目、客户、业务数据及非飞书通讯录 ID/UID/账号/标识；用户需要搜索、追溯、复盘或汇总会议、群聊、文档、日程、项目和人员相关信息，提炼结论、待办、风险、反馈或进展；用户需要结合公司、团队、项目、业务或协作背景完成办公写作、报告、方案、图表或其他内容创作；请求同时涉及企业内部信息和公开信息，或将会议、群聊、文档、日程、链接作为检索线索。"
+  },
+  "entries": [
+   "SKILL.md"
+  ],
+  "file_count": 1,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-f2a8c68464b3c1f80b1e8b0316fa168b",
+  "fm_raw_lines": 2,
+  "body_lines": 45,
+  "body_chars": 1980,
+  "total_chars": 2147,
+  "fm": {
+   "name": "doubao-newmedia-writing",
+   "description": "用于生成、改写、优化并默认以飞书文档/Lark Doc 交付中文新媒体内容，覆盖小红书图文笔记、微信公众号文章、3 分钟以内短视频分镜脚本，以及上述类型的复合创作方案；明确命中创作类型后必须创建并交付飞书文档/Lark Doc。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 23,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-f3f247c3161b9ff60d89e8464df2af39",
+  "fm_raw_lines": 2,
+  "body_lines": 110,
+  "body_chars": 8562,
+  "total_chars": 8940,
+  "fm": {
+   "name": "doubao-announcement-analysis",
+   "description": "搜索并解读上市公司公告，覆盖 A股（沪深北）、港股（HKEX）、美股（SEC EDGAR）三大市场。支持两种模式：①单条/多条具体公告的深度解读（拆解公告要点、判断重要性、给出多视角分析）；②按公司或时间段批量监控并生成公告摘要合集（时效优先、覆盖面广）。适用于业绩报告解读、重大合同/协议公告解读、股权变动（增减持/回购）解读、股权激励（期权/限制性股票/员工持股计划）解读、监管问询函/关注函及回复公告解读、停牌复牌与退市风险公告解读，以及公司近期公告的批量跟踪。不适用于不依赖具体公告原文的行业研究、公司深度研究报告（这类任务用 doubao-company-analysis / doubao-industry-analysis）。"
+  },
+  "entries": [
+   "SKILL.md",
+   "references",
+   "scripts"
+  ],
+  "file_count": 27,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-f7ebd5ce4aa1315792405b40fe4bed08",
+  "fm_raw_lines": 2,
+  "body_lines": 91,
+  "body_chars": 4578,
+  "total_chars": 4731,
+  "fm": {
+   "name": "doubao-research-proposal",
+   "description": "用于国自然、国社科等基金申请、开题报告、博士后/人才计划、研究计划书等学术提案的撰写、审查和优化；当用户需要基于已有研究成果形成立项书、区分事实与 AI 建议、检查任务书一致性、补强论证逻辑时使用。"
+  },
+  "entries": [
+   "SKILL.md",
+   "assets",
+   "references"
+  ],
+  "file_count": 14,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-fce738a0eeb3fa43b81adac5f74a62fa",
+  "fm_raw_lines": 2,
+  "body_lines": 129,
+  "body_chars": 3982,
+  "total_chars": 4208,
+  "fm": {
+   "name": "doubao-video-extract",
+   "description": "可提取、下载、解析、理解在线视频或本地视频文件。支持快手、B 站、AcFun、芒果 TV、梨视频、微博、X 平台、Facebook、Instagram、TikTok、Twitch、YouTube等视频平台、视频直链和本地视频。可提取内容包含视频的音频、字幕、逐字稿、文案、脚本、总结、时间轴。可理解的视频内容包含画面、人物、物体、动作、界面等视觉元素。"
+  },
+  "entries": [
+   "SKILL.md",
+   "dependencies.json",
+   "references",
+   "scripts"
+  ],
+  "file_count": 53,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-fd8723aef8a54dd5ff41811997d89e16",
+  "fm_raw_lines": 2,
+  "body_lines": 88,
+  "body_chars": 1889,
+  "total_chars": 2057,
+  "fm": {
+   "name": "doubao-book-writer",
+   "description": "豆包办公里的非虚构长文档工作台。用于手册、白皮书、报告、培训材料、人物口述、家谱、资料型书稿等长文档的新建、续写、组装、改写、扩写、精修、去AI味、质检和交付。不用于小说、网文、剧本、诗歌、世界观设定、角色剧情创作、短问答、翻译或代码任务。"
+  },
+  "entries": [
+   "Makefile",
+   "SKILL.md",
+   "package-lock.json",
+   "package.json",
+   "references",
+   "scripts",
+   "sub-skills"
+  ],
+  "file_count": 72,
+  "desc_block_scalar": false
+ },
+ {
+  "dir": "skill-fe93caa28ec4b12b70c665f26c888b30",
+  "fm_raw_lines": 7,
+  "body_lines": 87,
+  "body_chars": 4170,
+  "total_chars": 4441,
+  "fm": {
+   "name": "lark-approval",
+   "version": "1.2.0",
+   "description": "\"飞书审批：查询和处理审批待办/已办/实例，搜索可发起审批定义、查看定义详情并发起原生审批实例。当用户要处理审批任务、查看审批实例、搜索或发起审批时使用。审批待办不是飞书任务；非审批类待办走 lark-task。不负责创建审批定义；三方审批定义不走原生提单。\"",
+   "metadata": {
+    "requires": "",
+    "bins": "[\"lark-cli\"]",
+    "cliHelp": "\"lark-cli approval --help\""
+   }
+  },
+  "entries": [
+   "SKILL.md",
+   "references"
+  ],
+  "file_count": 17,
+  "desc_block_scalar": false
+ }
+]

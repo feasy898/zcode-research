@@ -1,0 +1,29 @@
+==========================================================================================
+### 周报
+[oracle 确定性] 残余 diff 明细:
+    $.outputs.docx: pre='out\\周报\\case2\\文书.docx' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\周报\\case2\\文书.docx'
+    $.outputs.fields_json: pre='out\\周报\\case2\\fields.json' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\周报\\case2\\fields.json'
+[package 确定性] vs 仓内既有 package/out/周报/case2：diff 数=2
+    $.outputs.docx: pre='package\\out\\周报\\case2\\文书.docx' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\周报\\case2\\文书.docx'
+    $.outputs.fields_json: pre='package\\out\\周报\\case2\\fields.json' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\周报\\case2\\fields.json'
+[package 确定性] docx 段落文本一致=True
+[oracle ____ 位置] p0='____工作周报'; p1='填报人：赵倩\u3000\u3000部门：____\u3000\u3000周期：____'; p3='1．____'
+[package ____ 位置] p0='____工作周报'; p1='填报人：赵倩\u3000\u3000周期：____'; p3='1．____'
+[oracle 节头] p2='一、本周工作内容'; p4='二、下周工作计划'
+[package 节头] p2='一、本周工作内容'; p4='二、下周工作计划'
+==========================================================================================
+### 工作总结
+[oracle 确定性] 残余 diff 明细:
+    $.outputs.docx: pre='out\\工作总结\\case2\\文书.docx' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\工作总结\\case2\\文书.docx'
+    $.outputs.fields_json: pre='out\\工作总结\\case2\\fields.json' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\工作总结\\case2\\fields.json'
+[package 确定性] vs 仓内既有 package/out/工作总结/case2：diff 数=2
+    $.outputs.docx: pre='package\\out\\工作总结\\case2\\文书.docx' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\工作总结\\case2\\文书.docx'
+    $.outputs.fields_json: pre='package\\out\\工作总结\\case2\\fields.json' vs new='D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\工作总结\\case2\\fields.json'
+[package 确定性] docx 段落文本一致=True
+[oracle ____ 位置] p0='____2026年9月工作总结'; p4='1．____'; p7='____'
+[package ____ 位置] p0='____2026年9月工作总结'; p4='1．____'; p7='____'
+[oracle 节头] p1='一、工作回顾'; p3='二、主要成绩'; p5='三、下一步工作打算'
+[package 节头] p1='一、工作回顾'; p3='二、主要成绩'; p5='四、下一步工作打算'
+==========================================================================================
+周报 p01 [oracle] codepoints=['0x586b', '0x62a5', '0x4eba', '0xff1a', '0x8d75', '0x5029', '0x3000', '0x3000', '0x90e8', '0x95e8', '0xff1a', '0x5f', '0x5f', '0x5f'] text='填报人：赵倩\u3000\u3000部门：____\u3000\u3000周期：____'
+周报 p01 [package] codepoints=['0x586b', '0x62a5', '0x4eba', '0xff1a', '0x8d75', '0x5029', '0x3000', '0x3000', '0x5468', '0x671f', '0xff1a', '0x5f', '0x5f', '0x5f'] text='填报人：赵倩\u3000\u3000周期：____'

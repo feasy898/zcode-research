@@ -1,0 +1,6 @@
+CMD "C:\Program Files\Python312\python.exe" D:\workspace\zcode研究\skillfactory\v3\assets\office-templates\package\scripts\gen_doc.py --template 周报 --data D:\workspace\zcode研究\_ab4_armb_rep2_work\inputs\toplist.json --outdir D:\workspace\zcode研究\_ab4_armb_rep2_work\out\A\n4
+EXIT 2
+--- STDOUT ---
+
+--- STDERR ---
+错误：数据 JSON 顶层必须是对象（键值对），实际为 list

@@ -1,0 +1,6 @@
+CMD "C:\Program Files\Python312\python.exe" D:\workspace\zcode研究\skillfactory\v3\assets\office-templates\package\scripts\gen_doc.py --template 周报 --data D:\workspace\zcode研究\skillfactory\v3\assets\office-templates\oracle\inputs\周报\case1.json --outdir D:\workspace\zcode研究\_ab4_armb_rep2_work\out\A\C
+EXIT 0
+--- STDOUT ---
+已生成：D:\workspace\zcode研究\_ab4_armb_rep2_work\out\A\C\文书.docx（模板=周报，标题=研发部工作周报，字段 filled/total=7/7，必填缺失=无，模板外键=无）
+
+--- STDERR ---

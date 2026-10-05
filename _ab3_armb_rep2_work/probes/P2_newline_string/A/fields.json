@@ -1,0 +1,89 @@
+{
+  "template": "工作总结",
+  "title": "____2026年9月工作总结",
+  "filled_fields": [
+    "总结时段",
+    "工作回顾",
+    "主要成绩",
+    "存在问题",
+    "下一步工作打算",
+    "成文日期"
+  ],
+  "missing_fields": [
+    "总结主体"
+  ],
+  "fields": [
+    {
+      "name": "总结主体",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+    },
+    {
+      "name": "总结时段",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "2026年9月"
+    },
+    {
+      "name": "工作回顾",
+      "required": true,
+      "kind": "list",
+      "status": "filled",
+      "value": [
+        "合成回顾一\n合成回顾二"
+      ]
+    },
+    {
+      "name": "主要成绩",
+      "required": true,
+      "kind": "list",
+      "status": "filled",
+      "value": [
+        "合成成绩一"
+      ]
+    },
+    {
+      "name": "存在问题",
+      "required": false,
+      "kind": "list",
+      "status": "filled",
+      "value": [
+        "合成问题一"
+      ]
+    },
+    {
+      "name": "下一步工作打算",
+      "required": true,
+      "kind": "list",
+      "status": "filled",
+      "value": [
+        "合成打算一"
+      ]
+    },
+    {
+      "name": "成文日期",
+      "required": false,
+      "kind": "text",
+      "status": "filled",
+      "value": "2026年9月30日"
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "filled": 6,
+    "missing": 1,
+    "missing_required": 1,
+    "missing_required_names": [
+      "总结主体"
+    ],
+    "unknown_keys": []
+  },
+  "outputs": {
+    "docx": "D:\\workspace\\zcode研究\\_ab3_armb_rep2_work\\probes\\P2_newline_string\\A\\文书.docx",
+    "fields_json": "D:\\workspace\\zcode研究\\_ab3_armb_rep2_work\\probes\\P2_newline_string\\A\\fields.json"
+  }
+}

@@ -1,0 +1,27 @@
+[
+ {"label":"W12-catorder",".env.example":[
+   "ASR_IMAGE=placeholder/asr:dev","ASR_PORT=8001","ASR_INPUT_DIR=./data/incoming",
+   "ASR_OUTPUT_DIR=./data/asr-out","ASR_MODEL=base",
+   "MINUTES_IMAGE=placeholder/minutes:dev","MINUTES_PORT=8002","MINUTES_INPUT_DIR=./data/asr-out",
+   "MINUTES_OUTPUT_DIR=./data/minutes-out",
+   "TODO_IMAGE=placeholder/todo:dev","TODO_PORT=8003","TODO_DATA_DIR=./data/todo"]},
+ {"label":"W12-blank2-retest",".env.example":[
+   "ASR_IMAGE=placeholder/asr:dev","ASR_PORT=8001","ASR_INPUT_DIR=./data/incoming",
+   "ASR_OUTPUT_DIR=./data/asr-out","ASR_MODEL=base",
+   "MINUTES_IMAGE=placeholder/minutes:dev","MINUTES_PORT=8002","MINUTES_INPUT_DIR=./data/asr-out",
+   "MINUTES_OUTPUT_DIR=./data/minutes-out","TODO_IMAGE=placeholder/todo:dev","TODO_PORT=8003",
+   "TODO_DATA_DIR=./data/todo",""]},
+ {"label":"W12-x1",".env.example":["ASR_PORT=8001","MINUTES_IMAGE=placeholder/minutes:dev"]},
+ {"label":"W12-x2",".env.example":["MINUTES_PORT=8002","TODO_IMAGE=placeholder/todo:dev"]},
+ {"label":"W12-x3",".env.example":["ASR_IMAGE=placeholder/asr:dev","MINUTES_IMAGE=placeholder/minutes:dev"]},
+ {"label":"W12-x4",".env.example":["MINUTES_IMAGE=placeholder/minutes:dev","TODO_IMAGE=placeholder/todo:dev"]},
+ {"label":"W12-x5",".env.example":["ASR_MODEL=base","MINUTES_IMAGE=placeholder/minutes:dev"]},
+ {"label":"W12-x6",".env.example":["ASR_MODEL=base","TODO_DATA_DIR=./data/todo"]},
+ {"label":"W12-x7",".env.example":["MINUTES_OUTPUT_DIR=./data/minutes-out","TODO_DATA_DIR=./data/todo"]},
+ {"label":"W12-x8",".env.example":["TODO_DATA_DIR=./data/todo","ASR_IMAGE=placeholder/asr:dev"]},
+ {"label":"W12-min1",".env.example":["MINUTES_IMAGE=placeholder/minutes:dev","MINUTES_PORT=8002"]},
+ {"label":"W12-min2",".env.example":["MINUTES_PORT=8002","MINUTES_INPUT_DIR=./data/asr-out"]},
+ {"label":"W12-min3",".env.example":["MINUTES_INPUT_DIR=./data/asr-out","MINUTES_OUTPUT_DIR=./data/minutes-out"]},
+ {"label":"W12-todo1",".env.example":["TODO_IMAGE=placeholder/todo:dev","TODO_PORT=8003"]},
+ {"label":"W12-todo2",".env.example":["TODO_PORT=8003","TODO_DATA_DIR=./data/todo"]}
+]

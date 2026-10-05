@@ -1,0 +1,318 @@
+[
+  {
+    "pass": 1,
+    "case": "T1-invalid-template",
+    "impl": "package",
+    "template": "证书",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python package/scripts/gen_doc.py --template 证书 --data oracle/inputs/周报/case1.json --outdir out/pass1/package/T1-invalid-template",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "usage: gen_doc.py [-h] --template {周报,请示函,会议通知,工作总结} --data DATA --outdir\r\n                  OUTDIR\r\ngen_doc.py: error: argument --template: invalid choice: '证书' (choose from 周报, 请示函, 会议通知, 工作总结)",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.39
+  },
+  {
+    "pass": 1,
+    "case": "T1-invalid-template",
+    "impl": "oracle",
+    "template": "证书",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python oracle/oracle.py --template 证书 --data oracle/inputs/周报/case1.json --outdir out/pass1/oracle/T1-invalid-template",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "usage: oracle.py [-h] --template {周报,请示函,会议通知,工作总结} --data DATA --outdir\r\n                 OUTDIR\r\noracle.py: error: argument --template: invalid choice: '证书' (choose from 周报, 请示函, 会议通知, 工作总结)",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.5
+  },
+  {
+    "pass": 1,
+    "case": "T2-data-missing",
+    "impl": "package",
+    "template": "周报",
+    "data": "fixtures/no-such-file.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data fixtures/no-such-file.json --outdir out/pass1/package/T2-data-missing",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "错误：数据文件不存在：D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\fixtures\\no-such-file.json",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.46
+  },
+  {
+    "pass": 1,
+    "case": "T2-data-missing",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "fixtures/no-such-file.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data fixtures/no-such-file.json --outdir out/pass1/oracle/T2-data-missing",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "[oracle] 数据文件不存在: D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\fixtures\\no-such-file.json",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.32
+  },
+  {
+    "pass": 1,
+    "case": "T3-data-not-json",
+    "impl": "package",
+    "template": "周报",
+    "data": "fixtures/notjson.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data fixtures/notjson.json --outdir out/pass1/package/T3-data-not-json",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "错误：数据文件不是合法 JSON：D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\fixtures\\notjson.json（Expecting value: line 1 column 1 (char 0)）",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.53
+  },
+  {
+    "pass": 1,
+    "case": "T3-data-not-json",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "fixtures/notjson.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data fixtures/notjson.json --outdir out/pass1/oracle/T3-data-not-json",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "[oracle] JSON 解析失败: Expecting value: line 1 column 1 (char 0)",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.54
+  },
+  {
+    "pass": 1,
+    "case": "T4-data-top-array",
+    "impl": "package",
+    "template": "周报",
+    "data": "fixtures/array.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data fixtures/array.json --outdir out/pass1/package/T4-data-top-array",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "错误：数据 JSON 顶层必须是对象（键值对），实际为 list",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.76
+  },
+  {
+    "pass": 1,
+    "case": "T4-data-top-array",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "fixtures/array.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data fixtures/array.json --outdir out/pass1/oracle/T4-data-top-array",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "[oracle] 数据必须是 JSON 对象（键值对）",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.97
+  },
+  {
+    "pass": 1,
+    "case": "C0-legal-control",
+    "impl": "package",
+    "template": "周报",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data oracle/inputs/周报/case1.json --outdir out/pass1/package/C0-legal-control",
+    "exit": 0,
+    "stdout": "已生成：D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\out\\pass1\\package\\C0-legal-control\\文书.docx（模板=周报，标题=研发部工作周报，字段 filled/total=7/7，必填缺失=无，模板外键=无）",
+    "stderr": "",
+    "outdir_created": true,
+    "outdir_files": [
+      [
+        "fields.json",
+        2045
+      ],
+      [
+        "文书.docx",
+        37164
+      ]
+    ],
+    "seconds": 2.34
+  },
+  {
+    "pass": 1,
+    "case": "C0-legal-control",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data oracle/inputs/周报/case1.json --outdir out/pass1/oracle/C0-legal-control",
+    "exit": 0,
+    "stdout": "OK template=周报 docx=D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\out\\pass1\\oracle\\C0-legal-control\\文书.docx fields=D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\out\\pass1\\oracle\\C0-legal-control\\fields.json filled=7 missing=0 missing_required=0",
+    "stderr": "",
+    "outdir_created": true,
+    "outdir_files": [
+      [
+        "fields.json",
+        2043
+      ],
+      [
+        "文书.docx",
+        37227
+      ]
+    ],
+    "seconds": 1.92
+  },
+  {
+    "pass": 2,
+    "case": "T1-invalid-template",
+    "impl": "package",
+    "template": "证书",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python package/scripts/gen_doc.py --template 证书 --data oracle/inputs/周报/case1.json --outdir out/pass2/package/T1-invalid-template",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "usage: gen_doc.py [-h] --template {周报,请示函,会议通知,工作总结} --data DATA --outdir\r\n                  OUTDIR\r\ngen_doc.py: error: argument --template: invalid choice: '证书' (choose from 周报, 请示函, 会议通知, 工作总结)",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.21
+  },
+  {
+    "pass": 2,
+    "case": "T1-invalid-template",
+    "impl": "oracle",
+    "template": "证书",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python oracle/oracle.py --template 证书 --data oracle/inputs/周报/case1.json --outdir out/pass2/oracle/T1-invalid-template",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "usage: oracle.py [-h] --template {周报,请示函,会议通知,工作总结} --data DATA --outdir\r\n                 OUTDIR\r\noracle.py: error: argument --template: invalid choice: '证书' (choose from 周报, 请示函, 会议通知, 工作总结)",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.17
+  },
+  {
+    "pass": 2,
+    "case": "T2-data-missing",
+    "impl": "package",
+    "template": "周报",
+    "data": "fixtures/no-such-file.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data fixtures/no-such-file.json --outdir out/pass2/package/T2-data-missing",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "错误：数据文件不存在：D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\fixtures\\no-such-file.json",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.4
+  },
+  {
+    "pass": 2,
+    "case": "T2-data-missing",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "fixtures/no-such-file.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data fixtures/no-such-file.json --outdir out/pass2/oracle/T2-data-missing",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "[oracle] 数据文件不存在: D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\fixtures\\no-such-file.json",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.48
+  },
+  {
+    "pass": 2,
+    "case": "T3-data-not-json",
+    "impl": "package",
+    "template": "周报",
+    "data": "fixtures/notjson.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data fixtures/notjson.json --outdir out/pass2/package/T3-data-not-json",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "错误：数据文件不是合法 JSON：D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\fixtures\\notjson.json（Expecting value: line 1 column 1 (char 0)）",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.74
+  },
+  {
+    "pass": 2,
+    "case": "T3-data-not-json",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "fixtures/notjson.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data fixtures/notjson.json --outdir out/pass2/oracle/T3-data-not-json",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "[oracle] JSON 解析失败: Expecting value: line 1 column 1 (char 0)",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 2.11
+  },
+  {
+    "pass": 2,
+    "case": "T4-data-top-array",
+    "impl": "package",
+    "template": "周报",
+    "data": "fixtures/array.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data fixtures/array.json --outdir out/pass2/package/T4-data-top-array",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "错误：数据 JSON 顶层必须是对象（键值对），实际为 list",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.7
+  },
+  {
+    "pass": 2,
+    "case": "T4-data-top-array",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "fixtures/array.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data fixtures/array.json --outdir out/pass2/oracle/T4-data-top-array",
+    "exit": 2,
+    "stdout": "",
+    "stderr": "[oracle] 数据必须是 JSON 对象（键值对）",
+    "outdir_created": false,
+    "outdir_files": null,
+    "seconds": 1.51
+  },
+  {
+    "pass": 2,
+    "case": "C0-legal-control",
+    "impl": "package",
+    "template": "周报",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python package/scripts/gen_doc.py --template 周报 --data oracle/inputs/周报/case1.json --outdir out/pass2/package/C0-legal-control",
+    "exit": 0,
+    "stdout": "已生成：D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\out\\pass2\\package\\C0-legal-control\\文书.docx（模板=周报，标题=研发部工作周报，字段 filled/total=7/7，必填缺失=无，模板外键=无）",
+    "stderr": "",
+    "outdir_created": true,
+    "outdir_files": [
+      [
+        "fields.json",
+        2045
+      ],
+      [
+        "文书.docx",
+        37164
+      ]
+    ],
+    "seconds": 1.51
+  },
+  {
+    "pass": 2,
+    "case": "C0-legal-control",
+    "impl": "oracle",
+    "template": "周报",
+    "data": "oracle/inputs/周报/case1.json",
+    "cmd": "python oracle/oracle.py --template 周报 --data oracle/inputs/周报/case1.json --outdir out/pass2/oracle/C0-legal-control",
+    "exit": 0,
+    "stdout": "OK template=周报 docx=D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\out\\pass2\\oracle\\C0-legal-control\\文书.docx fields=D:\\workspace\\zcode研究\\_ab4_arma_rep2_scratch\\out\\pass2\\oracle\\C0-legal-control\\fields.json filled=7 missing=0 missing_required=0",
+    "stderr": "",
+    "outdir_created": true,
+    "outdir_files": [
+      [
+        "fields.json",
+        2043
+      ],
+      [
+        "文书.docx",
+        37227
+      ]
+    ],
+    "seconds": 1.39
+  }
+]

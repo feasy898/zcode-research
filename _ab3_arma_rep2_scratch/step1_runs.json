@@ -1,0 +1,50 @@
+[
+  {
+    "impl": "oracle",
+    "template": "周报",
+    "cmd": "C:\\Program Files\\Python312\\python.exe D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\oracle.py ..\\..\\..\\..\\_ab3_arma_rep2_scratch\\--template 周报 --data D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\inputs\\周报\\case2.json --outdir D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\周报\\case2",
+    "exit": 0,
+    "stdout": "OK template=周报 docx=D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\周报\\case2\\文书.docx fields=D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\周报\\case2\\fields.json filled=3 missing=4 missing_required=3",
+    "stderr": "",
+    "files": [
+      "fields.json",
+      "文书.docx"
+    ]
+  },
+  {
+    "impl": "package",
+    "template": "周报",
+    "cmd": "C:\\Program Files\\Python312\\python.exe D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\package\\scripts\\gen_doc.py ..\\..\\..\\..\\_ab3_arma_rep2_scratch\\--template 周报 --data D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\inputs\\周报\\case2.json --outdir D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\周报\\case2",
+    "exit": 0,
+    "stdout": "已生成：D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\周报\\case2\\文书.docx（模板=周报，标题=____工作周报，字段 filled/total=3/7，必填缺失=['部门', '周期', '本周工作内容']，模板外键=无）",
+    "stderr": "",
+    "files": [
+      "fields.json",
+      "文书.docx"
+    ]
+  },
+  {
+    "impl": "oracle",
+    "template": "工作总结",
+    "cmd": "C:\\Program Files\\Python312\\python.exe D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\oracle.py ..\\..\\..\\..\\_ab3_arma_rep2_scratch\\--template 工作总结 --data D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\inputs\\工作总结\\case2.json --outdir D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\工作总结\\case2",
+    "exit": 0,
+    "stdout": "OK template=工作总结 docx=D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\工作总结\\case2\\文书.docx fields=D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\oracle\\工作总结\\case2\\fields.json filled=3 missing=4 missing_required=2",
+    "stderr": "",
+    "files": [
+      "fields.json",
+      "文书.docx"
+    ]
+  },
+  {
+    "impl": "package",
+    "template": "工作总结",
+    "cmd": "C:\\Program Files\\Python312\\python.exe D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\package\\scripts\\gen_doc.py ..\\..\\..\\..\\_ab3_arma_rep2_scratch\\--template 工作总结 --data D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\inputs\\工作总结\\case2.json --outdir D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\工作总结\\case2",
+    "exit": 0,
+    "stdout": "已生成：D:\\workspace\\zcode研究\\_ab3_arma_rep2_scratch\\out\\package\\工作总结\\case2\\文书.docx（模板=工作总结，标题=____2026年9月工作总结，字段 filled/total=3/7，必填缺失=['总结主体', '主要成绩']，模板外键=无）",
+    "stderr": "",
+    "files": [
+      "fields.json",
+      "文书.docx"
+    ]
+  }
+]

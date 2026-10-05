@@ -1,0 +1,32 @@
+[
+ {"label":"W5-env-b1",".env.example":["ASR_INPUT_DIR=./data/audio","ASR_INPUT_DIR=./data/asr-audio","ASR_INPUT_DIR=./data/asr-stdin"]},
+ {"label":"W5-env-b2",".env.example":["ASR_INPUT_DIR=./data/incoming","ASR_INPUT_DIR=./data/asr-src","ASR_INPUT_DIR=./data/src"]},
+ {"label":"W5-dep-B1","DEPLOY.md":[
+   "# 三服务部署包部署指南（asr / minutes / todo）",
+   "> 由 gen_deploy.py 生成；服务集：asr, minutes, todo。验收口径：validate.py 七项检查全绿。",
+   "## 一、三条命令完成部署",
+   "```bash",
+   "# 1) 生成环境配置（占位默认值，可先不改）",
+   "cp .env.example .env",
+   "# 2) 启动全部服务",
+   "docker compose up -d"]},
+ {"label":"W5-dep-B2","DEPLOY.md":[
+   "# 3) 查看容器状态",
+   "docker compose ps",
+   "```",
+   "## 二、服务与端口",
+   "| 服务 | 说明 | 宿主端口 | 容器端口 | 健康检查 |",
+   "| --- | --- | --- | --- | --- |",
+   "| asr | 语音识别 | 8001 | 8000 | curl -fsS http://127.0.0.1:8001/healthz |",
+   "| minutes | 会议纪要 | 8002 | 8000 | curl -fsS http://127.0.0.1:8002/healthz |"]},
+ {"label":"W5-comp-networks","docker-compose.yml":["    networks:","      - default"]},
+ {"label":"W5-comp-capdrop","docker-compose.yml":["    cap_drop:","      - ALL"]},
+ {"label":"W5-comp-litenv","docker-compose.yml":["      TZ: Asia/Shanghai","      PYTHONUNBUFFERED: \"1\""]},
+ {"label":"W5-comp-misc1","docker-compose.yml":["    read_only: true","    privileged: false","    user: \"1000:1000\"","    working_dir: /app"]},
+ {"label":"W5-comp-banner","docker-compose.yml":[
+   "# ==============================================================================",
+   "# 三服务部署包 docker-compose.yml（由 gen_deploy.py 生成）",
+   "# 镜像均为占位，部署前请替换（详见 DEPLOY.md）"]},
+ {"label":"W5-comp-depends","docker-compose.yml":["    depends_on:","      - asr"]},
+ {"label":"W5-comp-ulimit","docker-compose.yml":["    ulimits:","      nofile:","        soft: 65536"]}
+]

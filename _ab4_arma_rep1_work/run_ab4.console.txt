@@ -1,0 +1,59 @@
+#### ENTRY POINTS (existence by name only) ####
+[A] exe=C:\Program Files\Python312\python.exe script=D:\workspace\zcode研究\skillfactory\v3\assets\office-templates\package\scripts\gen_doc.py exists=True
+[B] exe=C:\Program Files\Python312\python.exe script=D:\workspace\zcode研究\skillfactory\v3\assets\office-templates\oracle\oracle.py exists=True
+[legal input] D:\workspace\zcode研究\skillfactory\v3\assets\office-templates\oracle\inputs\周报\case1.json exists=True size=456B
+
+#### LOCAL INVALID INPUTS (constructed in scratch, contents shown verbatim) ####
+not_json.txt: 69B sha256=cc0b45e1f0efed63 content='这不是JSON：键＝值；第二项 ＝ 值2。{未闭合的伪JSON'
+top_level_array.json: 23B sha256=7189030ac42c2ce2 content='["数组", "非对象"]'
+nonexistent path (never created): D:\workspace\zcode研究\_ab4_arma_rep1_work\inputs\nonexistent_不存在.json
+
+#### RUNS (cwd=scratch; --outdir fresh per run) ####
+[A] g1_template_证书: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: "usage: gen_doc.py [-h] --template {周报,请示函,会议通知,工作总结} --data DATA --outdir\n                  OUTDIR\ngen_doc.py: error: argument --template: invalid choice: '证书' (choose from 周报, 请示函, 会议通知, 工作总结)"
+    residue: (none)
+[A] g2_data_文件不存在: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: '错误：数据文件不存在：D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\inputs\\nonexistent_不存在.json'
+    residue: (none)
+[A] g3_data_非JSON: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: '错误：数据文件不是合法 JSON：D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\inputs\\not_json.txt（Expecting value: line 1 column 1 (char 0)）'
+    residue: (none)
+[A] g4_data_顶层非对象: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: '错误：数据 JSON 顶层必须是对象（键值对），实际为 list'
+    residue: (none)
+[A] g0_合法对照: exit=0 outdir={'fields.json': 2011, '文书.docx': 37164}
+    stdout: '已生成：D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\A\\g0_合法对照\\out\\文书.docx（模板=周报，标题=研发部工作周报，字段 filled/total=7/7，必填缺失=无，模板外键=无）'
+    stderr: ''
+    residue: NEW     A\g0_合法对照\out\fields.json  size=2011; NEW     A\g0_合法对照\out\文书.docx  size=37164
+[B] g1_template_证书: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: "usage: oracle.py [-h] --template {周报,请示函,会议通知,工作总结} --data DATA --outdir\n                 OUTDIR\noracle.py: error: argument --template: invalid choice: '证书' (choose from 周报, 请示函, 会议通知, 工作总结)"
+    residue: (none)
+[B] g2_data_文件不存在: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: '[oracle] 数据文件不存在: D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\inputs\\nonexistent_不存在.json'
+    residue: (none)
+[B] g3_data_非JSON: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: '[oracle] JSON 解析失败: Expecting value: line 1 column 1 (char 0)'
+    residue: (none)
+[B] g4_data_顶层非对象: exit=2 outdir=MISSING
+    stdout: ''
+    stderr: '[oracle] 数据必须是 JSON 对象（键值对）'
+    residue: (none)
+[B] g0_合法对照: exit=0 outdir={'fields.json': 2011, '文书.docx': 37227}
+    stdout: 'OK template=周报 docx=D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\B\\g0_合法对照\\out\\文书.docx fields=D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\B\\g0_合法对照\\out\\fields.json filled=7 missing=0 missing_required=0'
+    stderr: ''
+    residue: NEW     B\g0_合法对照\out\fields.json  size=2011; NEW     B\g0_合法对照\out\文书.docx  size=37227
+
+#### SKILLFACTORY RESIDUE CHECK (names/sizes only — no contents) ####
+(no structural change under watched skillfactory roots)
+
+#### CONTROL PRODUCTS VALIDITY (g0) ####
+[A] 文书.docx valid zip=True entries=17 has_word/document.xml=True
+[B] 文书.docx valid zip=True entries=17 has_word/document.xml=True
+DONE

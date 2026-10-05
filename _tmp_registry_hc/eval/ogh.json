@@ -1,0 +1,59 @@
+[PASS] root-resolution      被测: 传入根即包根: D:\workspace\zcode研究\skillfactory\v3\assets\office-guard-hooks\package | 参照: 传入根即包根: D:\workspace\zcode研究\skillfactory\v3\assets\office-guard-hooks\oracle
+[PASS] reference-baseline   参照根 D:\workspace\zcode研究\skillfactory\v3\assets\office-guard-hooks\oracle 必备文件齐全
+[PASS] structure            被测根 D:\workspace\zcode研究\skillfactory\v3\assets\office-guard-hooks\package 必备文件齐全
+[PASS] fixtures-generated   6 个 fixtures 生成并就位 (D:\workspace\zcode研究\skillfactory\v3\assets\office-guard-hooks\package\tests\fixtures)
+[PASS] self-suite           run_tests.py exit=0（全部 fixtures 断言通过）
+[PASS] invalid-json-stdin   4 次非法 stdin 子进程均 exit 2 且无 Traceback
+[PASS] hooks-json-config    hooks.json 合法; 事件=PostToolUse
+{
+  "runner": "skillfactory/v3/assets/office-guard-hooks/eval/runner.py",
+  "tested_root": "D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\package",
+  "reference_root": "D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\oracle",
+  "resolved_tested_root": "D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\package",
+  "resolved_reference_root": "D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\oracle",
+  "ok": true,
+  "checks": [
+    {
+      "id": "root-resolution",
+      "name": "被测/参照根按解析规则得到实际评测根",
+      "passed": true,
+      "detail": "被测: 传入根即包根: D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\package | 参照: 传入根即包根: D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\oracle"
+    },
+    {
+      "id": "reference-baseline",
+      "name": "参照产物根必备文件齐全",
+      "passed": true,
+      "detail": "参照根 D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\oracle 必备文件齐全"
+    },
+    {
+      "id": "structure",
+      "name": "被测产物根必备文件齐全",
+      "passed": true,
+      "detail": "被测根 D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\package 必备文件齐全"
+    },
+    {
+      "id": "fixtures-generated",
+      "name": "gen_fixtures 生成 6 个 fixtures 且就位",
+      "passed": true,
+      "detail": "6 个 fixtures 生成并就位 (D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-guard-hooks\\package\\tests\\fixtures)"
+    },
+    {
+      "id": "self-suite",
+      "name": "python run_tests.py 对全部 fixtures 断言通过 (exit 0)",
+      "passed": true,
+      "detail": "run_tests.py exit=0（全部 fixtures 断言通过）"
+    },
+    {
+      "id": "invalid-json-stdin",
+      "name": "两脚本对非法 JSON stdin 返回 exit 2 而非崩溃",
+      "passed": true,
+      "detail": "4 次非法 stdin 子进程均 exit 2 且无 Traceback"
+    },
+    {
+      "id": "hooks-json-config",
+      "name": "hooks.json 合法且事件名符合 Claude Code 文档口径",
+      "passed": true,
+      "detail": "hooks.json 合法; 事件=PostToolUse"
+    }
+  ]
+}

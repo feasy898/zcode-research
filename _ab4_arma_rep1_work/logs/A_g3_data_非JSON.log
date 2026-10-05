@@ -1,0 +1,14 @@
+arm=A group=g3_data_非JSON
+--- argv ---
+['C:\\Program Files\\Python312\\python.exe', 'D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\package\\scripts\\gen_doc.py', '--template', '周报', '--data', 'D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\inputs\\not_json.txt', '--outdir', 'D:\\workspace\\zcode研究\\_ab4_arma_rep1_work\\A\\g3_data_非JSON\\out']
+--- exit ---
+2
+--- stdout ---
+
+--- stderr ---
+错误：数据文件不是合法 JSON：D:\workspace\zcode研究\_ab4_arma_rep1_work\inputs\not_json.txt（Expecting value: line 1 column 1 (char 0)）
+
+--- outdir state after run ---
+MISSING
+--- residue (WORK tree diff) ---
+(none)

@@ -1,0 +1,77 @@
+== 周报 package fields.json ledger ==
+  template: 周报 | title: 研发部工作周报
+  filled: ['部门', '填报人', '周期', '本周工作内容', '下周工作计划', '问题与需协调事项', '报送日期'] | missing: []
+  summary: {'total': 7, 'filled': 7, 'missing': 0, 'missing_required': 0, 'missing_required_names': [], 'unknown_keys': []}
+    {'name': '部门', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '研发部'}
+    {'name': '填报人', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '王小明'}
+    {'name': '周期', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '2026-09-21 至 2026-09-27'}
+    {'name': '本周工作内容', 'required': True, 'kind': 'list', 'status': 'filled', 'value': ['完成打分器 v0.9 与评测台联调', '修复评测集 3 处标注不一致问题']}
+    {'name': '下周工作计划', 'required': True, 'kind': 'list', 'status': 'filled', 'value': ['启动回归测试全量跑批', '输出周度质量报告初稿']}
+    {'name': '问题与需协调事项', 'required': False, 'kind': 'list', 'status': 'filled', 'value': ['测试机资源紧张，需协调一台 GPU 机器']}
+    {'name': '报送日期', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '2026-09-28'}
+== 请示函 package fields.json ledger ==
+  template: 请示函 | title: 关于采购评测用 GPU 服务器的请示
+  filled: ['请示事由', '主送机关', '请示缘由', '请示事项', '请示单位', '联系人', '联系电话', '成文日期'] | missing: []
+  summary: {'total': 8, 'filled': 8, 'missing': 0, 'missing_required': 0, 'missing_required_names': [], 'unknown_keys': []}
+    {'name': '请示事由', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '采购评测用 GPU 服务器'}
+    {'name': '主送机关', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '公司总经理办公会'}
+    {'name': '请示缘由', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '因评测规模扩大，现有设备无法满足批量推理需求，评测周期被迫拉长。'}
+    {'name': '请示事项', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '申请采购 V100S 服务器 2 台，预算 12 万元，本月内完成到货验收。'}
+    {'name': '请示单位', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '评测技术部'}
+    {'name': '联系人', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '李工'}
+    {'name': '联系电话', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '010-88886666'}
+    {'name': '成文日期', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '2026年9月28日'}
+== 会议通知 package fields.json ledger ==
+  template: 会议通知 | title: 关于召开三季度质量评审会的通知
+  filled: ['会议名称', '召开单位', '主送对象', '会议时间', '会议地点', '参会人员', '会议议题', '会议要求', '联系人', '联系电话', '发文日期'] | missing: []
+  summary: {'total': 11, 'filled': 11, 'missing': 0, 'missing_required': 0, 'missing_required_names': [], 'unknown_keys': []}
+    {'name': '会议名称', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '三季度质量评审会'}
+    {'name': '召开单位', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '评测技术部'}
+    {'name': '主送对象', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '各部门、各项目组'}
+    {'name': '会议时间', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '2026年10月9日（周五）14:00'}
+    {'name': '会议地点', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '3 号楼 501 会议室'}
+    {'name': '参会人员', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '各部门负责人、各项目组 PM'}
+    {'name': '会议议题', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '三季度评测结果复盘与四季度计划'}
+    {'name': '会议要求', 'required': False, 'kind': 'list', 'status': 'filled', 'value': ['会前提交本部门质量简报', '迟到 10 分钟以上按缺席处理']}
+    {'name': '联系人', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '李工'}
+    {'name': '联系电话', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '010-88886666'}
+    {'name': '发文日期', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '2026年9月28日'}
+== 工作总结 package fields.json ledger ==
+  template: 工作总结 | title: 评测技术部2026年第三季度工作总结
+  filled: ['总结主体', '总结时段', '工作回顾', '主要成绩', '存在问题', '下一步工作打算', '成文日期'] | missing: []
+  summary: {'total': 7, 'filled': 7, 'missing': 0, 'missing_required': 0, 'missing_required_names': [], 'unknown_keys': []}
+    {'name': '总结主体', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '评测技术部'}
+    {'name': '总结时段', 'required': True, 'kind': 'text', 'status': 'filled', 'value': '2026年第三季度'}
+    {'name': '工作回顾', 'required': True, 'kind': 'list', 'status': 'filled', 'value': ['完成 P0 打分器三轮迭代', '建设 12 份评测 JSON 台账']}
+    {'name': '主要成绩', 'required': True, 'kind': 'list', 'status': 'filled', 'value': ['打分一致性从 6.1 提升到 7.4', '评测周期缩短 30%']}
+    {'name': '存在问题', 'required': False, 'kind': 'list', 'status': 'filled', 'value': ['标注规范仍有歧义', 'GPU 资源排期紧张']}
+    {'name': '下一步工作打算', 'required': True, 'kind': 'list', 'status': 'filled', 'value': ['发布标注规范 v2', '引入自动化回归评测']}
+    {'name': '成文日期', 'required': False, 'kind': 'text', 'status': 'filled', 'value': '2026年9月30日'}
+
+#### oracle fresh-vs-backup fields.json diff (what is nondeterministic) ####
+-- 周报: 4 changed line(s)
+    -  "docx": "out\\周报\\case1\\文书.docx",
+    -  "fields_json": "out\\周报\\case1\\fields.json"
+    +  "docx": "oracle\\out\\周报\\case1\\文书.docx",
+    +  "fields_json": "oracle\\out\\周报\\case1\\fields.json"
+-- 请示函: 4 changed line(s)
+    -  "docx": "out\\请示函\\case1\\文书.docx",
+    -  "fields_json": "out\\请示函\\case1\\fields.json"
+    +  "docx": "oracle\\out\\请示函\\case1\\文书.docx",
+    +  "fields_json": "oracle\\out\\请示函\\case1\\fields.json"
+-- 会议通知: 4 changed line(s)
+    -  "docx": "out\\会议通知\\case1\\文书.docx",
+    -  "fields_json": "out\\会议通知\\case1\\fields.json"
+    +  "docx": "oracle\\out\\会议通知\\case1\\文书.docx",
+    +  "fields_json": "oracle\\out\\会议通知\\case1\\fields.json"
+-- 工作总结: 4 changed line(s)
+    -  "docx": "out\\工作总结\\case1\\文书.docx",
+    -  "fields_json": "out\\工作总结\\case1\\fields.json"
+    +  "docx": "oracle\\out\\工作总结\\case1\\文书.docx",
+    +  "fields_json": "oracle\\out\\工作总结\\case1\\fields.json"
+
+#### package fresh-vs-backup docx: is diff only zip metadata? ####
+-- 周报: entry_names_equal=True content-diff entries=[] time-only-diff entries=17
+-- 请示函: entry_names_equal=True content-diff entries=[] time-only-diff entries=17
+-- 会议通知: entry_names_equal=True content-diff entries=[] time-only-diff entries=17
+-- 工作总结: entry_names_equal=True content-diff entries=[] time-only-diff entries=17

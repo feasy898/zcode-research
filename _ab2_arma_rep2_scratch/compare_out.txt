@@ -1,0 +1,552 @@
+====================================================================================================
+### 请示函 / case2
+-- input fixture keys/profile (via harness):
+     请示事由: str('延期举办季度评审会')
+     请示缘由: str('因关键评审人出差，原定会议时间无法保证评审质量。')
+     请示事项: EMPTY_STRING
+     请示单位: str('评测技术部')
+     联系人: str('李工')
+-- ledger ORACLE (full, outputs paths elided):
+   {
+    "template": "请示函",
+    "title": "关于延期举办季度评审会的请示",
+    "filled_fields": [
+     "请示事由",
+     "请示缘由",
+     "请示单位",
+     "联系人"
+    ],
+    "missing_fields": [
+     "主送机关",
+     "请示事项",
+     "联系电话",
+     "成文日期"
+    ],
+    "fields": [
+     {
+      "name": "请示事由",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "延期举办季度评审会"
+     },
+     {
+      "name": "主送机关",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "请示缘由",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "因关键评审人出差，原定会议时间无法保证评审质量。"
+     },
+     {
+      "name": "请示事项",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "请示单位",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "评测技术部"
+     },
+     {
+      "name": "联系人",
+      "required": false,
+      "kind": "text",
+      "status": "filled",
+      "value": "李工"
+     },
+     {
+      "name": "联系电话",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "成文日期",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     }
+    ],
+    "summary": {
+     "total": 8,
+     "filled": 4,
+     "missing": 4,
+     "missing_required": 2,
+     "missing_required_names": [
+      "主送机关",
+      "请示事项"
+     ],
+     "unknown_keys": []
+    },
+    "__docx_paras__": [
+     "关于延期举办季度评审会的请示",
+     "____：",
+     "因关键评审人出差，原定会议时间无法保证评审质量。",
+     "现就有关事项请示如下：",
+     "____",
+     "妥否，请批示。",
+     "联系人：李工　　联系电话：",
+     "评测技术部",
+     ""
+    ]
+   }
+-- ledger PACKAGE (full, outputs paths elided):
+   {
+    "template": "请示函",
+    "title": "关于延期举办季度评审会的请示",
+    "filled_fields": [
+     "请示事由",
+     "请示缘由",
+     "请示单位",
+     "联系人"
+    ],
+    "missing_fields": [
+     "主送机关",
+     "请示事项",
+     "联系电话",
+     "成文日期"
+    ],
+    "fields": [
+     {
+      "name": "请示事由",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "延期举办季度评审会"
+     },
+     {
+      "name": "主送机关",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "请示缘由",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "因关键评审人出差，原定会议时间无法保证评审质量。"
+     },
+     {
+      "name": "请示事项",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "请示单位",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "评测技术部"
+     },
+     {
+      "name": "联系人",
+      "required": false,
+      "kind": "text",
+      "status": "filled",
+      "value": "李工"
+     },
+     {
+      "name": "联系电话",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "成文日期",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     }
+    ],
+    "summary": {
+     "total": 8,
+     "filled": 4,
+     "missing": 4,
+     "missing_required": 2,
+     "missing_required_names": [
+      "主送机关",
+      "请示事项"
+     ],
+     "unknown_keys": []
+    },
+    "__docx_paras__": [
+     "关于延期举办季度评审会的请示",
+     "____：",
+     "因关键评审人出差，原定会议时间无法保证评审质量。",
+     "____",
+     "联系人：李工　　联系电话：",
+     "评测技术部",
+     ""
+    ]
+   }
+-- ledger deep-diff oracle vs package (excl $.outputs): 5 diff(s)
+     $.__docx_paras__: LEN oracle=9 package=7
+     $.__docx_paras__[3]: oracle='现就有关事项请示如下：' vs package='____'
+     $.__docx_paras__[4]: oracle='____' vs package='联系人：李工\u3000\u3000联系电话：'
+     $.__docx_paras__[5]: oracle='妥否，请批示。' vs package='评测技术部'
+     $.__docx_paras__[6]: oracle='联系人：李工\u3000\u3000联系电话：' vs package=''
+-- docx ORACLE paragraphs:
+     ORC P00: '关于延期举办季度评审会的请示'
+     ORC P01: '____：'
+     ORC P02: '因关键评审人出差，原定会议时间无法保证评审质量。'
+     ORC P03: '现就有关事项请示如下：'
+     ORC P04: '____'
+     ORC P05: '妥否，请批示。'
+     ORC P06: '联系人：李工\u3000\u3000联系电话：'
+     ORC P07: '评测技术部'
+     ORC P08: ''
+-- docx PACKAGE paragraphs:
+     PKG P00: '关于延期举办季度评审会的请示'
+     PKG P01: '____：'
+     PKG P02: '因关键评审人出差，原定会议时间无法保证评审质量。'
+     PKG P03: '____'
+     PKG P04: '联系人：李工\u3000\u3000联系电话：'
+     PKG P05: '评测技术部'
+     PKG P06: ''
+-- needle checks:
+     package filled_fields=['请示事由', '请示缘由', '请示单位', '联系人']
+     package missing_fields=['主送机关', '请示事项', '联系电话', '成文日期']
+     oracle filled_fields=['请示事由', '请示缘由', '请示单位', '联系人']
+     oracle missing_fields=['主送机关', '请示事项', '联系电话', '成文日期']
+     placeholder marker '____': package=2 oracle=2
+     placeholder marker '__': package=4 oracle=4
+-- determinism (fresh scratch run vs pre-existing skillfactory out backup):
+     oracle/文书.docx: fresh=6d294c4748e691a9 backup=87a4d82bae93a3ed equal=False
+     oracle/fields.json: fresh=e6cc7fa685f8cd4d backup=4dce6c7fab1e3a82 equal=False
+     package/文书.docx: fresh=3915352461836bf8 backup=b96c3c4315ef72bb equal=False
+     package/fields.json: fresh=d72004f351b21a9f backup=d20fd9fa6dfb6ca6 equal=False
+====================================================================================================
+### 会议通知 / case2
+-- input fixture keys/profile (via harness):
+     召开单位: str('评测技术部')
+     主送对象: str('各部门')
+     会议时间: str('2026年10月16日（周五）10:00')
+     会议地点: EMPTY_STRING
+     参会人员: str('全体评测组成员')
+     发文日期: str('2026年9月30日')
+     备注: str('此键不在模板字段内，用于测试 unknown_keys 记录')
+-- ledger ORACLE (full, outputs paths elided):
+   {
+    "template": "会议通知",
+    "title": "关于召开____的通知",
+    "filled_fields": [
+     "召开单位",
+     "主送对象",
+     "会议时间",
+     "参会人员",
+     "发文日期"
+    ],
+    "missing_fields": [
+     "会议名称",
+     "会议地点",
+     "会议议题",
+     "会议要求",
+     "联系人",
+     "联系电话"
+    ],
+    "fields": [
+     {
+      "name": "会议名称",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "召开单位",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "评测技术部"
+     },
+     {
+      "name": "主送对象",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "各部门"
+     },
+     {
+      "name": "会议时间",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "2026年10月16日（周五）10:00"
+     },
+     {
+      "name": "会议地点",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "参会人员",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "全体评测组成员"
+     },
+     {
+      "name": "会议议题",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "会议要求",
+      "required": false,
+      "kind": "list",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "省略该条目/小节"
+     },
+     {
+      "name": "联系人",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "联系电话",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "发文日期",
+      "required": false,
+      "kind": "text",
+      "status": "filled",
+      "value": "2026年9月30日"
+     }
+    ],
+    "summary": {
+     "total": 11,
+     "filled": 5,
+     "missing": 6,
+     "missing_required": 2,
+     "missing_required_names": [
+      "会议名称",
+      "会议地点"
+     ],
+     "unknown_keys": [
+      "备注"
+     ]
+    },
+    "__docx_paras__": [
+     "关于召开____的通知",
+     "各部门：",
+     "经研究，决定召开____。现将有关事项通知如下：",
+     "一、会议时间：2026年10月16日（周五）10:00",
+     "二、会议地点：____",
+     "三、参会人员：全体评测组成员",
+     "特此通知。",
+     "评测技术部",
+     "2026年9月30日"
+    ]
+   }
+-- ledger PACKAGE (full, outputs paths elided):
+   {
+    "template": "会议通知",
+    "title": "关于召开____的通知",
+    "filled_fields": [
+     "召开单位",
+     "主送对象",
+     "会议时间",
+     "参会人员",
+     "发文日期"
+    ],
+    "missing_fields": [
+     "会议名称",
+     "会议地点",
+     "会议议题",
+     "会议要求",
+     "联系人",
+     "联系电话"
+    ],
+    "fields": [
+     {
+      "name": "会议名称",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "召开单位",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "评测技术部"
+     },
+     {
+      "name": "主送对象",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "各部门"
+     },
+     {
+      "name": "会议时间",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "2026年10月16日（周五）10:00"
+     },
+     {
+      "name": "会议地点",
+      "required": true,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "以____占位"
+     },
+     {
+      "name": "参会人员",
+      "required": true,
+      "kind": "text",
+      "status": "filled",
+      "value": "全体评测组成员"
+     },
+     {
+      "name": "会议议题",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "会议要求",
+      "required": false,
+      "kind": "list",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "省略该条目/小节"
+     },
+     {
+      "name": "联系人",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "联系电话",
+      "required": false,
+      "kind": "text",
+      "status": "missing",
+      "value": null,
+      "rendered_as": "留空（渲染为空字符串）"
+     },
+     {
+      "name": "发文日期",
+      "required": false,
+      "kind": "text",
+      "status": "filled",
+      "value": "2026年9月30日"
+     }
+    ],
+    "summary": {
+     "total": 11,
+     "filled": 5,
+     "missing": 6,
+     "missing_required": 2,
+     "missing_required_names": [
+      "会议名称",
+      "会议地点"
+     ],
+     "unknown_keys": [
+      "备注"
+     ]
+    },
+    "__docx_paras__": [
+     "关于召开____的通知",
+     "各部门：",
+     "会议时间：2026年10月16日（周五）10:00",
+     "会议地点：____",
+     "参会人员：全体评测组成员",
+     "会议议题：",
+     "联系人：　　联系电话：",
+     "评测技术部",
+     "2026年9月30日"
+    ]
+   }
+-- ledger deep-diff oracle vs package (excl $.outputs): 5 diff(s)
+     $.__docx_paras__[2]: oracle='经研究，决定召开____。现将有关事项通知如下：' vs package='会议时间：2026年10月16日（周五）10:00'
+     $.__docx_paras__[3]: oracle='一、会议时间：2026年10月16日（周五）10:00' vs package='会议地点：____'
+     $.__docx_paras__[4]: oracle='二、会议地点：____' vs package='参会人员：全体评测组成员'
+     $.__docx_paras__[5]: oracle='三、参会人员：全体评测组成员' vs package='会议议题：'
+     $.__docx_paras__[6]: oracle='特此通知。' vs package='联系人：\u3000\u3000联系电话：'
+-- docx ORACLE paragraphs:
+     ORC P00: '关于召开____的通知'
+     ORC P01: '各部门：'
+     ORC P02: '经研究，决定召开____。现将有关事项通知如下：'
+     ORC P03: '一、会议时间：2026年10月16日（周五）10:00'
+     ORC P04: '二、会议地点：____'
+     ORC P05: '三、参会人员：全体评测组成员'
+     ORC P06: '特此通知。'
+     ORC P07: '评测技术部'
+     ORC P08: '2026年9月30日'
+-- docx PACKAGE paragraphs:
+     PKG P00: '关于召开____的通知'
+     PKG P01: '各部门：'
+     PKG P02: '会议时间：2026年10月16日（周五）10:00'
+     PKG P03: '会议地点：____'
+     PKG P04: '参会人员：全体评测组成员'
+     PKG P05: '会议议题：'
+     PKG P06: '联系人：\u3000\u3000联系电话：'
+     PKG P07: '评测技术部'
+     PKG P08: '2026年9月30日'
+-- needle checks:
+     package filled_fields=['召开单位', '主送对象', '会议时间', '参会人员', '发文日期']
+     package missing_fields=['会议名称', '会议地点', '会议议题', '会议要求', '联系人', '联系电话']
+     oracle filled_fields=['召开单位', '主送对象', '会议时间', '参会人员', '发文日期']
+     oracle missing_fields=['会议名称', '会议地点', '会议议题', '会议要求', '联系人', '联系电话']
+     placeholder marker '____': package=2 oracle=3
+     placeholder marker '__': package=4 oracle=6
+-- determinism (fresh scratch run vs pre-existing skillfactory out backup):
+     oracle/文书.docx: fresh=48aeb96cca9dc645 backup=ef4973b6fc690264 equal=False
+     oracle/fields.json: fresh=e3c17aa1086d1509 backup=edb0d80dbfb7064c equal=False
+     package/文书.docx: fresh=63cbe28cd4766bfa backup=f90528913ee2335b equal=False
+     package/fields.json: fresh=1883feb2dd64f7f2 backup=1c8cb4d6ae43b412 equal=False
+====================================================================================================
+COMPARE DONE

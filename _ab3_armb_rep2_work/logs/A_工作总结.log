@@ -1,0 +1,5 @@
+exit=0
+--- stdout ---
+已生成：D:\workspace\zcode研究\_ab3_armb_rep2_work\A\工作总结\case2\文书.docx（模板=工作总结，标题=____2026年9月工作总结，字段 filled/total=3/7，必填缺失=['总结主体', '主要成绩']，模板外键=无）
+
+--- stderr ---

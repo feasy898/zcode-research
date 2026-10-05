@@ -1,0 +1,25 @@
+### 周报 台账不变量（SKILL.md §5）
+  [oracle/周报] 错误数=0
+  [package/周报] 错误数=0
+  [oracle/周报] 标题公式预期='____工作周报' 实际='____工作周报' 一致=True
+  [package/周报] 标题公式预期='____工作周报' 实际='____工作周报' 一致=True
+### 工作总结 台账不变量（SKILL.md §5）
+  [oracle/工作总结] 错误数=0
+  [package/工作总结] 错误数=0
+  [oracle/工作总结] 标题公式预期='____2026年9月工作总结' 实际='____2026年9月工作总结' 一致=True
+  [package/工作总结] 标题公式预期='____2026年9月工作总结' 实际='____2026年9月工作总结' 一致=True
+
+### oracle 自带 verify.py（仓内 oracle/out 8 样例校验）
+exit = 0
+PASS out\会议通知\case1
+PASS out\会议通知\case2
+PASS out\周报\case1
+PASS out\周报\case2
+PASS out\工作总结\case1
+PASS out\工作总结\case2
+PASS out\请示函\case1
+PASS out\请示函\case2
+
+共 8 份产物: PASS=8 FAIL=0
+
+TOTAL ledger invariant errors (4 ledgers) = 0

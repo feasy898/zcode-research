@@ -1,0 +1,7 @@
+exit=0
+--- argv ---
+['C:\\Program Files\\Python312\\python.exe', 'D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\oracle.py', '--template', '周报', '--data', 'D:\\workspace\\zcode研究\\skillfactory\\v3\\assets\\office-templates\\oracle\\inputs\\周报\\case2.json', '--outdir', 'D:\\workspace\\zcode研究\\_ab3_armb_rep1_work\\B\\周报\\case2']
+--- stdout ---
+OK template=周报 docx=D:\workspace\zcode研究\_ab3_armb_rep1_work\B\周报\case2\文书.docx fields=D:\workspace\zcode研究\_ab3_armb_rep1_work\B\周报\case2\fields.json filled=3 missing=4 missing_required=3
+
+--- stderr ---

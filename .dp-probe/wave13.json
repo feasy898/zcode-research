@@ -1,0 +1,39 @@
+[
+ {"label":"W13-eA",".env.example":[
+   "# asr","# asr 语音识别","# —— asr 语音识别 ——","# == asr ==","# asr（语音识别）","# 语音识别","# ---- asr ----","# [asr]"]},
+ {"label":"W13-eB",".env.example":[
+   "# 三服务部署包环境变量示例","# 环境变量示例（由 gen_deploy.py 生成）","# cp .env.example .env","# 复制为 .env 使用","# .env.example","# 环境变量模板","# 部署环境变量","# 三服务部署包 .env 示例"]},
+ {"label":"W13-eC",".env.example":[
+   "# 说明：","# 注意：","# 提示：","# 使用说明：","# 部署提示：","# 单位落地提示：","# 落地提示：","# 备注："]},
+ {"label":"W13-eD",".env.example":[
+   "# 镜像","# 服务镜像","# 镜像地址","# 端口","# 宿主端口","# 服务端口","# 数据目录","# 模型"]},
+ {"label":"W13-eE",".env.example":[
+   "# 输入目录","# 输出目录","# 数据目录","# 模型名称","# 模型","# 输入路径","# 输出路径"]},
+ {"label":"W13-eF",".env.example":[
+   "# 验收：validate.py 全绿","# 验收标准：validate.py 七项全绿","# 修改后请运行 validate.py 校验",
+   "# 如需裁剪服务请用 gen_deploy.py 重新生成","# 勿手工增删变量"]},
+ {"label":"W13-eG",".env.example":[
+   "# ASR_IMAGE：服务镜像","# ASR_PORT：宿主端口","# ASR_INPUT_DIR：输入目录"]},
+ {"label":"W13-eH",".env.example":[
+   "# ==================================================","# ------------------------------------------",
+   "# ----------------------------------------------------------","##############################"]},
+ {"label":"W13-pos1",".env.example":[
+   "ASR_IMAGE=placeholder/asr:dev","ASR_PORT=8001","ASR_INPUT_DIR=./data/incoming","ASR_OUTPUT_DIR=./data/asr-out","ASR_MODEL=base",
+   "","MINUTES_IMAGE=placeholder/minutes:dev","MINUTES_PORT=8002","MINUTES_INPUT_DIR=./data/asr-out","MINUTES_OUTPUT_DIR=./data/minutes-out",
+   "","TODO_IMAGE=placeholder/todo:dev","TODO_PORT=8003","TODO_DATA_DIR=./data/todo",""]},
+ {"label":"W13-pos2",".env.example":[
+   "","ASR_IMAGE=placeholder/asr:dev","ASR_PORT=8001","ASR_INPUT_DIR=./data/incoming","ASR_OUTPUT_DIR=./data/asr-out","ASR_MODEL=base",
+   "","MINUTES_IMAGE=placeholder/minutes:dev","MINUTES_PORT=8002","MINUTES_INPUT_DIR=./data/asr-out","MINUTES_OUTPUT_DIR=./data/minutes-out",
+   "","TODO_IMAGE=placeholder/todo:dev","TODO_PORT=8003","TODO_DATA_DIR=./data/todo"]},
+ {"label":"W13-base12",".env.example":[
+   "ASR_IMAGE=placeholder/asr:dev","ASR_PORT=8001","ASR_INPUT_DIR=./data/incoming","ASR_OUTPUT_DIR=./data/asr-out","ASR_MODEL=base",
+   "MINUTES_IMAGE=placeholder/minutes:dev","MINUTES_PORT=8002","MINUTES_INPUT_DIR=./data/asr-out","MINUTES_OUTPUT_DIR=./data/minutes-out",
+   "TODO_IMAGE=placeholder/todo:dev","TODO_PORT=8003","TODO_DATA_DIR=./data/todo"]},
+ {"label":"W13-dep-h3","DEPLOY.md":[
+   "## 一、三条命令完成部署","## 1 三条命令","## （一）三条命令完成部署","### 一、三条命令完成部署",
+   "## 部署三步","## 1、三条命令完成部署"]},
+ {"label":"W13-dep-intro","DEPLOY.md":[
+   "本部署包由 gen_deploy.py 生成。","三服务部署包，一条命令生成、一次校验验收。","通过以下三条命令完成部署：","按以下步骤部署："]},
+ {"label":"W13-comp-x","docker-compose.yml":[
+   "      - \"./data:/data\"","      start_interval: 5s","      stdin_open: true","      tty: true"]}
+]

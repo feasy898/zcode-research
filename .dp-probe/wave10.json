@@ -1,0 +1,22 @@
+[
+ {"label":"W10-env-alpha",".env.example":[
+   "ASR_IMAGE=placeholder/asr:dev","ASR_INPUT_DIR=./data/incoming","ASR_MODEL=base",
+   "ASR_OUTPUT_DIR=./data/asr-out","ASR_PORT=8001",
+   "MINUTES_IMAGE=placeholder/minutes:dev","MINUTES_INPUT_DIR=./data/asr-out",
+   "MINUTES_OUTPUT_DIR=./data/minutes-out","MINUTES_PORT=8002",
+   "TODO_DATA_DIR=./data/todo","TODO_IMAGE=placeholder/todo:dev","TODO_PORT=8003"]},
+ {"label":"W10-env-bytype",".env.example":[
+   "ASR_IMAGE=placeholder/asr:dev","MINUTES_IMAGE=placeholder/minutes:dev","TODO_IMAGE=placeholder/todo:dev",
+   "ASR_PORT=8001","MINUTES_PORT=8002","TODO_PORT=8003",
+   "ASR_INPUT_DIR=./data/incoming","ASR_OUTPUT_DIR=./data/asr-out",
+   "MINUTES_INPUT_DIR=./data/asr-out","MINUTES_OUTPUT_DIR=./data/minutes-out",
+   "TODO_DATA_DIR=./data/todo","ASR_MODEL=base"]},
+ {"label":"W10-dep-hdrs","DEPLOY.md":[
+   "## 一、三条命令","## 1. 三条命令完成部署","### 三条命令完成部署","## 三条命令",
+   "## 一、部署三步","## 部署步骤","## 快速开始","## 三步部署"]},
+ {"label":"W10-dep-hdrs2","DEPLOY.md":[
+   "## 一、三条命令完成部署（复制 .env → up → ps）","## 第一步：准备环境配置","## 部署","## 使用",
+   "## 一、准备","## 一、快速部署","## 一键部署","## 三条指令"]},
+ {"label":"W10-comp-cmt2","docker-compose.yml":[
+   "    # 语音识别（asr）","    # asr","    # --- asr ---","  # --- asr ---","    # —— 语音识别 ——"]}
+]

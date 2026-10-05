@@ -1,0 +1,6 @@
+CMD "C:\Program Files\Python312\python.exe" D:\workspace\zcode研究\skillfactory\v3\assets\office-templates\package\scripts\gen_doc.py --template 周报 --data D:\workspace\zcode研究\_ab4_armb_rep2_work\inputs\notjson.json --outdir D:\workspace\zcode研究\_ab4_armb_rep2_work\out\A\n3
+EXIT 2
+--- STDOUT ---
+
+--- STDERR ---
+错误：数据文件不是合法 JSON：D:\workspace\zcode研究\_ab4_armb_rep2_work\inputs\notjson.json（Expecting value: line 1 column 1 (char 0)）

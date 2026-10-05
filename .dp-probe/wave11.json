@@ -1,0 +1,17 @@
+[
+ {"label":"W11-asr-IM-ID",".env.example":["ASR_IMAGE=placeholder/asr:dev","ASR_INPUT_DIR=./data/incoming"]},
+ {"label":"W11-asr-IM-MO",".env.example":["ASR_IMAGE=placeholder/asr:dev","ASR_MODEL=base"]},
+ {"label":"W11-asr-IM-OU",".env.example":["ASR_IMAGE=placeholder/asr:dev","ASR_OUTPUT_DIR=./data/asr-out"]},
+ {"label":"W11-asr-IM-PO",".env.example":["ASR_IMAGE=placeholder/asr:dev","ASR_PORT=8001"]},
+ {"label":"W11-asr-ID-MO",".env.example":["ASR_INPUT_DIR=./data/incoming","ASR_MODEL=base"]},
+ {"label":"W11-asr-ID-OU",".env.example":["ASR_INPUT_DIR=./data/incoming","ASR_OUTPUT_DIR=./data/asr-out"]},
+ {"label":"W11-asr-ID-PO",".env.example":["ASR_INPUT_DIR=./data/incoming","ASR_PORT=8001"]},
+ {"label":"W11-asr-MO-OU",".env.example":["ASR_MODEL=base","ASR_OUTPUT_DIR=./data/asr-out"]},
+ {"label":"W11-asr-MO-PO",".env.example":["ASR_MODEL=base","ASR_PORT=8001"]},
+ {"label":"W11-asr-OU-PO",".env.example":["ASR_OUTPUT_DIR=./data/asr-out","ASR_PORT=8001"]},
+ {"label":"W11-dep-listport","DEPLOY.md":[
+   "- asr：宿主端口 8001","- asr（语音识别）：宿主端口 8001","- asr：8001","asr：8001",
+   "| 服务 | 宿主端口 | 容器端口 |","| 服务 | 端口 | 健康检查 |","| 服务 | 宿主端口 |"]},
+ {"label":"W11-comp-cmt3","docker-compose.yml":[
+   "    # 语音识别服务","    # ASR 服务","  # 语音识别服务","    # 语音识别：8001"]}
+]

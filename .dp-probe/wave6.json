@@ -1,0 +1,38 @@
+[
+ {"label":"W6-env-incoming",".env.example":["ASR_INPUT_DIR=./data/incoming"]},
+ {"label":"W6-env-src2",".env.example":["ASR_INPUT_DIR=./data/asr-src","ASR_INPUT_DIR=./data/src"]},
+ {"label":"W6-dep-B1a","DEPLOY.md":[
+   "# 三服务部署包部署指南（asr / minutes / todo）",
+   "> 由 gen_deploy.py 生成；服务集：asr, minutes, todo。验收口径：validate.py 七项检查全绿。",
+   "## 一、三条命令完成部署",
+   "```bash"]},
+ {"label":"W6-dep-B1b","DEPLOY.md":[
+   "# 1) 生成环境配置（占位默认值，可先不改）",
+   "cp .env.example .env",
+   "# 2) 启动全部服务",
+   "docker compose up -d"]},
+ {"label":"W6-dep-B2a","DEPLOY.md":[
+   "# 3) 查看容器状态",
+   "docker compose ps",
+   "```",
+   "## 二、服务与端口"]},
+ {"label":"W6-dep-B2b","DEPLOY.md":[
+   "| 服务 | 说明 | 宿主端口 | 容器端口 | 健康检查 |",
+   "| --- | --- | --- | --- | --- |",
+   "| asr | 语音识别 | 8001 | 8000 | curl -fsS http://127.0.0.1:8001/healthz |",
+   "| minutes | 会议纪要 | 8002 | 8000 | curl -fsS http://127.0.0.1:8002/healthz |"]},
+ {"label":"W6-comp-startp2","docker-compose.yml":[
+   "      start_period: 15s","      start_period: 20s","      start_period: 60s",
+   "      start_period: 1m","      start_period: 45s"]},
+ {"label":"W6-comp-svccmt","docker-compose.yml":[
+   "  # 语音识别","  # asr 语音识别","  # 语音识别（asr）","  # asr：语音识别"]},
+ {"label":"W6-comp-banner2","docker-compose.yml":[
+   "# 三服务部署包（asr / minutes / todo）",
+   "# 三服务部署包 compose 配置（由 gen_deploy.py 生成）",
+   "# 由 gen_deploy.py 生成的三服务部署包",
+   "# 占位镜像，部署前替换"]},
+ {"label":"W6-comp-footer","docker-compose.yml":[
+   "# 生成：gen_deploy.py --services asr,minutes,todo",
+   "# 由 gen_deploy.py --services asr,minutes,todo 生成",
+   "# 验收：validate.py --pack ."]}
+]

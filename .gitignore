@@ -1,0 +1,21 @@
+# 本地缓存与快照（不入库）
+.mimosa/
+.zcode/
+.ruff_cache/
+.judge_tmp/
+extracted/
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+*.bundle
+
+# 敏感文件
+.env
+.env.*
+!*.env.example
+
+# Windows 噪声
+nul
+NUL

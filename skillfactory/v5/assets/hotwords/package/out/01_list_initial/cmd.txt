@@ -1,0 +1,1 @@
+"C:\Program Files\Python312\python.exe" D:\workspace\zcode研究\skillfactory\v5\assets\hotwords\package\hotwords.py --store D:\workspace\zcode研究\skillfactory\v5\assets\hotwords\package\out\_work\store.json list
